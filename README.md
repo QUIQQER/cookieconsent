@@ -7,7 +7,7 @@ Implementierung des Cookie Hinweises für die EU-Richtlinie 2009/136/EG (E-Priva
 
 Paketname:
 
-    quiqqer/cookiesend
+    quiqqer/cookieconsent
 
 
 Features (Funktionen)
@@ -20,7 +20,7 @@ Features (Funktionen)
 Installation
 ------------
 
-Der Paketname ist: quiqqer/*
+Der Paketname ist: quiqqer/cookieconsent
 
 
 Mitwirken
@@ -41,6 +41,3 @@ Lizenz
 -------
 
 MIT
-
-Entwickler
---------

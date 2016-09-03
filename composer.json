@@ -1,30 +1,29 @@
 {
-    "name" : "quiqqer/cookieconsent",
-    "type" : "quiqqer-module",
-    "description" : "",
-    "version" : "dev-master",
-    "license" : "MIT",
-
-    "authors" : [{
-        "name": "Henning Leutz",
-        "email": "leutz@pcsg.de",
-        "homepage": "http://www.pcsg.de",
-        "role": "Developer"
-    }],
-
-    "support" : {
-        "email": "support@pcsg.de",
-        "url": "http://www.pcsg.de"
-    },
-
-    "require": {
-        "php" : ">=5.3",
-        "quiqqer/quiqqer" : "*@dev"
-    },
-
-    "autoload": {
-        "psr-0" : {
-            "QUI" : "src/"
-        }
+  "name": "quiqqer/cookieconsent",
+  "type": "quiqqer-module",
+  "description": "",
+  "version": "dev-master",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Henning Leutz",
+      "email": "leutz@pcsg.de",
+      "homepage": "http://www.pcsg.de",
+      "role": "Developer"
     }
+  ],
+  "support": {
+    "email": "support@pcsg.de",
+    "url": "http://www.pcsg.de"
+  },
+  "require": {
+    "php": ">=5.3",
+    "quiqqer/quiqqer": "*@dev",
+    "quiqqer/sitetypes": ">=1.4|dev-master|dev-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "QUI\\CookieConsent\\": "src/QUI/CookieConsent"
+    }
+  }
 }

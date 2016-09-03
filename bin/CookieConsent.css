@@ -1,0 +1,34 @@
+.quiqqer-cookieconsent {
+    background: #222;
+    color: #fff;
+    left: 0;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+}
+
+.quiqqer-cookieconsent__top {
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+    top: 0;
+}
+
+.quiqqer-cookieconsent__bottom {
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, .28);
+}
+
+.quiqqer-cookieconsent-message {
+    float: left;
+    width: calc(100% - 200px);
+}
+
+.quiqqer-cookieconsent-accept {
+    background: #f1d600;
+    border: 1px solid #f1d600;
+    cursor: pointer;
+    float: left;
+    margin-left: 10px;
+    padding: 10px;
+    width: 190px;
+}

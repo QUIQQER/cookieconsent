@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locales>
+    <groups name="quiqqer/cookieconsent" datatype="php,js">
+        <locale name="package.title">
+            <de><![CDATA[Cookie Consent]]></de>
+            <en><![CDATA[Cookie Consent]]></en>
+        </locale>
+
+        <locale name="text" html="true">
+            <de><![CDATA[Diese Website verwendet Cookies um die Benutzerfreundlichkeit zu erhöhen.
+            Mit der weiteren Navigation auf der Website stimmen Sie der Nutzung von Cookies zu.]]></de>
+            <en><![CDATA[
+            This website uses cookies to ensure you get the best experience on our website.
+            ]]></en>
+        </locale>
+        <locale name="button">
+            <de><![CDATA[Ich habe es verstanden!]]></de>
+            <en><![CDATA[Got it!]]></en>
+        </locale>
+    </groups>
+</locales>

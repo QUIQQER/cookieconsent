@@ -23,6 +23,15 @@
     width: calc(100% - 200px);
 }
 
+.quiqqer-cookieconsent-message a {
+    color: #31a8f0;
+}
+
+.quiqqer-cookieconsent-message a:hover {
+    color: #31a8f0;
+    text-decoration: underline;
+}
+
 .quiqqer-cookieconsent-accept {
     background: #f1d600;
     border: 1px solid #f1d600;

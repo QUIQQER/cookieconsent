@@ -13,9 +13,26 @@
             This website uses cookies to ensure you get the best experience on our website.
             ]]></en>
         </locale>
+        <locale name="PrivacyPolicy.link.text">
+            <de><![CDATA[Mehr erfahren]]></de>
+            <en><![CDATA[More info]]></en>
+        </locale>
         <locale name="button">
             <de><![CDATA[Ich habe es verstanden!]]></de>
             <en><![CDATA[Got it!]]></en>
+        </locale>
+
+        <locale name="settings.title">
+            <de><![CDATA[Cookie Consent]]></de>
+            <en><![CDATA[Cookie Consent]]></en>
+        </locale>
+        <locale name="settings.cookieconsent.title">
+            <de><![CDATA[Cookie Consent Einstellungen]]></de>
+            <en><![CDATA[Cookie Consent settings]]></en>
+        </locale>
+        <locale name="settings.cookieconsent.position.text">
+            <de><![CDATA[Position des Cookie Consent]]></de>
+            <en><![CDATA[Position of the Cookie Consent]]></en>
         </locale>
     </groups>
 </locales>

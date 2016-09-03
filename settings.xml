@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiqqer>
+    <project>
+
+        <settings>
+            <config>
+                <section name="quiqqer.cookieconsent">
+                    <conf name="position">
+                        <type><![CDATA[string]]></type>
+                    </conf>
+                </section>
+            </config>
+
+            <window>
+                <categories>
+                    <category name="quiqqer">
+                        <text>
+                            <locale group="quiqqer/cookieconsent" var="settings.title"/>
+                        </text>
+
+                        <settings title="quiqqer/cookieconsent" name="settings.cookieconsent">
+                            <title>
+                                <locale group="quiqqer/cookieconsent" var="settings.cookieconsent.title"/>
+                            </title>
+                            <select conf="quiqqer.cookieconsent.position">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="settings.cookieconsent.position.text"/>
+                                </text>
+                                <option value="top">Top</option>
+                                <option value="bottom">Bottom</option>
+                            </select>
+                        </settings>
+
+                    </category>
+                </categories>
+
+            </window>
+        </settings>
+
+    </project>
+</quiqqer>

@@ -1,3 +1,10 @@
+/**
+ * @module package/quiqqer/cookieconsent/bin/CookieConsent
+ * @author www.pcsg.de (Henning Leutz)
+ *
+ * @require qui/QUI
+ * @require Locale
+ */
 define('package/quiqqer/cookieconsent/bin/CookieConsent', [
     'qui/QUI',
     'Locale'
@@ -52,7 +59,28 @@ define('package/quiqqer/cookieconsent/bin/CookieConsent', [
                 }
             }).inject(document.body);
 
-            Message.addClass('quiqqer-cookieconsent__bottom');
+            if (typeof window.QUIQQER_CC_LINK !== 'undefined') {
+                new Element('a', {
+                    href  : window.QUIQQER_CC_LINK,
+                    html  : QUILocale.get(lg, 'PrivacyPolicy.link.text'),
+                    styles: {
+                        marginLeft: 10
+                    }
+                }).inject(Message.getElement('.quiqqer-cookieconsent-message'));
+            }
+
+
+            switch (window.QUIQQER_CC_POS) {
+                case 'bottom':
+                    Message.addClass('quiqqer-cookieconsent__bottom');
+                    break;
+
+                default:
+                case 'top':
+                    Message.addClass('quiqqer-cookieconsent__top');
+            }
+
+
             Message.getElement('.quiqqer-cookieconsent-accept').addEvent('click', accept);
 
             moofx(Message).animate({

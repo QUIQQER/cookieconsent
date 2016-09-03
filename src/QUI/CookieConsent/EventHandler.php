@@ -52,7 +52,6 @@ class EventHandler
                 );
             } catch (QUI\Exception $Exception) {
             }
-
         }
     }
 }

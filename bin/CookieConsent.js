@@ -12,7 +12,7 @@ define('package/quiqqer/cookieconsent/bin/CookieConsent', [
     "use strict";
 
     if (QUI.Storage.get('quiqqer-cookieconsent-accept')) {
-        return;
+        //return;
     }
 
     var lg = 'quiqqer/cookieconsent';

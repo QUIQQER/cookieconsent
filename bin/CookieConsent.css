@@ -35,6 +35,7 @@
 .quiqqer-cookieconsent-accept {
     background: #f1d600;
     border: 1px solid #f1d600;
+    color: #222;
     cursor: pointer;
     float: left;
     margin-left: 10px;

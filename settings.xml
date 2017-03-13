@@ -26,8 +26,15 @@
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="settings.cookieconsent.position.text"/>
                                 </text>
-                                <option value="top">Top</option>
-                                <option value="bottom">Bottom</option>
+                                <option value="top">
+                                    <locale group="quiqqer/cookieconsent" var="settings.cookieconsent.position.top"/>
+                                </option>
+                                <option value="bottom">
+                                    <locale group="quiqqer/cookieconsent" var="settings.cookieconsent.position.bottom"/>
+                                </option>
+                                <option value="topSlide">
+                                    <locale group="quiqqer/cookieconsent" var="settings.cookieconsent.position.topSlide"/>
+                                </option>
                             </select>
                         </settings>
 

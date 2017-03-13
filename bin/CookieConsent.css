@@ -18,6 +18,12 @@
     box-shadow: 0 -4px 8px rgba(0, 0, 0, .28);
 }
 
+.quiqqer-cookieconsent__topSlide {
+    display: block;
+    float: left;
+    position: relative;
+}
+
 .quiqqer-cookieconsent-message {
     float: left;
     width: calc(100% - 200px);

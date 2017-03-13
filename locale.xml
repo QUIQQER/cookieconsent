@@ -34,5 +34,18 @@
             <de><![CDATA[Position des Cookie Consent]]></de>
             <en><![CDATA[Position of the Cookie Consent]]></en>
         </locale>
+
+        <locale name="settings.cookieconsent.position.top">
+            <de><![CDATA[Von oben]]></de>
+            <en><![CDATA[From top]]></en>
+        </locale>
+        <locale name="settings.cookieconsent.position.topSlide">
+            <de><![CDATA[Von oben (Schiebt die Webseite nach unten)]]></de>
+            <en><![CDATA[From top (Push the webpage down)]]></en>
+        </locale>
+        <locale name="settings.cookieconsent.position.bottom">
+            <de><![CDATA[Von unten]]></de>
+            <en><![CDATA[From bottom]]></en>
+        </locale>
     </groups>
 </locales>

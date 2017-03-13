@@ -22,8 +22,12 @@ class EventHandler
         // CookieConsent Data
         $position = 'top';
 
-        if ($Project->getConfig('quiqqer.cookieconsent.position') == 'bottom') {
-            $position = 'bottom';
+        switch ($Project->getConfig('quiqqer.cookieconsent.position')) {
+            case 'top':
+            case 'bottom':
+            case 'topSlide':
+                $position = $Project->getConfig('quiqqer.cookieconsent.position');
+                break;
         }
 
         $Template->extendFooter(

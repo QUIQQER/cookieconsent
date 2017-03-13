@@ -29,7 +29,7 @@ define('package/quiqqer/cookieconsent/bin/CookieConsent', [
 
         if (Message.hasClass('quiqqer-cookieconsent__top')) {
             animate.top = -30;
-        } else {
+        } else if (Message.hasClass('quiqqer-cookieconsent__bottom')) {
             animate.bottom = -30;
         }
 
@@ -49,15 +49,23 @@ define('package/quiqqer/cookieconsent/bin/CookieConsent', [
             var Message = new Element('div', {
                 'class': 'quiqqer-cookieconsent',
                 html   : '<div class="quiqqer-cookieconsent-message">' +
-                         QUILocale.get(lg, 'text') +
-                         '</div>' +
-                         '<button class="quiqqer-cookieconsent-accept">' +
-                         QUILocale.get(lg, 'button') +
-                         '</button>',
+                QUILocale.get(lg, 'text') +
+                '</div>' +
+                '<button class="quiqqer-cookieconsent-accept">' +
+                QUILocale.get(lg, 'button') +
+                '</button>',
                 styles : {
                     opacity: 0
                 }
-            }).inject(document.body);
+            });
+
+            if (window.QUIQQER_CC_POS === 'topSlide') {
+                Message.setStyles({});
+                Message.inject(document.body, 'top');
+            } else {
+                Message.inject(document.body);
+            }
+
 
             if (typeof window.QUIQQER_CC_LINK !== 'undefined') {
                 new Element('a', {
@@ -71,6 +79,10 @@ define('package/quiqqer/cookieconsent/bin/CookieConsent', [
 
 
             switch (window.QUIQQER_CC_POS) {
+                case 'topSlide':
+                    Message.addClass('quiqqer-cookieconsent__topSlide');
+                    break;
+
                 case 'bottom':
                     Message.addClass('quiqqer-cookieconsent__bottom');
                     break;

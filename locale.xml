@@ -2,8 +2,8 @@
 <locales>
     <groups name="quiqqer/cookieconsent" datatype="php,js">
         <locale name="package.title">
-            <de><![CDATA[Cookie Consent]]></de>
-            <en><![CDATA[Cookie Consent]]></en>
+            <de><![CDATA[QUIQQER - Cookie Consent]]></de>
+            <en><![CDATA[QUIQQER - Cookie Consent]]></en>
         </locale>
 
         <locale name="text" html="true">

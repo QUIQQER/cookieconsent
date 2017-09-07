@@ -5,6 +5,10 @@
             <de><![CDATA[QUIQQER - Cookie Consent]]></de>
             <en><![CDATA[QUIQQER - Cookie Consent]]></en>
         </locale>
+        <locale name="package.description">
+            <de><![CDATA[]]></de>
+            <en><![CDATA[]]></en>
+        </locale>
 
         <locale name="text" html="true">
             <de><![CDATA[Diese Website verwendet Cookies um die Benutzerfreundlichkeit zu erhöhen.

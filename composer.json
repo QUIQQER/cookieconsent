@@ -1,7 +1,7 @@
 {
   "name": "quiqqer/cookieconsent",
   "type": "quiqqer-module",
-  "description": "",
+  "description": "Impletmentation of the Cookie-Notification according to the EU-Guideline 2009/136/EG (E-Privacy-Guideline) ",
   "version": "dev-dev",
   "license": "MIT",
   "authors": [

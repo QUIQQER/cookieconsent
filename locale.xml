@@ -6,8 +6,8 @@
             <en><![CDATA[QUIQQER - Cookie Consent]]></en>
         </locale>
         <locale name="package.description">
-            <de><![CDATA[]]></de>
-            <en><![CDATA[]]></en>
+            <de><![CDATA[Implementierung des Cookie Hinweises für die EU-Richtlinie 2009/136/EG (E-Privacy-Richtlinie).]]></de>
+            <en><![CDATA[Impletmentation of the Cookie-Notification according to the EU-Guideline 2009/136/EG (E-Privacy-Guideline) ]]></en>
         </locale>
 
         <locale name="text" html="true">

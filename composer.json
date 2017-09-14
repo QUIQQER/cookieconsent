@@ -1,9 +1,9 @@
 {
   "name": "quiqqer/cookieconsent",
   "type": "quiqqer-module",
-  "description": "Impletmentation of the Cookie-Notification according to the EU-Guideline 2009/136/EG (E-Privacy-Guideline) ",
+  "description": "The Cookie Consent module integrates a cookies-notification concerning the EU-guideline for your QUIQQER-Website. If data protection specifications have been declared, those will be linked automatically.",
   "version": "dev-dev",
-  "license": "MIT",
+  "license": "GPL-3.0+",
   "authors": [
     {
       "name": "Henning Leutz",

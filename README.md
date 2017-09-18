@@ -1,29 +1,31 @@
+![Cookie Consent](bin/images/Readme.jpg)
 
 Cookie Consent
 ========
 
-Implementierung des Cookie Hinweises für die EU-Richtlinie 2009/136/EG (E-Privacy-Richtlinie).
+The Cookie Consent module integrates a cookies-notification concerning the EU-guideline for your QUIQQER-Website. 
+If data protection specifications have been declared, those will be linked automatically. 
 
 
-Paketname:
+Package name:
 
     quiqqer/cookieconsent
 
 
-Features (Funktionen)
+Features
 --------
 
-- Vorgefertigter Text kann ersetzt werden
-- Cookie Hinweisanzeige kann angepasst werden
+- Prefabricated Cookie Consent text can be replaced
+- Cookie Consent notice can be customized
 
 
 Installation
 ------------
 
-Der Paketname ist: quiqqer/cookieconsent
+Tha package name is: quiqqer/cookieconsent
 
 
-Mitwirken
+Contribute
 ----------
 
 - Issue Tracker: https://dev.quiqqer.com/quiqqer/cookieconsent/issues
@@ -31,13 +33,15 @@ Mitwirken
 
 
 Support
+
 -------
+If you have found errors, wishes or suggestions for improvement,
+you can contact us by email at support@pcsg.de.
 
-Falls Sie ein Fehler gefunden haben, oder Verbesserungen wünschen,
-dann können Sie gerne an support@pcsg.de eine E-Mail schreiben.
-
+We will try to meet your needs or send them to the responsible developers
+of the project.
 
 Lizenz
 -------
 
-MIT
+GPL-3.0+

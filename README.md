@@ -33,8 +33,8 @@ Contribute
 
 
 Support
-
 -------
+
 If you have found errors, wishes or suggestions for improvement,
 you can contact us by email at support@pcsg.de.
 

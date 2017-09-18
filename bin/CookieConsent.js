@@ -1,9 +1,6 @@
 /**
  * @module package/quiqqer/cookieconsent/bin/CookieConsent
  * @author www.pcsg.de (Henning Leutz)
- *
- * @require qui/QUI
- * @require Locale
  */
 define('package/quiqqer/cookieconsent/bin/CookieConsent', [
     'qui/QUI',
@@ -42,7 +39,7 @@ define('package/quiqqer/cookieconsent/bin/CookieConsent', [
         });
     };
 
-    window.addEvent('load', function () {
+    var load = function () {
         require([
             'css!package/quiqqer/cookieconsent/bin/CookieConsent.css'
         ], function () {
@@ -99,5 +96,11 @@ define('package/quiqqer/cookieconsent/bin/CookieConsent', [
                 opacity: 1
             });
         });
-    });
+    };
+
+    if (document.readyState === 'complete') {
+        load();
+    } else {
+        window.addEvent('load', load);
+    }
 });

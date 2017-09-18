@@ -5,6 +5,10 @@
             <de><![CDATA[QUIQQER - Cookie Consent]]></de>
             <en><![CDATA[QUIQQER - Cookie Consent]]></en>
         </locale>
+        <locale name="package.description">
+            <de><![CDATA[Das Cookie Consent Modul integriert einen Cookies-Hinweis zur EU-Richtlinie in Ihre QUIQQER-Webseite. Wenn eine Datenschutzbestimmungen angelegt wurde, wird auf diese automatisch verlinkt.]]></de>
+            <en><![CDATA[The Cookie Consent module integrates a cookies-notification concerning the EU-guideline for your QUIQQER-Website. If data protection specifications have been declared, those will be linked automatically. ]]></en>
+        </locale>
 
         <locale name="text" html="true">
             <de><![CDATA[Diese Website verwendet Cookies um die Benutzerfreundlichkeit zu erhöhen.

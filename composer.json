@@ -2,7 +2,7 @@
   "name": "quiqqer/cookieconsent",
   "type": "quiqqer-module",
   "description": "The Cookie Consent module integrates a cookies-notification concerning the EU-guideline for your QUIQQER-Website. If data protection specifications have been declared, those will be linked automatically.",
-  "version": "dev-master",
+  "version": "1.3.0",
   "license": "GPL-3.0+",
   "authors": [
     {

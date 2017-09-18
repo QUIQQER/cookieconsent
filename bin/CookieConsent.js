@@ -99,7 +99,7 @@ define('package/quiqqer/cookieconsent/bin/CookieConsent', [
     };
 
     if (document.readyState === 'complete') {
-        load();
+        load.delay(2000);
     } else {
         window.addEvent('load', load);
     }

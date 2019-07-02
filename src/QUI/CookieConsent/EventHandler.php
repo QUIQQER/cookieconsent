@@ -31,20 +31,20 @@ class EventHandler
         }
 
         $Template->extendFooter(
-            '<script>' .
-            'var QUIQQER_CC_POS = "' . $position . '";' .
-            'require(["package/quiqqer/cookieconsent/bin/CookieConsent"]);' .
+            '<script>'.
+            'var QUIQQER_CC_POS = "'.$position.'";'.
+            'require(["package/quiqqer/cookieconsent/bin/CookieConsent"]);'.
             '</script>'
         );
 
 
         // PrivacyPolicy Site
-        $list = $Project->getSites(array(
-            'where' => array(
+        $list = $Project->getSites([
+            'where' => [
                 'type' => 'quiqqer/sitetypes:types/privacypolicy'
-            ),
+            ],
             'limit' => 1
-        ));
+        ]);
 
         if (isset($list[0])) {
             try {
@@ -52,10 +52,27 @@ class EventHandler
                 $PrivacyPolicy = $list[0];
 
                 $Template->extendFooter(
-                    '<script>var QUIQQER_CC_LINK = "' . $PrivacyPolicy->getUrlRewritten() . '";</script>'
+                    '<script>var QUIQQER_CC_LINK = "'.$PrivacyPolicy->getUrlRewritten().'";</script>'
                 );
             } catch (QUI\Exception $Exception) {
             }
         }
+    }
+
+    /**
+     * @param QUI\Template $Template
+     */
+    public static function onTemplateGetHeader($Template)
+    {
+        try {
+            $lastUpdate = QUI::getPackageManager()->getLastUpdateDate();
+            $lastUpdate = \md5($lastUpdate);
+        } catch (QUI\Exception $Exception) {
+            return;
+        }
+
+        $Template->extendHeader(
+            '<link rel="preload" as="style" href="'.URL_OPT_DIR.'quiqqer/cookieconsent/bin/CookieConsent.css?update='.$lastUpdate.'">'
+        );
     }
 }

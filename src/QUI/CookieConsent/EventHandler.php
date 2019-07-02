@@ -70,7 +70,7 @@ class EventHandler
         } catch (QUI\Exception $Exception) {
             return;
         }
-        
+
         $Template->extendHeader(
             '<link rel="preload" as="style" href="'.URL_OPT_DIR.'quiqqer/cookieconsent/bin/CookieConsent.css?update='.$lastUpdate.'">'
         );

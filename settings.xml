@@ -9,6 +9,119 @@
                         <type><![CDATA[string]]></type>
                     </conf>
                 </section>
+                <section name="checklist">
+                    <conf name="contact.ssl">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="contact.smtp">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="contact.privacypolicy">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="contact.usage">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="contact.dpa">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="newsletter.unsubscribe">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="newsletter.optin">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="newsletter.dataProcessingDirectory">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="newsletter.dpa">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="newsletter.coupling">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="google.dpa">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="google.analytics.ips">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="google.analytics.gdpr">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="google.analytics.duration">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="google.cookie.opt.out">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="google.cookie.opt.in">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="tools.socialmedia">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="tools.calendars">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="tools.youtube">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="tools.newsletters">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="tools.seals">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="tools.google.maps">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="tools.google.recaptcha">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="tools.google.fonts">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="cookies.inform">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="cookies.consent">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="privacypolicy.added">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="privacypolicy.verified">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="privacypolicy.accessible">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="imprint.name.provider">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="imprint.name.company">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="imprint.address">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="imprint.contact">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="imprint.register">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="imprint.vat">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="imprint.supervisor">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                    <conf name="imprint.chamber">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                </section>
             </config>
 
             <window>
@@ -37,12 +150,300 @@
                                 </option>
                             </select>
                         </settings>
+                    </category>
 
+                    <category name="quiqqer.gdpr.checklist">
+                        <text>
+                            <locale group="quiqqer/cookieconsent" var="checklist.title"/>
+                        </text>
+                        <icon>fa fa-legal</icon>
+
+                        <settings name="checklist.contact">
+                            <title>
+                                <locale group="quiqqer/cookieconsent" var="checklist.contact.title"/>
+                            </title>
+
+                            <input conf="checklist.contact.ssl" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.contact.ssl.text"/>
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.contact.ssl.description"/>
+                                </description>
+                            </input>
+
+                            <input conf="checklist.contact.smtp" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.contact.smtp.text"/>
+                                </text>
+                            </input>
+
+                            <input conf="checklist.contact.privacypolicy" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.contact.privacypolicy.text"/>
+                                </text>
+                            </input>
+
+                            <input conf="checklist.contact.usage" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.contact.usage.text"/>
+                                </text>
+                            </input>
+
+                            <input conf="checklist.contact.dpa" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.contact.dpa.text"/>
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.contact.dpa.description"/>
+                                </description>
+                            </input>
+                        </settings>
+
+                        <settings name="checklist.newsletter">
+                            <title>
+                                <locale group="quiqqer/cookieconsent" var="checklist.newsletter.title"/>
+                            </title>
+                            <input conf="checklist.newsletter.unsubscribe" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.newsletter.unsubscribe.text"/>
+                                </text>
+                            </input>
+                            <input conf="checklist.newsletter.optin" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.newsletter.optin.text"/>
+                                </text>
+                            </input>
+                            <input conf="checklist.newsletter.dataProcessingDirectory" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.newsletter.dataProcessingDirectory.text"/>
+                                </text>
+                            </input>
+                            <input conf="checklist.newsletter.dpa" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.newsletter.dpa.text"/>
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.newsletter.dpa.description"/>
+                                </description>
+                            </input>
+                            <input conf="checklist.newsletter.coupling" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.newsletter.coupling.text"/>
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.newsletter.coupling.description"/>
+                                </description>
+                            </input>
+                        </settings>
+
+                        <settings name="checklist.google">
+                            <title>
+                                <locale group="quiqqer/cookieconsent" var="checklist.google.title"/>
+                            </title>
+                            <input conf="checklist.google.dpa" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.google.dpa.text"/>
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.google.dpa.description"/>
+                                </description>
+                            </input>
+                            <input conf="checklist.google.analytics.ips" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.google.analytics.ips.text"/>
+                                </text>
+                            </input>
+                            <input conf="checklist.google.analytics.gdpr" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.google.analytics.gdpr.text"/>
+                                </text>
+                            </input>
+                            <input conf="checklist.google.analytics.duration" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.google.analytics.duration.text"/>
+                                </text>
+                            </input>
+                            <input conf="checklist.google.cookie.opt.out" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.google.cookie.opt.out.text"/>
+                                </text>
+                            </input>
+                            <input conf="checklist.google.cookie.opt.in" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.google.cookie.opt.in.text"/>
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.google.cookie.opt.in.description"/>
+                                </description>
+                            </input>
+                        </settings>
+
+                        <settings name="checklist.tools">
+                            <title>
+                                <locale group="quiqqer/cookieconsent" var="checklist.tools.title"/>
+                            </title>
+                            <input conf="checklist.tools.socialmedia" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.tools.socialmedia.text"/>
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.tools.socialmedia.description"/>
+                                </description>
+                            </input>
+                            <input conf="checklist.tools.calendars" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.tools.calendars.text"/>
+                                </text>
+                            </input>
+                            <input conf="checklist.tools.youtube" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.tools.youtube.text"/>
+                                </text>
+                            </input>
+                            <input conf="checklist.tools.newsletters" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.tools.newsletters.text"/>
+                                </text>
+                            </input>
+                            <input conf="checklist.tools.seals" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.tools.seals.text"/>
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.tools.seals.description"/>
+                                </description>
+                            </input>
+                            <input conf="checklist.tools.google.maps" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.tools.google.maps.text"/>
+                                </text>
+
+                            </input>
+                            <input conf="checklist.tools.google.recaptcha" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.tools.google.recaptcha.text"/>
+                                </text>
+                            </input>
+                            <input conf="checklist.tools.google.fonts" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.tools.google.fonts.text"/>
+                                </text>
+                            </input>
+                        </settings>
+
+                        <settings name="checklist.cookies">
+                            <title>
+                                <locale group="quiqqer/cookieconsent" var="checklist.cookies.title"/>
+                            </title>
+                            <input conf="checklist.cookies.inform" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.cookies.inform.text"/>
+                                </text>
+                            </input>
+                            <input conf="checklist.cookies.consent" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.cookies.consent.text"/>
+                                </text>
+                            </input>
+                        </settings>
+
+                        <settings name="checklist.privacypolicy">
+                            <title>
+                                <locale group="quiqqer/cookieconsent" var="checklist.privacypolicy.title"/>
+                            </title>
+                            <input conf="checklist.privacypolicy.added" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.privacypolicy.added.text"/>
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.privacypolicy.added.description"/>
+                                </description>
+                            </input>
+                            <input conf="checklist.privacypolicy.verified" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.privacypolicy.verified.text"/>
+                                </text>
+                            </input>
+                            <input conf="checklist.privacypolicy.accessible" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.privacypolicy.accessible.text"/>
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.privacypolicy.accessible.description"/>
+                                </description>
+                            </input>
+                        </settings>
+
+                        <settings name="checklist.imprint">
+                            <title>
+                                <locale group="quiqqer/cookieconsent" var="checklist.imprint.title"/>
+                            </title>
+                            <input conf="checklist.imprint.name.provider" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.imprint.name.provider.text"/>
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.imprint.name.provider.description"/>
+                                </description>
+                            </input>
+                            <input conf="checklist.imprint.name.company" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.imprint.name.company.text"/>
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.imprint.name.company.description"/>
+                                </description>
+                            </input>
+                            <input conf="checklist.imprint.address" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.imprint.address.text"/>
+                                </text>
+                            </input>
+                            <input conf="checklist.imprint.contact" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.imprint.contact.text"/>
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.imprint.contact.description"/>
+                                </description>
+                            </input>
+                            <input conf="checklist.imprint.register" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.imprint.register.text"/>
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.imprint.register.description"/>
+                                </description>
+                            </input>
+                            <input conf="checklist.imprint.vat" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.imprint.vat.text"/>
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.imprint.vat.description"/>
+                                </description>
+                            </input>
+                            <input conf="checklist.imprint.supervisor" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.imprint.supervisor.text"/>
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.imprint.supervisor.description"/>
+                                </description>
+                            </input>
+                            <input conf="checklist.imprint.chamber" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.imprint.chamber.text"/>
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.imprint.chamber.description"/>
+                                </description>
+                            </input>
+                        </settings>
                     </category>
                 </categories>
-
             </window>
         </settings>
-
     </project>
 </quiqqer>

@@ -10,6 +10,9 @@
                     </conf>
                 </section>
                 <section name="checklist">
+                    <conf name="disclaimer.read">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
                     <conf name="contact.ssl">
                         <type><![CDATA[boolean]]></type>
                     </conf>
@@ -157,6 +160,21 @@
                             <locale group="quiqqer/cookieconsent" var="checklist.title"/>
                         </text>
                         <icon>fa fa-legal</icon>
+
+                        <settings name="checklist.disclaimer">
+                            <title>
+                                <locale group="quiqqer/cookieconsent" var="checklist.disclaimer.title"/>
+                            </title>
+
+                            <input conf="checklist.disclaimer.read" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.disclaimer.read.text"/>
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/cookieconsent" var="checklist.disclaimer.read.description"/>
+                                </description>
+                            </input>
+                        </settings>
 
                         <settings name="checklist.contact">
                             <title>

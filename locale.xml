@@ -60,6 +60,18 @@
             <de><![CDATA[DSGVO-Checkliste]]></de>
             <en><![CDATA[GDPR-Checklist]]></en>
         </locale>
+        <locale name="checklist.disclaimer.title">
+            <de><![CDATA[Haftungsausschluss]]></de>
+            <en><![CDATA[Disclaimer]]></en>
+        </locale>
+        <locale name="checklist.disclaimer.read.text">
+            <de><![CDATA[Haftungsausschluss Gelesen]]></de>
+            <en><![CDATA[Disclaimer Read]]></en>
+        </locale>
+        <locale name="checklist.disclaimer.read.description">
+            <de html="1"><![CDATA[<br>Der Autor dieser Zusammenstellung garantiert keine (rechtliche) Korrektheit der Angaben. Irrtümer und Unvollständigkeiten vorbehalten.<br>Sämtliche Rechtstexte (bspw. Impressum oder Datenschutzerklärung) sollten von einem Anwalt überprüft werden.]]></de>
+            <en html="1"><![CDATA[<br>The author of this list does not guarantee any (legal) correctness of the information. Errors and omissions may occur.<br>All legal texts (e.g. imprint or privacy declaration) should be checked by a lawyer.]]></en>
+        </locale>
         <locale name="checklist.contact.title">
             <de><![CDATA[Kontaktformular]]></de>
             <en><![CDATA[Contact form]]></en>

@@ -57,7 +57,7 @@
 
     <groups name="quiqqer/cookieconsent" datatype="php">
         <locale name="checklist.title">
-            <de><![CDATA[DGVO-Checkliste]]></de>
+            <de><![CDATA[DSGVO-Checkliste]]></de>
             <en><![CDATA[GDPR-Checklist]]></en>
         </locale>
         <locale name="checklist.contact.title">

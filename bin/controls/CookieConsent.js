@@ -8,6 +8,10 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
 ], function (QUI, QUIControl) {
     "use strict";
 
+    if (QUI.Storage.get('quiqqer-cookieconsent-accepted')) {
+        return;
+    }
+
     var lg = 'quiqqer/cookieconsent';
 
     return new Class({
@@ -39,10 +43,6 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
 
 
         $onImport: function () {
-            if (QUI.Storage.get('quiqqer-cookieconsent-accepted')) {
-                return;
-            }
-
             var Element = this.getElm();
 
             if (!Element) {

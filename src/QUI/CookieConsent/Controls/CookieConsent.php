@@ -6,7 +6,6 @@
 
 namespace QUI\CookieConsent\Controls;
 
-
 use QUI\Control;
 use QUI\Projects\Project;
 
@@ -82,7 +81,5 @@ class CookieConsent extends Control
      */
     public static function getPrivacyUrl($Project)
     {
-
     }
-
 }

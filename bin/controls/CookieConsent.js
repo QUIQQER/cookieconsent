@@ -79,6 +79,12 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
             QUI.Storage.set('quiqqer-cookieconsent-accept', 1);
             this.allowPageUsage();
             this.hideAnimated();
+
+            require(['Ajax'], function (QUIAjax) {
+                QUIAjax.post('package_quiqqer_cookieconsent_ajax_acceptCookies', null, {
+                    'package': 'quiqqer/cookieconsent'
+                });
+            });
         },
 
         hideAnimated: function (callback, duration) {

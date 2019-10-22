@@ -20,7 +20,9 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
             'hide',
             'hideImmediately',
             'show',
-            'accept'
+            'accept',
+            'blockPageUsage',
+            'allowPageUsage'
         ],
 
 
@@ -29,6 +31,7 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
 
             this.$ButtonAccept = null;
             this.$Banner = null;
+            this.isPageUseAllowed = true;
 
             this.addEvents({
                 onImport: this.$onImport
@@ -57,6 +60,10 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
                 Element.inject(document.body, 'top');
             }
 
+            if (this.getAttribute('blocksite')) {
+                this.blockPageUsage();
+            }
+
             this.$ButtonAccept = Element.getElementById('quiqqer-cookieconsent-accept');
 
             if (!this.$ButtonAccept) {
@@ -70,6 +77,7 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
 
         accept: function () {
             QUI.Storage.set('quiqqer-cookieconsent-accept', 1);
+            this.allowPageUsage();
             this.hideAnimated();
         },
 
@@ -131,6 +139,18 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
                 duration: duration || 300,
                 callback: callback
             });
+        },
+
+
+        blockPageUsage: function () {
+            document.body.classList.add('cookiebanner-blocks-page');
+            this.$Banner.classList.add('page-blocked');
+        },
+
+
+        allowPageUsage: function () {
+            document.body.classList.remove('cookiebanner-blocks-page');
+            this.$Banner.classList.remove('page-blocked');
         }
     });
 });

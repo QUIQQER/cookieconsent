@@ -24,6 +24,7 @@ class CookieConsent extends Control
         parent::__construct($attributes);
 
         $this->setJavaScriptControlOption('position', $this::getPosition($Project));
+        $this->setJavaScriptControlOption('blocksite', $Project->getConfig('cookieconsent.blocksite'));
 
         $this->setJavaScriptControl('package/quiqqer/cookieconsent/bin/controls/CookieConsent');
 

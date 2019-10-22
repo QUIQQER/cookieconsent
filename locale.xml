@@ -56,6 +56,15 @@
     </groups>
 
     <groups name="quiqqer/cookieconsent" datatype="php">
+        <locale name="setting.cookieconsent.blocksite.text">
+            <de><![CDATA[Verwendung der Seite blockieren]]></de>
+            <en><![CDATA[Block use of the page]]></en>
+        </locale>
+        <locale name="setting.cookieconsent.blocksite.description">
+            <de html="1"><![CDATA[<br>Verhindert, dass die Seite genutzt werden kann, bis der Benutzer seine Einwilligung erteilt.]]></de>
+            <en html="1"><![CDATA[<br>Prevents the site from being used until the user gives his or her consent.]]></en>
+        </locale>
+
         <locale name="setting.checklist.title">
             <de><![CDATA[DSGVO-Checkliste]]></de>
             <en><![CDATA[GDPR-Checklist]]></en>

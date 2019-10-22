@@ -9,6 +9,11 @@
                         <type><![CDATA[string]]></type>
                     </conf>
                 </section>
+                <section name="cookieconsent">
+                    <conf name="blocksite">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
+                </section>
                 <section name="checklist">
                     <conf name="disclaimer.read">
                         <type><![CDATA[boolean]]></type>
@@ -152,6 +157,15 @@
                                     <locale group="quiqqer/cookieconsent" var="settings.cookieconsent.position.topSlide"/>
                                 </option>
                             </select>
+
+                            <input conf="cookieconsent.blocksite" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="setting.cookieconsent.blocksite.text"/>
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/cookieconsent" var="setting.cookieconsent.blocksite.description"/>
+                                </description>
+                            </input>
                         </settings>
                     </category>
 

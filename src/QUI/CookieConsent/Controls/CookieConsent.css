@@ -7,6 +7,16 @@
     width: 100%;
     z-index: 10000;
     display: none;
+    pointer-events: auto;
+}
+
+#quiqqer-cookieconsent-banner.page-blocked {
+    box-shadow: 0 0 0 100vh rgba(0,0,0,0.6);
+}
+
+body.cookiebanner-blocks-page {
+    pointer-events: none;
+    overflow: hidden;
 }
 
 .quiqqer-cookieconsent__top {

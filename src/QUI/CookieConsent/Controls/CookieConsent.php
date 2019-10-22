@@ -8,6 +8,7 @@ namespace QUI\CookieConsent\Controls;
 
 use QUI\Control;
 use QUI\Projects\Project;
+use QUI\Projects\Site;
 
 /**
  * Class CookieConsent
@@ -23,6 +24,8 @@ class CookieConsent extends Control
         parent::__construct($attributes);
 
         $this->setJavaScriptControlOption('position', $this::getPosition($Project));
+        $this->setJavaScriptControlOption('privacy-url', $this);
+        $this->setJavaScriptControlOption('imprint-url', $this::getImprintUrl($Project));
         $this->setJavaScriptControlOption('blocksite', $Project->getConfig('cookieconsent.blocksite'));
 
         $this->setJavaScriptControl('package/quiqqer/cookieconsent/bin/controls/CookieConsent');
@@ -65,21 +68,55 @@ class CookieConsent extends Control
 
 
     /**
-     * Returns the selected imprint page's URL for the given project.
+     * Returns the URL of the first site with the legalnotes sitetype for a given project.
      *
      * @param Project $Project
+     *
+     * @return false|string
      */
     public static function getImprintUrl($Project)
     {
+        return self::getSiteUrlBySitetype($Project, 'quiqqer/sitetypes:types/legalnotes');
     }
 
 
     /**
-     * Returns the selected privacy page's URL for the given project.
+     * Returns the URL of the first site with the privacypolicy sitetype for a given project.
      *
      * @param Project $Project
+     *
+     * @return false|string
      */
     public static function getPrivacyUrl($Project)
     {
+        return self::getSiteUrlBySitetype($Project, 'quiqqer/sitetypes:types/privacypolicy');
+    }
+
+    /**
+     * Returns the URL of the first site of a given sitetype for a given project.
+     *
+     * @param Project $Project
+     *
+     * @return false|string
+     */
+    protected static function getSiteUrlBySitetype($Project, $type)
+    {
+        /* @var $result Site[] */
+        $result = $Project->getSites([
+            'where' => [
+                'type' => $type
+            ],
+            'limit' => 1
+        ]);
+
+        if (!isset($result[0])) {
+            return false;
+        }
+
+        try {
+            return $result[0]->getUrlRewritten();
+        } catch (\QUI\Exception $Exception) {
+            return false;
+        }
     }
 }

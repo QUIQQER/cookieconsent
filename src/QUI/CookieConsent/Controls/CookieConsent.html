@@ -1,8 +1,18 @@
+{assign var="privacyUrl" value=$Control::getPrivacyUrl($Project)}
+{assign var="imprintUrl" value=$Control::getImprintUrl($Project)}
+
 <div id="quiqqer-cookieconsent-banner" class="quiqqer-cookieconsent__{{$Control::getPosition($Project)}}">
     <div class="quiqqer-cookieconsent-message">
         Diese Website verwendet Cookies um die Benutzerfreundlichkeit zu erhöhen.
         Mit der weiteren Navigation auf der Website stimmen Sie der Nutzung von Cookies zu.
-        <a href="/Datenschutz" style="margin-left: 10px;">Mehr erfahren</a>
+
+        {if $privacyUrl}
+        <a href="{{$privacyUrl}}" style="margin-left: 10px;">Datenschutzerklärung</a>
+        {/if}
+
+        {if $imprintUrl}
+        <a href="{{$imprintUrl}}" style="margin-left: 10px;">Impressum</a>
+        {/if}
     </div>
     <button id="quiqqer-cookieconsent-accept">Ich habe es verstanden!</button>
 </div>

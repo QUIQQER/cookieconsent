@@ -31,7 +31,6 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
 
             this.$ButtonAccept = null;
             this.$Banner = null;
-            this.isPageUseAllowed = true;
 
             this.addEvents({
                 onImport: this.$onImport
@@ -40,7 +39,7 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
 
 
         $onImport: function () {
-            if (QUI.Storage.get('quiqqer-cookieconsent-accept')) {
+            if (QUI.Storage.get('quiqqer-cookieconsent-accepted')) {
                 return;
             }
 
@@ -76,7 +75,7 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
         },
 
         accept: function () {
-            QUI.Storage.set('quiqqer-cookieconsent-accept', 1);
+            QUI.Storage.set('quiqqer-cookieconsent-accepted', true);
             this.allowPageUsage();
             this.hideAnimated();
 

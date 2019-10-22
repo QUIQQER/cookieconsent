@@ -56,168 +56,168 @@
     </groups>
 
     <groups name="quiqqer/cookieconsent" datatype="php">
-        <locale name="checklist.title">
+        <locale name="setting.checklist.title">
             <de><![CDATA[DSGVO-Checkliste]]></de>
             <en><![CDATA[GDPR-Checklist]]></en>
         </locale>
-        <locale name="checklist.disclaimer.title">
+        <locale name="setting.checklist.disclaimer.title">
             <de><![CDATA[Haftungsausschluss]]></de>
             <en><![CDATA[Disclaimer]]></en>
         </locale>
-        <locale name="checklist.disclaimer.read.text">
+        <locale name="setting.checklist.disclaimer.read.text">
             <de><![CDATA[Haftungsausschluss Gelesen]]></de>
             <en><![CDATA[Disclaimer Read]]></en>
         </locale>
-        <locale name="checklist.disclaimer.read.description">
+        <locale name="setting.checklist.disclaimer.read.description">
             <de html="1"><![CDATA[<br>Der Autor dieser Zusammenstellung garantiert keine (rechtliche) Korrektheit der Angaben. Irrtümer und Unvollständigkeiten vorbehalten.<br>Sämtliche Rechtstexte (bspw. Impressum oder Datenschutzerklärung) sollten von einem Anwalt überprüft werden.]]></de>
             <en html="1"><![CDATA[<br>The author of this list does not guarantee any (legal) correctness of the information. Errors and omissions may occur.<br>All legal texts (e.g. imprint or privacy declaration) should be checked by a lawyer.]]></en>
         </locale>
-        <locale name="checklist.contact.title">
+        <locale name="setting.checklist.contact.title">
             <de><![CDATA[Kontaktformular]]></de>
             <en><![CDATA[Contact form]]></en>
         </locale>
-        <locale name="checklist.contact.ssl.text">
+        <locale name="setting.checklist.contact.ssl.text">
             <de><![CDATA[SSL-Zertifikat (HTTPS)]]></de>
             <en><![CDATA[SSL Certificate (HTTPS)]]></en>
         </locale>
-        <locale name="checklist.contact.ssl.description">
+        <locale name="setting.checklist.contact.ssl.description">
             <de><![CDATA[<br>Webseite verwendet httpS:// statt http://]]></de>
             <en><![CDATA[<br>Website uses httpS:// instead of http://]]></en>
         </locale>
-        <locale name="checklist.contact.smtp.text">
+        <locale name="setting.checklist.contact.smtp.text">
             <de><![CDATA[Emails über SMTP bzw. TLS versenden]]></de>
             <en><![CDATA[Send emails via SMTP or TLS]]></en>
         </locale>
-        <locale name="checklist.contact.privacypolicy.text">
+        <locale name="setting.checklist.contact.privacypolicy.text">
             <de><![CDATA[Datenschutzerklärung eingebunden]]></de>
             <en><![CDATA[Privacy policy integrated]]></en>
         </locale>
-        <locale name="checklist.contact.usage.text">
+        <locale name="setting.checklist.contact.usage.text">
             <de><![CDATA[Hinweis auf Verwendungszweck und Dauer der Speicherung der Daten]]></de>
             <en><![CDATA[Indication of purpose and duration of data storage]]></en>
         </locale>
-        <locale name="checklist.contact.dpa.text">
+        <locale name="setting.checklist.contact.dpa.text">
             <de><![CDATA[AV-Vertrag abgeschlossen]]></de>
             <en><![CDATA[DPA signed]]></en>
         </locale>
-        <locale name="checklist.contact.dpa.description">
+        <locale name="setting.checklist.contact.dpa.description">
             <de html="1"><![CDATA[<br>Mit den Anbietern der von dir verwendeten Online-Tools oder Plug-Ins, die personenbezogene Daten erheben, müssen AV-Verträge (Auftrags-Verarbeitungs-Verträge) abgeschlossen werden.]]></de>
             <en html="1"><![CDATA[<br>DPAs (data processing agreements) must be concluded with the providers of online tools or plug-ins you use, which collect personal data.]]></en>
         </locale>
         
-        <locale name="checklist.newsletter.title">
+        <locale name="setting.checklist.newsletter.title">
             <de><![CDATA[Newsletter]]></de>
             <en><![CDATA[Newsletter]]></en>
         </locale>
-        <locale name="checklist.newsletter.unsubscribe.text">
+        <locale name="setting.checklist.newsletter.unsubscribe.text">
             <de><![CDATA[Abmeldelink]]></de>
             <en><![CDATA[Unsubscribe Link]]></en>
         </locale>
-        <locale name="checklist.newsletter.optin.text">
+        <locale name="setting.checklist.newsletter.optin.text">
             <de><![CDATA[Double-Opt-In]]></de>
             <en><![CDATA[Double Opt-In]]></en>
         </locale>
-        <locale name="checklist.newsletter.dataProcessingDirectory.text">
+        <locale name="setting.checklist.newsletter.dataProcessingDirectory.text">
             <de><![CDATA[Anbieter des E-Mail-Marketing-Tools in dein Datenverarbeitungsverzeichnis eingetragen]]></de>
             <en><![CDATA[Provider of the e-mail marketing tool added to your data processing directory]]></en>
         </locale>
-        <locale name="checklist.newsletter.dpa.text">
+        <locale name="setting.checklist.newsletter.dpa.text">
             <de><![CDATA[AV-Vertrag abgeschlossen]]></de>
             <en><![CDATA[DPA signed]]></en>
         </locale>
-        <locale name="checklist.newsletter.dpa.description">
+        <locale name="setting.checklist.newsletter.dpa.description">
             <de html="1"><![CDATA[<br>Mit den Anbietern der von dir verwendeten Online-Tools oder Plug-Ins, die personenbezogene Daten erheben, müssen AV-Verträge (Auftrags-Verarbeitungs-Verträge) abgeschlossen werden.]]></de>
             <en html="1"><![CDATA[<br>DPAs (data processing agreements) must be concluded with the providers of online tools or plug-ins]]></en>
         </locale>
-        <locale name="checklist.newsletter.coupling.text">
+        <locale name="setting.checklist.newsletter.coupling.text">
             <de><![CDATA[Kopplungsverbot]]></de>
             <en><![CDATA[Prohibition of Coupling]]></en>
         </locale>
-        <locale name="checklist.newsletter.coupling.description">
+        <locale name="setting.checklist.newsletter.coupling.description">
             <de html="1"><![CDATA[<br>Du kannst kein kostenloses E-Book oder ein anderes Freebie mehr mit der Newsletter-Anmeldung verknüpfen. Das bedeutet, wenn sich jemand für den Erhalt des Freebies registriert, dürfen die gesammelten Daten nur für die Übermittlung des Freebies verwendet werden. Du darfst keine Newsletter oder andere E-Mails an diese Adressen senden.]]></de>
             <en html="1"><![CDATA[<br>You can no longer tie a free e-book or other freebie to your newsletter subscription. This means that if someone registers to receive the freebie, the collected data may only be used for the transmission of the freebie. You may not send newsletters or other e-mails to these addresses.]]></en>
         </locale>
         
-        <locale name="checklist.google.title">
+        <locale name="setting.checklist.google.title">
             <de><![CDATA[Google Tools]]></de>
             <en><![CDATA[Google Tools]]></en>
         </locale>
-        <locale name="checklist.google.dpa.text">
+        <locale name="setting.checklist.google.dpa.text">
             <de><![CDATA[AV-Vertrag abgeschlossen]]></de>
             <en><![CDATA[DPA signed]]></en>
         </locale>
-        <locale name="checklist.google.dpa.description">
+        <locale name="setting.checklist.google.dpa.description">
             <de html="1"><![CDATA[<br>Mit den Anbietern der von dir verwendeten Online-Tools oder Plug-Ins, die personenbezogene Daten erheben, müssen AV-Verträge (Auftrags-Verarbeitungs-Verträge) abgeschlossen werden.]]></de>
             <en html="1"><![CDATA[<br>DPAs (data processing agreements) must be concluded with the providers of online tools or plug-ins]]></en>
         </locale>
-        <locale name="checklist.google.analytics.ips.text">
+        <locale name="setting.checklist.google.analytics.ips.text">
             <de><![CDATA[Analytics: Code IP-Adresse anonymisieren]]></de>
             <en><![CDATA[Analytics Code: Anonymize IP address]]></en>
         </locale>
-        <locale name="checklist.google.analytics.gdpr.text">
+        <locale name="setting.checklist.google.analytics.gdpr.text">
             <de><![CDATA[Analytics: DSGVO-Vertrag unterzeichnen]]></de>
             <en><![CDATA[Analytics: GDPR contract signed]]></en>
         </locale>
-        <locale name="checklist.google.analytics.duration.text">
+        <locale name="setting.checklist.google.analytics.duration.text">
             <de><![CDATA[Analytics: Dauer der Datenspeicherung festlegen]]></de>
             <en><![CDATA[Analytics: Set duration of data storage]]></en>
         </locale>
-        <locale name="checklist.google.cookie.opt.out.text">
+        <locale name="setting.checklist.google.cookie.opt.out.text">
             <de><![CDATA[Cookie-Banner muss „Opt-out“ von Google Analytics gewährleisten]]></de>
             <en><![CDATA[Cookie banner must ensure "opt-out" from Google Analytics]]></en>
         </locale>
-        <locale name="checklist.google.cookie.opt.in.text">
+        <locale name="setting.checklist.google.cookie.opt.in.text">
             <de><![CDATA[Cookie-Banner muss "Opt-in" unterstützen]]></de>
             <en><![CDATA[Cookie banner must support "opt-in"]]></en>
         </locale>
-        <locale name="checklist.google.cookie.opt.in.description">
+        <locale name="setting.checklist.google.cookie.opt.in.description">
             <de html="1"><![CDATA[<br>Tracking erst aktivieren, wenn der User zugestimmt hat.]]></de>
             <en html="1"><![CDATA[<br>Start tracking only after the user has agreed.]]></en>
         </locale>
         
         
         
-        <locale name="checklist.tools.title">
+        <locale name="setting.checklist.tools.title">
             <de><![CDATA[Externe Tools DSGVO-konform eingebunden]]></de>
             <en><![CDATA[GDPR-compliant integration of external tools]]></en>
         </locale>
-        <locale name="checklist.tools.socialmedia.text">
+        <locale name="setting.checklist.tools.socialmedia.text">
             <de><![CDATA[Social Media Plugins]]></de>
             <en><![CDATA[Social Media Plugins]]></en>
         </locale>
-        <locale name="checklist.tools.socialmedia.description">
+        <locale name="setting.checklist.tools.socialmedia.description">
             <de html="1"><![CDATA[<br>(z.B. Facebook, Twitter)]]></de>
             <en html="1"><![CDATA[<br>(e.g. Facebook, Twitter)]]></en>
         </locale>
-        <locale name="checklist.tools.calendars.text">
+        <locale name="setting.checklist.tools.calendars.text">
             <de><![CDATA[Externe Kalender]]></de>
             <en><![CDATA[External Calendars]]></en>
         </locale>
-        <locale name="checklist.tools.youtube.text">
+        <locale name="setting.checklist.tools.youtube.text">
             <de><![CDATA[YouTube-Videos]]></de>
             <en><![CDATA[YouTube videos]]></en>
         </locale>
-        <locale name="checklist.tools.newsletters.text">
+        <locale name="setting.checklist.tools.newsletters.text">
             <de><![CDATA[Newsletter-Tools]]></de>
             <en><![CDATA[Newsletter tools]]></en>
         </locale>
-        <locale name="checklist.tools.seals.text">
+        <locale name="setting.checklist.tools.seals.text">
             <de><![CDATA[Produktsiegel]]></de>
             <en><![CDATA[Product Seals]]></en>
         </locale>
-        <locale name="checklist.tools.seals.description">
+        <locale name="setting.checklist.tools.seals.description">
             <de html="1"><![CDATA[<br>(z.B: TrustedShop)]]></de>
             <en html="1"><![CDATA[<br>(e.g. TrustedShop)]]></en>
         </locale>
-        <locale name="checklist.tools.google.maps.text">
+        <locale name="setting.checklist.tools.google.maps.text">
             <de><![CDATA[Google Maps]]></de>
             <en><![CDATA[Google Maps]]></en>
         </locale>
-        <locale name="checklist.tools.google.recaptcha.text">
+        <locale name="setting.checklist.tools.google.recaptcha.text">
             <de><![CDATA[Google ReCaptcha]]></de>
             <en><![CDATA[Google ReCaptcha]]></en>
         </locale>
-        <locale name="checklist.tools.google.fonts.text">
+        <locale name="setting.checklist.tools.google.fonts.text">
             <de><![CDATA[Google Schriftarten (Fonts)]]></de>
             <en><![CDATA[Google Fonts]]></en>
         </locale>
@@ -225,105 +225,105 @@
         
         
         
-        <locale name="checklist.cookies.title">
+        <locale name="setting.checklist.cookies.title">
             <de><![CDATA[Cookie Banner]]></de>
             <en><![CDATA[Cookie Banner]]></en>
         </locale>
-        <locale name="checklist.cookies.inform.text">
+        <locale name="setting.checklist.cookies.inform.text">
             <de><![CDATA[Auf Cookies hinweisen]]></de>
             <en><![CDATA[Inform about cookies]]></en>
         </locale>
-        <locale name="checklist.cookies.consent.text">
+        <locale name="setting.checklist.cookies.consent.text">
             <de><![CDATA[Zustimmung des Nutzer einholen]]></de>
             <en><![CDATA[Obtain the user's consent]]></en>
         </locale>
         
-        <locale name="checklist.privacypolicy.title">
+        <locale name="setting.checklist.privacypolicy.title">
             <de><![CDATA[Datenschutzerklärung]]></de>
             <en><![CDATA[Privacy Policy]]></en>
         </locale>
-        <locale name="checklist.privacypolicy.added.text">
+        <locale name="setting.checklist.privacypolicy.added.text">
             <de><![CDATA[Datenschutzerklärung erstellt]]></de>
             <en><![CDATA[Privacy policy added]]></en>
         </locale>
-        <locale name="checklist.privacypolicy.added.description">
+        <locale name="setting.checklist.privacypolicy.added.description">
             <de html="1"><![CDATA[<br>Generator für DSGVO-konforme Muster-Datenschutzerklärung: https://datenschutz-generator.de/datenschutzerklaerung/]]></de>
             <en html="1"><![CDATA[<br>Generator for GDPR-compliant privacy policies: https://www.gdprprivacynotice.com/]]></en>
         </locale>
-        <locale name="checklist.privacypolicy.verified.text">
+        <locale name="setting.checklist.privacypolicy.verified.text">
             <de><![CDATA[Von einem Anwalt überprüft]]></de>
             <en><![CDATA[Verified by a lawyer]]></en>
         </locale>
-        <locale name="checklist.privacypolicy.accessible.text">
+        <locale name="setting.checklist.privacypolicy.accessible.text">
             <de><![CDATA[Leicht zugänglich gemacht]]></de>
             <en><![CDATA[Easily accessible]]></en>
         </locale>
-        <locale name="checklist.privacypolicy.accessible.description">
+        <locale name="setting.checklist.privacypolicy.accessible.description">
             <de html="1"><![CDATA[<br>Zum Aufruf der DSGVO darf der Nutzer maximal 2 Klicks benötigen]]></de>
             <en html="1"><![CDATA[<br>The user may require a maximum of 2 clicks to see the privacy policy.]]></en>
         </locale>
         
-        <locale name="checklist.imprint.title">
+        <locale name="setting.checklist.imprint.title">
             <de><![CDATA[Impressum]]></de>
             <en><![CDATA[Imprint]]></en>
         </locale>
-        <locale name="checklist.imprint.name.provider.text">
+        <locale name="setting.checklist.imprint.name.provider.text">
             <de><![CDATA[Vollständiger Name des Dienstanbieters]]></de>
             <en><![CDATA[Full name of service provider]]></en>
         </locale>
-        <locale name="checklist.imprint.name.provider.description">
+        <locale name="setting.checklist.imprint.name.provider.description">
             <de html="1"><![CDATA[<br>Ausgeschriebener Vor- und Zuname]]></de>
             <en html="1"><![CDATA[<br>Full name and surname]]></en>
         </locale>
-        <locale name="checklist.imprint.name.company.text">
+        <locale name="setting.checklist.imprint.name.company.text">
             <de><![CDATA[Name der Gesellschaft mit Vertretungsberechtigten]]></de>
             <en><![CDATA[Name of the company with authorised representatives]]></en>
         </locale>
-        <locale name="checklist.imprint.name.company.description">
+        <locale name="setting.checklist.imprint.name.company.description">
             <de html="1"><![CDATA[<br>Nur falls vorhanden; in der Regel ist das der Geschäftsführer mit ausgeschriebenem Vor- und Zunamen]]></de>
             <en html="1"><![CDATA[<br>Only if applicable; usually this is the managing director with first name and surname]]></en>
         </locale>
-        <locale name="checklist.imprint.address.text">
+        <locale name="setting.checklist.imprint.address.text">
             <de><![CDATA[Vollständige Anschrift]]></de>
             <en><![CDATA[Full address]]></en>
         </locale>
-        <locale name="checklist.imprint.contact.text">
+        <locale name="setting.checklist.imprint.contact.text">
             <de><![CDATA[Unmittelbare Kontaktdaten]]></de>
             <en><![CDATA[Immediate contact details]]></en>
         </locale>
-        <locale name="checklist.imprint.contact.description">
+        <locale name="setting.checklist.imprint.contact.description">
             <de html="1"><![CDATA[<br>Telefonnummer, E-Mail-Adresse, Fax]]></de>
             <en html="1"><![CDATA[<br>Telephone number, e-mail address, fax]]></en>
         </locale>
-        <locale name="checklist.imprint.register.text">
+        <locale name="setting.checklist.imprint.register.text">
             <de><![CDATA[Handelsregister, Registergericht]]></de>
             <en><![CDATA[Commercial register, register court]]></en>
         </locale>
-        <locale name="checklist.imprint.register.description">
+        <locale name="setting.checklist.imprint.register.description">
             <de html="1"><![CDATA[<br>Nur falls vorhanden]]></de>
             <en html="1"><![CDATA[<br>Only if applicable]]></en>
         </locale>
-        <locale name="checklist.imprint.vat.text">
+        <locale name="setting.checklist.imprint.vat.text">
             <de><![CDATA[Ust-ID]]></de>
             <en><![CDATA[VAT ID]]></en>
         </locale>
-        <locale name="checklist.imprint.vat.description">
+        <locale name="setting.checklist.imprint.vat.description">
             <de html="1"><![CDATA[<br>Nur falls vorhanden]]></de>
             <en html="1"><![CDATA[<br>Only if applicable]]></en>
         </locale>
-        <locale name="checklist.imprint.supervisor.text">
+        <locale name="setting.checklist.imprint.supervisor.text">
             <de><![CDATA[Aufsichtsbehörde samt Anschrift]]></de>
             <en><![CDATA[Supervisory authority, including address]]></en>
         </locale>
-        <locale name="checklist.imprint.supervisor.description">
+        <locale name="setting.checklist.imprint.supervisor.description">
             <de html="1"><![CDATA[<br>Nur falls behördliche Zulassung erforderlich ist]]></de>
             <en html="1"><![CDATA[<br>Only if official approval is required]]></en>
         </locale>
-        <locale name="checklist.imprint.chamber.text">
+        <locale name="setting.checklist.imprint.chamber.text">
             <de><![CDATA[Zuständige Kammer, Berufsbezeichnung, Links zu berufsrechtlichen Regelungen]]></de>
             <en><![CDATA[Competent chamber, job title, links to professional regulations]]></en>
         </locale>
-        <locale name="checklist.imprint.chamber.description">
+        <locale name="setting.checklist.imprint.chamber.description">
             <de html="1"><![CDATA[<br>Nur bei reglementierten Berufen (betrifft u. a. Rechtsanwälte, Steuerberater, Berufe aus dem Gesundheitswesen)]]></de>
             <en html="1"><![CDATA[<br>Only for regulated professions (including lawyers, tax consultants, healthcare professionals, etc.)]]></en>
         </locale>

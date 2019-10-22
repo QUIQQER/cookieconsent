@@ -1,4 +1,4 @@
-.quiqqer-cookieconsent {
+#quiqqer-cookieconsent-banner {
     background: #222;
     color: #fff;
     left: 0;
@@ -6,6 +6,7 @@
     position: fixed;
     width: 100%;
     z-index: 10000;
+    display: none;
 }
 
 .quiqqer-cookieconsent__top {
@@ -38,7 +39,7 @@
     text-decoration: underline;
 }
 
-.quiqqer-cookieconsent-accept {
+#quiqqer-cookieconsent-accept {
     background: #f1d600;
     border: 1px solid #f1d600;
     color: #222;
@@ -56,7 +57,7 @@
         width: 100%;
     }
 
-    .quiqqer-cookieconsent-accept {
+    #quiqqer-cookieconsent-accept {
         display: block;
         float: none;
         margin: 0 auto;

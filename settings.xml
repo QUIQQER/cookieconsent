@@ -166,6 +166,13 @@
                                     <locale group="quiqqer/cookieconsent" var="setting.cookieconsent.blocksite.description"/>
                                 </description>
                             </input>
+
+                            <input type="hidden"
+                                   data-qui="package/quiqqer/cookieconsent/bin/controls/MultiLangDescription">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="setting.text.label"/>
+                                </text>
+                            </input>
                         </settings>
                     </category>
 

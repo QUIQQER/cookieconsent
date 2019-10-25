@@ -3,8 +3,7 @@
 
 <div id="quiqqer-cookieconsent-banner" class="quiqqer-cookieconsent__{{$Control::getPosition($Project)}}">
     <div class="quiqqer-cookieconsent-message">
-        Diese Website verwendet Cookies um die Benutzerfreundlichkeit zu erhöhen.
-        Mit der weiteren Navigation auf der Website stimmen Sie der Nutzung von Cookies zu.
+        {{$Control::getText($Project)}}
 
         {if $privacyUrl}
         <a href="{{$privacyUrl}}" style="margin-left: 10px;">Datenschutzerklärung</a>

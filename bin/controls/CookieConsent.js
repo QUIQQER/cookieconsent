@@ -76,6 +76,7 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
 
         accept: function () {
             QUI.Storage.set('quiqqer-cookieconsent-accepted', true);
+            QUI.Storage.set('quiqqer-cookieconsent-accepted-timestamp', Date.now());
             this.allowPageUsage();
             this.hideAnimated();
 

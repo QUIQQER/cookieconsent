@@ -173,6 +173,13 @@
                                     <locale group="quiqqer/cookieconsent" var="setting.text.label"/>
                                 </text>
                             </input>
+
+                            <input type="hidden"
+                                   data-qui="package/quiqqer/cookieconsent/bin/controls/MultiLangButtonText">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="setting.buttontext.label"/>
+                                </text>
+                            </input>
                         </settings>
                     </category>
 

@@ -13,5 +13,7 @@
         <a href="{{$imprintUrl}}" style="margin-left: 10px;">Impressum</a>
         {/if}
     </div>
-    <button id="quiqqer-cookieconsent-accept">Ich habe es verstanden!</button>
+    <button id="quiqqer-cookieconsent-accept">
+        {{$Control::getButtonText($Project)}}
+    </button>
 </div>

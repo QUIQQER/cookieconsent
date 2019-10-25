@@ -74,6 +74,15 @@
             <en><![CDATA[This website uses cookies to enhance the user-experience. By using this website, you consent to the use of cookies.]]></en>
         </locale>
 
+        <locale name="setting.buttontext.label">
+            <de><![CDATA[Button Text]]></de>
+            <en><![CDATA[Button Text]]></en>
+        </locale>
+        <locale name="setting.buttontext.default">
+            <de><![CDATA[Ich stimme zu.]]></de>
+            <en><![CDATA[I agree.]]></en>
+        </locale>
+
         <locale name="setting.checklist.title">
             <de><![CDATA[DSGVO-Checkliste]]></de>
             <en><![CDATA[GDPR-Checklist]]></en>

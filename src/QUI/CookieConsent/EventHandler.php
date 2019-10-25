@@ -36,7 +36,7 @@ class EventHandler
      */
     public static function onProjectConfigSave($projectName, array $config, array $params)
     {
-        if (!isset($params['cookieconsent.text'])) {
+        if (!isset($params['cookieconsent.text']) || !isset($params['cookieconsent.buttontext'])) {
             return;
         }
 
@@ -48,26 +48,31 @@ class EventHandler
 
         $group = 'quiqqer/cookieconsent';
 
-        $localeVariableName    = 'setting.text.project.' . $Project->getName();
-        $localeVariableContent = json_decode($params['cookieconsent.text'], true);
+        $localeVariables = [
+            'setting.text.project.' . $Project->getName() => json_decode($params['cookieconsent.text'], true),
+            'setting.buttontext.project.' . $Project->getName() => json_decode($params['cookieconsent.buttontext'], true),
+        ];
 
-        try {
-            QUI\Translator::add($group, $localeVariableName, $group);
-        } catch (QUI\Exception $Exception) {
-            // Throws error if lang var already exists
-        }
 
-        try {
-            QUI\Translator::update(
-                $group,
-                $localeVariableName,
-                $group,
-                $localeVariableContent
-            );
-        } catch (QUI\Exception $Exception) {
-            QUI\System\Log::writeException($Exception);
+        foreach ($localeVariables as $localeVariableName => $localeVariableContent) {
+            try {
+                QUI\Translator::add($group, $localeVariableName, $group);
+            } catch (QUI\Exception $Exception) {
+                // Throws error if lang var already exists
+            }
 
-            return;
+            try {
+                QUI\Translator::update(
+                    $group,
+                    $localeVariableName,
+                    $group,
+                    $localeVariableContent
+                );
+            } catch (QUI\Exception $Exception) {
+                QUI\System\Log::writeException($Exception);
+
+                continue;
+            }
         }
 
         QUI\Translator::publish($group);

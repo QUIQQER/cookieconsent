@@ -140,4 +140,25 @@ class CookieConsent extends Control
 
         return $text;
     }
+
+    /**
+     * Returns the cookie-banner text for the given project.
+     *
+     * @param $Project
+     *
+     * @return string
+     */
+    public static function getButtonText($Project)
+    {
+        $lg     = 'quiqqer/cookieconsent';
+        $locale = \QUI::getLocale();
+
+        $text = $locale->get($lg, "setting.buttontext.project.{$Project->getName()}");
+
+        if ($locale->isLocaleString($text) || empty($text)) {
+            $text = $locale->get($lg, 'setting.buttontext.default');
+        }
+
+        return $text;
+    }
 }

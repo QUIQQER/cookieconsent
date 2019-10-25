@@ -14,7 +14,7 @@
                         <type><![CDATA[boolean]]></type>
                     </conf>
                 </section>
-                <section name="checklist">
+                <section name="cookieconsent.checklist">
                     <conf name="disclaimer.read">
                         <type><![CDATA[boolean]]></type>
                     </conf>
@@ -187,7 +187,7 @@
                                 <locale group="quiqqer/cookieconsent" var="setting.checklist.disclaimer.title"/>
                             </title>
 
-                            <input conf="checklist.disclaimer.read" type="checkbox">
+                            <input conf="cookieconsent.checklist.disclaimer.read" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.disclaimer.read.text"/>
                                 </text>
@@ -202,7 +202,7 @@
                                 <locale group="quiqqer/cookieconsent" var="setting.checklist.contact.title"/>
                             </title>
 
-                            <input conf="checklist.contact.ssl" type="checkbox">
+                            <input conf="cookieconsent.checklist.contact.ssl" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.contact.ssl.text"/>
                                 </text>
@@ -211,25 +211,25 @@
                                 </description>
                             </input>
 
-                            <input conf="checklist.contact.smtp" type="checkbox">
+                            <input conf="cookieconsent.checklist.contact.smtp" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.contact.smtp.text"/>
                                 </text>
                             </input>
 
-                            <input conf="checklist.contact.privacypolicy" type="checkbox">
+                            <input conf="cookieconsent.checklist.contact.privacypolicy" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.contact.privacypolicy.text"/>
                                 </text>
                             </input>
 
-                            <input conf="checklist.contact.usage" type="checkbox">
+                            <input conf="cookieconsent.checklist.contact.usage" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.contact.usage.text"/>
                                 </text>
                             </input>
 
-                            <input conf="checklist.contact.dpa" type="checkbox">
+                            <input conf="cookieconsent.checklist.contact.dpa" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.contact.dpa.text"/>
                                 </text>
@@ -243,22 +243,22 @@
                             <title>
                                 <locale group="quiqqer/cookieconsent" var="setting.checklist.newsletter.title"/>
                             </title>
-                            <input conf="checklist.newsletter.unsubscribe" type="checkbox">
+                            <input conf="cookieconsent.checklist.newsletter.unsubscribe" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.newsletter.unsubscribe.text"/>
                                 </text>
                             </input>
-                            <input conf="checklist.newsletter.optin" type="checkbox">
+                            <input conf="cookieconsent.checklist.newsletter.optin" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.newsletter.optin.text"/>
                                 </text>
                             </input>
-                            <input conf="checklist.newsletter.dataProcessingDirectory" type="checkbox">
+                            <input conf="cookieconsent.checklist.newsletter.dataProcessingDirectory" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.newsletter.dataProcessingDirectory.text"/>
                                 </text>
                             </input>
-                            <input conf="checklist.newsletter.dpa" type="checkbox">
+                            <input conf="cookieconsent.checklist.newsletter.dpa" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.newsletter.dpa.text"/>
                                 </text>
@@ -266,7 +266,7 @@
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.newsletter.dpa.description"/>
                                 </description>
                             </input>
-                            <input conf="checklist.newsletter.coupling" type="checkbox">
+                            <input conf="cookieconsent.checklist.newsletter.coupling" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.newsletter.coupling.text"/>
                                 </text>
@@ -280,7 +280,7 @@
                             <title>
                                 <locale group="quiqqer/cookieconsent" var="setting.checklist.google.title"/>
                             </title>
-                            <input conf="checklist.google.dpa" type="checkbox">
+                            <input conf="cookieconsent.checklist.google.dpa" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.google.dpa.text"/>
                                 </text>
@@ -288,27 +288,27 @@
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.google.dpa.description"/>
                                 </description>
                             </input>
-                            <input conf="checklist.google.analytics.ips" type="checkbox">
+                            <input conf="cookieconsent.checklist.google.analytics.ips" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.google.analytics.ips.text"/>
                                 </text>
                             </input>
-                            <input conf="checklist.google.analytics.gdpr" type="checkbox">
+                            <input conf="cookieconsent.checklist.google.analytics.gdpr" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.google.analytics.gdpr.text"/>
                                 </text>
                             </input>
-                            <input conf="checklist.google.analytics.duration" type="checkbox">
+                            <input conf="cookieconsent.checklist.google.analytics.duration" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.google.analytics.duration.text"/>
                                 </text>
                             </input>
-                            <input conf="checklist.google.cookie.opt.out" type="checkbox">
+                            <input conf="cookieconsent.checklist.google.cookie.opt.out" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.google.cookie.opt.out.text"/>
                                 </text>
                             </input>
-                            <input conf="checklist.google.cookie.opt.in" type="checkbox">
+                            <input conf="cookieconsent.checklist.google.cookie.opt.in" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.google.cookie.opt.in.text"/>
                                 </text>
@@ -322,7 +322,7 @@
                             <title>
                                 <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.title"/>
                             </title>
-                            <input conf="checklist.tools.socialmedia" type="checkbox">
+                            <input conf="cookieconsent.checklist.tools.socialmedia" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.socialmedia.text"/>
                                 </text>
@@ -330,22 +330,22 @@
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.socialmedia.description"/>
                                 </description>
                             </input>
-                            <input conf="checklist.tools.calendars" type="checkbox">
+                            <input conf="cookieconsent.checklist.tools.calendars" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.calendars.text"/>
                                 </text>
                             </input>
-                            <input conf="checklist.tools.youtube" type="checkbox">
+                            <input conf="cookieconsent.checklist.tools.youtube" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.youtube.text"/>
                                 </text>
                             </input>
-                            <input conf="checklist.tools.newsletters" type="checkbox">
+                            <input conf="cookieconsent.checklist.tools.newsletters" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.newsletters.text"/>
                                 </text>
                             </input>
-                            <input conf="checklist.tools.seals" type="checkbox">
+                            <input conf="cookieconsent.checklist.tools.seals" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.seals.text"/>
                                 </text>
@@ -353,18 +353,18 @@
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.seals.description"/>
                                 </description>
                             </input>
-                            <input conf="checklist.tools.google.maps" type="checkbox">
+                            <input conf="cookieconsent.checklist.tools.google.maps" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.google.maps.text"/>
                                 </text>
 
                             </input>
-                            <input conf="checklist.tools.google.recaptcha" type="checkbox">
+                            <input conf="cookieconsent.checklist.tools.google.recaptcha" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.google.recaptcha.text"/>
                                 </text>
                             </input>
-                            <input conf="checklist.tools.google.fonts" type="checkbox">
+                            <input conf="cookieconsent.checklist.tools.google.fonts" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.google.fonts.text"/>
                                 </text>
@@ -375,12 +375,12 @@
                             <title>
                                 <locale group="quiqqer/cookieconsent" var="setting.checklist.cookies.title"/>
                             </title>
-                            <input conf="checklist.cookies.inform" type="checkbox">
+                            <input conf="cookieconsent.checklist.cookies.inform" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.cookies.inform.text"/>
                                 </text>
                             </input>
-                            <input conf="checklist.cookies.consent" type="checkbox">
+                            <input conf="cookieconsent.checklist.cookies.consent" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.cookies.consent.text"/>
                                 </text>
@@ -391,7 +391,7 @@
                             <title>
                                 <locale group="quiqqer/cookieconsent" var="setting.checklist.privacypolicy.title"/>
                             </title>
-                            <input conf="checklist.privacypolicy.added" type="checkbox">
+                            <input conf="cookieconsent.checklist.privacypolicy.added" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.privacypolicy.added.text"/>
                                 </text>
@@ -399,12 +399,12 @@
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.privacypolicy.added.description"/>
                                 </description>
                             </input>
-                            <input conf="checklist.privacypolicy.verified" type="checkbox">
+                            <input conf="cookieconsent.checklist.privacypolicy.verified" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.privacypolicy.verified.text"/>
                                 </text>
                             </input>
-                            <input conf="checklist.privacypolicy.accessible" type="checkbox">
+                            <input conf="cookieconsent.checklist.privacypolicy.accessible" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.privacypolicy.accessible.text"/>
                                 </text>
@@ -418,7 +418,7 @@
                             <title>
                                 <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.title"/>
                             </title>
-                            <input conf="checklist.imprint.name.provider" type="checkbox">
+                            <input conf="cookieconsent.checklist.imprint.name.provider" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.name.provider.text"/>
                                 </text>
@@ -426,7 +426,7 @@
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.name.provider.description"/>
                                 </description>
                             </input>
-                            <input conf="checklist.imprint.name.company" type="checkbox">
+                            <input conf="cookieconsent.checklist.imprint.name.company" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.name.company.text"/>
                                 </text>
@@ -434,12 +434,12 @@
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.name.company.description"/>
                                 </description>
                             </input>
-                            <input conf="checklist.imprint.address" type="checkbox">
+                            <input conf="cookieconsent.checklist.imprint.address" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.address.text"/>
                                 </text>
                             </input>
-                            <input conf="checklist.imprint.contact" type="checkbox">
+                            <input conf="cookieconsent.checklist.imprint.contact" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.contact.text"/>
                                 </text>
@@ -447,7 +447,7 @@
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.contact.description"/>
                                 </description>
                             </input>
-                            <input conf="checklist.imprint.register" type="checkbox">
+                            <input conf="cookieconsent.checklist.imprint.register" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.register.text"/>
                                 </text>
@@ -455,7 +455,7 @@
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.register.description"/>
                                 </description>
                             </input>
-                            <input conf="checklist.imprint.vat" type="checkbox">
+                            <input conf="cookieconsent.checklist.imprint.vat" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.vat.text"/>
                                 </text>
@@ -463,7 +463,7 @@
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.vat.description"/>
                                 </description>
                             </input>
-                            <input conf="checklist.imprint.supervisor" type="checkbox">
+                            <input conf="cookieconsent.checklist.imprint.supervisor" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.supervisor.text"/>
                                 </text>
@@ -471,7 +471,7 @@
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.supervisor.description"/>
                                 </description>
                             </input>
-                            <input conf="checklist.imprint.chamber" type="checkbox">
+                            <input conf="cookieconsent.checklist.imprint.chamber" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.chamber.text"/>
                                 </text>

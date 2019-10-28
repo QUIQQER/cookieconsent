@@ -13,6 +13,24 @@
         <a href="{{$imprintUrl}}" style="margin-left: 10px;">Impressum</a>
         {/if}
     </div>
+
+    <fieldset>
+        {{foreach $cookieCategories as $cookieCategory}}
+            <input type="checkbox"
+                   value="{{$cookieCategory}}"
+                   class="quiqqer-cookieconsent-category"
+                   id="quiqqer-cookieconsent-category-{{$cookieCategory}}"
+                   {{if $cookieCategory== $requiredCookieCategory}}
+                   disabled
+                   checked
+                   {{/if}}
+            >
+            <label for="quiqqer-cookieconsent-category-{{$cookieCategory}}">
+                {locale group="quiqqer/cookieconsent" var="cookie.category.$cookieCategory"}
+            </label>
+        {{/foreach}}
+    </fieldset>
+
     <button id="quiqqer-cookieconsent-accept">
         {{$Control::getButtonText($Project)}}
     </button>

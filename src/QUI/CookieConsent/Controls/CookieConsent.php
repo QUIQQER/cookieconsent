@@ -7,6 +7,7 @@
 namespace QUI\CookieConsent\Controls;
 
 use QUI\Control;
+use QUI\CookieConsent\CookieInterface;
 use QUI\Projects\Project;
 use QUI\Projects\Site;
 
@@ -38,8 +39,15 @@ class CookieConsent extends Control
         $TemplateEngine = \QUI::getTemplateManager()->getEngine();
 
         $TemplateEngine->assign([
-            'Control' => $this,
-            'Project' => \QUI::getRewrite()->getProject()
+            'Control'                => $this,
+            'Project'                => \QUI::getRewrite()->getProject(),
+            'cookieCategories'       => [
+                CookieInterface::COOKIE_CATEGORY_ESSENTIAL,
+                CookieInterface::COOKIE_CATEGORY_PREFERENCES,
+                CookieInterface::COOKIE_CATEGORY_STATISTICS,
+                CookieInterface::COOKIE_CATEGORY_MARKETING
+            ],
+            'requiredCookieCategory' => CookieInterface::COOKIE_CATEGORY_ESSENTIAL
         ]);
 
         return $TemplateEngine->fetch(dirname(__FILE__) . '/CookieConsent.html');

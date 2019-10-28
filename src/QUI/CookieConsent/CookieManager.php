@@ -124,6 +124,21 @@ class CookieManager extends QUI\Utils\Singleton
 
 
     /**
+     * Sets the give cookie as accepted in the current session.
+     *
+     * @param CookieCollection $CookieCollection
+     */
+    public static function acceptCookiesForSession(CookieCollection $CookieCollection): void
+    {
+        $AcceptedCookies = static::getAcceptedCookiesForSession();
+
+        $AcceptedCookies->merge($CookieCollection);
+
+        QUI::getSession()->set(static::SESSION_KEY_ACCEPTED_COOKIES, $AcceptedCookies);
+    }
+
+
+    /**
      * Returns a collection of cookies that have been accepted in the current session.
      *
      * @return CookieCollection|null

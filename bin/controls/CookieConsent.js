@@ -157,6 +157,30 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
         allowPageUsage: function () {
             document.body.classList.remove('cookiebanner-blocks-page');
             this.$Banner.classList.remove('page-blocked');
+        },
+
+        /**
+         * Returns an array with the names of the selected cookie categories.
+         *
+         * @return {[]}
+         */
+        getSelectedCategories: function () {
+            var categoryElements = this.getElm().getElementsByClassName('quiqqer-cookieconsent-category');
+
+            var categories = [];
+
+            for (var i = 0; i < categoryElements.length; i++) {
+                var Category = categoryElements[i];
+                var categoryName = Category.value;
+
+                if (!Category.checked) {
+                    continue;
+                }
+
+                categories.push(categoryName);
+            }
+
+            return categories;
         }
     });
 });

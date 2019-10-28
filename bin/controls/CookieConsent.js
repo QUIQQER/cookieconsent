@@ -75,6 +75,8 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
         },
 
         accept: function () {
+            var categories = this.getSelectedCategories();
+
             QUI.Storage.set('quiqqer-cookieconsent-accepted', true);
             QUI.Storage.set('quiqqer-cookieconsent-accepted-timestamp', Date.now());
             this.allowPageUsage();
@@ -82,7 +84,8 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
 
             require(['Ajax'], function (QUIAjax) {
                 QUIAjax.post('package_quiqqer_cookieconsent_ajax_acceptCookies', null, {
-                    'package': 'quiqqer/cookieconsent'
+                    'package'   : 'quiqqer/cookieconsent',
+                    'categories': JSON.encode(categories)
                 });
             });
         },

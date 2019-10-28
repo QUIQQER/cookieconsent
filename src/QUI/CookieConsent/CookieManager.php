@@ -19,6 +19,8 @@ class CookieManager extends QUI\Utils\Singleton
 
     const PROVIDER_KEY = 'cookie';
 
+    const SESSION_KEY_ACCEPTED_COOKIES = 'cookies_accepted_by_user';
+
 
     /**
      * @var CookieCollection
@@ -118,5 +120,23 @@ class CookieManager extends QUI\Utils\Singleton
             /** @var $Cookie CookieInterface */
             return $Cookie->getCategory() == $category;
         });
+    }
+
+
+    /**
+     * Returns a collection of cookies that have been accepted in the current session.
+     *
+     * @return CookieCollection|null
+     */
+    public static function getAcceptedCookiesForSession(): CookieCollection
+    {
+        /** @var $acceptedCookies CookieCollection|null */
+        $acceptedCookies = QUI::getSession()->get(static::SESSION_KEY_ACCEPTED_COOKIES);
+
+        if (!$acceptedCookies || !($acceptedCookies instanceof CookieCollection)) {
+            $acceptedCookies = new CookieCollection();
+        }
+
+        return $acceptedCookies;
     }
 }

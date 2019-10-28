@@ -5,7 +5,6 @@
 
 namespace QUI\CookieConsent;
 
-
 interface CookieProviderInterface
 {
     /**

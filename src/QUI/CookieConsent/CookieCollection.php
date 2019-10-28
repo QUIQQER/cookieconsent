@@ -6,7 +6,6 @@
 
 namespace QUI\CookieConsent;
 
-
 use QUI\Collection;
 
 /**

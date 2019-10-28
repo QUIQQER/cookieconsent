@@ -53,6 +53,80 @@
             <de><![CDATA[Von unten]]></de>
             <en><![CDATA[From bottom]]></en>
         </locale>
+
+        <!-- region Cookie-Class Related -->
+        <locale name="cookie.name">
+            <de><![CDATA[Name]]></de>
+            <en><![CDATA[Name]]></en>
+        </locale>
+
+        <locale name="cookie.origin">
+            <de><![CDATA[Herkunft]]></de>
+            <en><![CDATA[Origin]]></en>
+        </locale>
+
+        <locale name="cookie.purpose">
+            <de><![CDATA[Zweck]]></de>
+            <en><![CDATA[Purpose]]></en>
+        </locale>
+
+        <locale name="cookie.lifetime.session">
+            <de><![CDATA[Sitzung]]></de>
+            <en><![CDATA[Session]]></en>
+        </locale>
+        <locale name="cookie.lifetime.day">
+            <de><![CDATA[1 Tag]]></de>
+            <en><![CDATA[1 Day]]></en>
+        </locale>
+        <locale name="cookie.lifetime.days">
+            <de><![CDATA[[count] Tage]]></de>
+            <en><![CDATA[[count] Days]]></en>
+        </locale>
+        <locale name="cookie.lifetime.week">
+            <de><![CDATA[1 Woche]]></de>
+            <en><![CDATA[1 Week]]></en>
+        </locale>
+        <locale name="cookie.lifetime.weeks">
+            <de><![CDATA[[count] Wochen]]></de>
+            <en><![CDATA[[count] Weeks]]></en>
+        </locale>
+        <locale name="cookie.lifetime.month">
+            <de><![CDATA[1 Monat]]></de>
+            <en><![CDATA[1 Monate]]></en>
+        </locale>
+        <locale name="cookie.lifetime.months">
+            <de><![CDATA[[count] Monate]]></de>
+            <en><![CDATA[[count] Months]]></en>
+        </locale>
+        <locale name="cookie.lifetime.year">
+            <de><![CDATA[1 Jahr]]></de>
+            <en><![CDATA[1 Year]]></en>
+        </locale>
+        <locale name="cookie.lifetime.years">
+            <de><![CDATA[[count] Jahre]]></de>
+            <en><![CDATA[[count] Years]]></en>
+        </locale>
+
+        <locale name="cookie.category.essential">
+            <de><![CDATA[Notwendig]]></de>
+            <en><![CDATA[Required]]></en>
+        </locale>
+
+        <locale name="cookie.category.preferences">
+            <de><![CDATA[Präferenzen]]></de>
+            <en><![CDATA[Preferences]]></en>
+        </locale>
+
+        <locale name="cookie.category.statistics">
+            <de><![CDATA[Statistiken]]></de>
+            <en><![CDATA[Statistics]]></en>
+        </locale>
+
+        <locale name="cookie.category.marketing">
+            <de><![CDATA[Marketing]]></de>
+            <en><![CDATA[Marketing]]></en>
+        </locale>
+        <!-- endregion -->
     </groups>
 
     <groups name="quiqqer/cookieconsent" datatype="php">

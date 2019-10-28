@@ -100,4 +100,23 @@ class CookieManager extends QUI\Utils\Singleton
 
         return $this->registeredCookies;
     }
+
+
+    /**
+     * Returns the cookies of a given category, that are registered in the system.
+     * The passed category should be one of the "COOKIE_CATEGORY_"-prefixed constants of CookieInterface.
+     *
+     * @param $category
+     *
+     * @return CookieCollection
+     */
+    public function getRegisteredCookiesByCategory($category): CookieCollection
+    {
+        $cookies = $this->getAllRegisteredCookies();
+
+        return $cookies->filter(function ($Cookie) use ($category) {
+            /** @var $Cookie CookieInterface */
+            return $Cookie->getCategory() == $category;
+        });
+    }
 }

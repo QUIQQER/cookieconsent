@@ -25,7 +25,8 @@
   "require": {
     "php": ">=7",
     "quiqqer/quiqqer": "*@dev",
-    "quiqqer/sitetypes": ">=1.2|dev-master|dev-dev"
+    "quiqqer/sitetypes": ">=1.2|dev-master|dev-dev",
+    "quiqqer/utils": ">=1.18|dev-master|dev-dev"
   },
   "autoload": {
     "psr-4": {

@@ -124,6 +124,21 @@ class CookieManager extends QUI\Utils\Singleton
 
 
     /**
+     * Returns if a given cookie is accepted in the current session.
+     *
+     * @param CookieInterface $Cookie
+     *
+     * @return bool
+     */
+    public static function isCookieAcceptedInSession(CookieInterface $Cookie): bool
+    {
+        $AcceptedCookies = static::getAcceptedCookiesForSession();
+
+        return $AcceptedCookies->contains($Cookie);
+    }
+
+
+    /**
      * Sets the give cookie as accepted in the current session.
      *
      * @param CookieCollection $CookieCollection

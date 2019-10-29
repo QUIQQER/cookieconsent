@@ -34,4 +34,40 @@
     <button id="quiqqer-cookieconsent-accept">
         {{$Control::getButtonText($Project)}}
     </button>
+
+    <div id="quiqqer-cookieconsent-cookie-info">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        {locale group="quiqqer/cookieconsent" var="cookie.name"}
+                    </th>
+                    <th>
+                        {locale group="quiqqer/cookieconsent" var="cookie.category"}
+                    </th>
+                    <th>
+                        {locale group="quiqqer/cookieconsent" var="cookie.origin"}
+                    </th>
+                    <th>
+                        {locale group="quiqqer/cookieconsent" var="cookie.purpose"}
+                    </th>
+                    <th>
+                        {locale group="quiqqer/cookieconsent" var="cookie.lifetime"}
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                {{foreach $Cookies as $Cookie}}
+                    {assign var="cookieCategory" value=$Cookie->getCategory()}
+                    <tr>
+                        <td>{{$Cookie->getName()}}</td>
+                        <td>{locale group="quiqqer/cookieconsent" var="cookie.category.$cookieCategory"}</td>
+                        <td>{{$Cookie->getOrigin()}}</td>
+                        <td>{{$Cookie->getPurpose()}}</td>
+                        <td>{{$Cookie->getLifetime()}}</td>
+                    </tr>
+                {{/foreach}}
+            </tbody>
+        </table>
+    </div>
 </div>

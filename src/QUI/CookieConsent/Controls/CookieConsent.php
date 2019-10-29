@@ -8,6 +8,7 @@ namespace QUI\CookieConsent\Controls;
 
 use QUI\Control;
 use QUI\CookieConsent\CookieInterface;
+use QUI\CookieConsent\CookieManager;
 use QUI\Projects\Project;
 use QUI\Projects\Site;
 
@@ -47,6 +48,7 @@ class CookieConsent extends Control
                 CookieInterface::COOKIE_CATEGORY_STATISTICS,
                 CookieInterface::COOKIE_CATEGORY_MARKETING
             ],
+            'Cookies' => CookieManager::getInstance()->getAllRegisteredCookies(),
             'requiredCookieCategory' => CookieInterface::COOKIE_CATEGORY_ESSENTIAL
         ]);
 

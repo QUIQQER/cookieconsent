@@ -70,9 +70,19 @@
             <en><![CDATA[Purpose]]></en>
         </locale>
 
+        <locale name="cookie.lifetime">
+            <de><![CDATA[Dauer]]></de>
+            <en><![CDATA[Duration]]></en>
+        </locale>
+
         <locale name="cookie.lifetime.session">
             <de><![CDATA[Sitzung]]></de>
             <en><![CDATA[Session]]></en>
+        </locale>
+
+        <locale name="cookie.category">
+            <de><![CDATA[Kategorie]]></de>
+            <en><![CDATA[Category]]></en>
         </locale>
 
         <locale name="cookie.category.essential">
@@ -396,5 +406,12 @@
             <de html="1"><![CDATA[<br>Nur bei reglementierten Berufen (betrifft u. a. Rechtsanwälte, Steuerberater, Berufe aus dem Gesundheitswesen)]]></de>
             <en html="1"><![CDATA[<br>Only for regulated professions (including lawyers, tax consultants, healthcare professionals, etc.)]]></en>
         </locale>
+
+        <!-- region QUIQQER Cookie Data -->
+        <locale name="cookie.quiqqer.purpose">
+            <de><![CDATA[Eindeutige ID, die die Sitzung des Benutzers identifiziert.]]></de>
+            <en><![CDATA[Unique ID that identifies the user's session.]]></en>
+        </locale>
+        <!-- endregion -->
     </groups>
 </locales>

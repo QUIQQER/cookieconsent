@@ -3,8 +3,6 @@
 QUI::$Ajax->registerFunction(
     'package_quiqqer_cookieconsent_ajax_acceptCookies',
     function ($categories) {
-        QUI::getSession()->set('cookies-accepted', true);
-
         $categories = json_decode($categories);
 
         if (!$categories) {

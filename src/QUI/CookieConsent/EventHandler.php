@@ -17,7 +17,7 @@ class EventHandler
      */
     public static function onTemplateSiteFetch($Template, $Site)
     {
-        if (QUI::getSession()->get('cookies-accepted')) {
+        if (CookieManager::areEssentialCookiesAccepted(true)) {
             return;
         }
 

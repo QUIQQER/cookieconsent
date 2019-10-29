@@ -21,6 +21,11 @@ class CookieManager extends QUI\Utils\Singleton
 
     const SESSION_KEY_ACCEPTED_COOKIES = 'cookies_accepted_by_user';
 
+    /**
+     * @var string Stores if the user accepted the essential cookies.
+     */
+    const SESSION_KEY_ESSENTIAL_COOKIES_ACCEPTED = 'cookies_essential_accepted_by_user';
+
 
     /**
      * @var CookieCollection
@@ -168,5 +173,36 @@ class CookieManager extends QUI\Utils\Singleton
         }
 
         return $acceptedCookies;
+    }
+
+    /**
+     * Returns if all essential cookies are accepted in the current session.
+     * Once the check was successful the result is stored in the user's session.
+     * Concurrent calls will use the cached value and therefore always return true.
+     *
+     * You may set the first parameter to true to force a check again.
+     *
+     * @param bool $force - Do not use the last cached result (only positive results are cached).
+     *
+     * @return bool
+     */
+    public static function areEssentialCookiesAccepted(bool $force = false): bool
+    {
+        if (QUI::getSession()->get(static::SESSION_KEY_ESSENTIAL_COOKIES_ACCEPTED) && !$force) {
+            return true;
+        }
+
+        $EssentialCookies = static::getInstance()->getRegisteredCookiesByCategory(CookieInterface::COOKIE_CATEGORY_ESSENTIAL);
+        $AcceptedCookies  = static::getAcceptedCookiesForSession();
+
+        foreach ($EssentialCookies as $Cookie) {
+            if (!$AcceptedCookies->contains($Cookie)) {
+                return false;
+            }
+        }
+
+        QUI::getSession()->set(static::SESSION_KEY_ESSENTIAL_COOKIES_ACCEPTED, true);
+
+        return true;
     }
 }

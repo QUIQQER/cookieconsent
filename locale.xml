@@ -74,38 +74,6 @@
             <de><![CDATA[Sitzung]]></de>
             <en><![CDATA[Session]]></en>
         </locale>
-        <locale name="cookie.lifetime.day">
-            <de><![CDATA[1 Tag]]></de>
-            <en><![CDATA[1 Day]]></en>
-        </locale>
-        <locale name="cookie.lifetime.days">
-            <de><![CDATA[[count] Tage]]></de>
-            <en><![CDATA[[count] Days]]></en>
-        </locale>
-        <locale name="cookie.lifetime.week">
-            <de><![CDATA[1 Woche]]></de>
-            <en><![CDATA[1 Week]]></en>
-        </locale>
-        <locale name="cookie.lifetime.weeks">
-            <de><![CDATA[[count] Wochen]]></de>
-            <en><![CDATA[[count] Weeks]]></en>
-        </locale>
-        <locale name="cookie.lifetime.month">
-            <de><![CDATA[1 Monat]]></de>
-            <en><![CDATA[1 Monate]]></en>
-        </locale>
-        <locale name="cookie.lifetime.months">
-            <de><![CDATA[[count] Monate]]></de>
-            <en><![CDATA[[count] Months]]></en>
-        </locale>
-        <locale name="cookie.lifetime.year">
-            <de><![CDATA[1 Jahr]]></de>
-            <en><![CDATA[1 Year]]></en>
-        </locale>
-        <locale name="cookie.lifetime.years">
-            <de><![CDATA[[count] Jahre]]></de>
-            <en><![CDATA[[count] Years]]></en>
-        </locale>
 
         <locale name="cookie.category.essential">
             <de><![CDATA[Notwendig]]></de>

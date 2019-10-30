@@ -108,6 +108,26 @@ class CookieManager extends QUI\Utils\Singleton
         return $this->registeredCookies;
     }
 
+    public function getAllRegisteredCookiesGroupedByCategory()
+    {
+        $Cookies = $this->getAllRegisteredCookies();
+
+        /** @var CookieCollection[] $result */
+        $result = [];
+
+        foreach ($Cookies as $Cookie) {
+            /** @var CookieInterface $Cookie */
+
+            $category = $Cookie->getCategory();
+            if (isset($result[$category])) {
+                $result[$category]->append($Cookie);
+            } else {
+                $result[$category] = new CookieCollection([$Cookie]);
+            }
+        }
+
+        return $result;
+    }
 
     /**
      * Returns the cookies of a given category, that are registered in the system.

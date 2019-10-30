@@ -12,7 +12,7 @@ QUI::$Ajax->registerFunction(
         $cookies = new \QUI\CookieConsent\CookieCollection();
 
         foreach ($categories as $category) {
-            $categoryCookies = \QUI\CookieConsent\CookieManager::getInstance()->getRegisteredCookiesByCategory($category);
+            $categoryCookies = \QUI\CookieConsent\CookieManager::getInstance()->getRegisteredCookiesForCategory($category);
             $cookies->merge($categoryCookies);
         }
 

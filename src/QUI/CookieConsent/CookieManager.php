@@ -117,7 +117,7 @@ class CookieManager extends QUI\Utils\Singleton
      *
      * @return CookieCollection
      */
-    public function getRegisteredCookiesByCategory($category): CookieCollection
+    public function getRegisteredCookiesForCategory($category): CookieCollection
     {
         $cookies = $this->getAllRegisteredCookies();
 
@@ -192,7 +192,7 @@ class CookieManager extends QUI\Utils\Singleton
             return true;
         }
 
-        $EssentialCookies = static::getInstance()->getRegisteredCookiesByCategory(CookieInterface::COOKIE_CATEGORY_ESSENTIAL);
+        $EssentialCookies = static::getInstance()->getRegisteredCookiesForCategory(CookieInterface::COOKIE_CATEGORY_ESSENTIAL);
         $AcceptedCookies  = static::getAcceptedCookiesForSession();
 
         foreach ($EssentialCookies as $Cookie) {

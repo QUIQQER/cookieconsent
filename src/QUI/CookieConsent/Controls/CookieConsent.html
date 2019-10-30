@@ -15,18 +15,18 @@
     </div>
 
     <fieldset>
-        {{foreach $cookieCategories as $cookieCategory}}
+        {{foreach $cookiesGroupedByCategory key=$categoryName item=$Cookies}}
             <input type="checkbox"
-                   value="{{$cookieCategory}}"
+                   value="{{$categoryName}}"
                    class="quiqqer-cookieconsent-category"
-                   id="quiqqer-cookieconsent-category-{{$cookieCategory}}"
-                   {{if $cookieCategory== $requiredCookieCategory}}
+                   id="quiqqer-cookieconsent-category-{{$categoryName}}"
+                   {{if $categoryName== $requiredCookieCategory}}
                    disabled
                    checked
                    {{/if}}
             >
-            <label for="quiqqer-cookieconsent-category-{{$cookieCategory}}">
-                {locale group="quiqqer/cookieconsent" var="cookie.category.$cookieCategory"}
+            <label for="quiqqer-cookieconsent-category-{{$categoryName}}">
+                {locale group="quiqqer/cookieconsent" var="cookie.category.$categoryName"}
             </label>
         {{/foreach}}
     </fieldset>
@@ -57,15 +57,16 @@
                 </tr>
             </thead>
             <tbody>
-                {{foreach $Cookies as $Cookie}}
-                    {assign var="cookieCategory" value=$Cookie->getCategory()}
-                    <tr>
-                        <td>{{$Cookie->getName()}}</td>
-                        <td>{locale group="quiqqer/cookieconsent" var="cookie.category.$cookieCategory"}</td>
-                        <td>{{$Cookie->getOrigin()}}</td>
-                        <td>{{$Cookie->getPurpose()}}</td>
-                        <td>{{$Cookie->getLifetime()}}</td>
-                    </tr>
+                {{foreach $cookiesGroupedByCategory key=$cookieCategory item=$Cookies}}
+                    {{foreach $Cookies as $Cookie}}
+                        <tr>
+                            <td>{{$Cookie->getName()}}</td>
+                            <td>{locale group="quiqqer/cookieconsent" var="cookie.category.$cookieCategory"}</td>
+                            <td>{{$Cookie->getOrigin()}}</td>
+                            <td>{{$Cookie->getPurpose()}}</td>
+                            <td>{{$Cookie->getLifetime()}}</td>
+                        </tr>
+                    {{/foreach}}
                 {{/foreach}}
             </tbody>
         </table>

@@ -7,6 +7,7 @@
 namespace QUI\CookieConsent;
 
 use QUI\CookieConsent\Cookies\QuiqqerSessionCookie;
+use QUI\CookieConsent\Cookies\TestCookie;
 
 /**
  * Class QuiqqerCookieProvider
@@ -17,6 +18,6 @@ class QuiqqerCookieProvider implements CookieProviderInterface
 {
     public static function getCookies(): CookieCollection
     {
-        return new CookieCollection([new QuiqqerSessionCookie()]);
+        return new CookieCollection([new QuiqqerSessionCookie(), new TestCookie()]);
     }
 }

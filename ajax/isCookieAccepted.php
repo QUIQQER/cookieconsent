@@ -9,7 +9,7 @@ QUI::$Ajax->registerFunction(
 
         $ReflectionClass = new ReflectionClass($cookieName);
 
-        if(!$ReflectionClass->implementsInterface(\QUI\CookieConsent\CookieInterface::class)) {
+        if (!$ReflectionClass->implementsInterface(\QUI\CookieConsent\CookieInterface::class)) {
             return false;
         }
 

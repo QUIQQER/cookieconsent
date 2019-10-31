@@ -22,7 +22,8 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
             'show',
             'accept',
             'blockPageUsage',
-            'allowPageUsage'
+            'allowPageUsage',
+            'toggleInfoSection'
         ],
 
 
@@ -30,6 +31,8 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
             this.parent(options);
 
             this.$ButtonAccept = null;
+            this.$ButtonShowInfo = null;
+            this.$InfoSection = null;
             this.$Banner = null;
 
             this.addEvents({
@@ -67,8 +70,22 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
 
             this.$ButtonAccept.addEventListener('click', this.accept);
 
+            this.$ButtonShowInfo = Element.getElementById('quiqqer-cookieconsent-toggle-info');
+            this.$InfoSection = Element.getElementById('quiqqer-cookieconsent-details');
+
+            if (this.$ButtonShowInfo && this.$InfoSection) {
+                this.$ButtonShowInfo.addEventListener('click', this.toggleInfoSection);
+            }
+
             this.show();
         },
+
+
+        toggleInfoSection: function () {
+            this.$ButtonShowInfo.classList.toggle('open');
+            this.$InfoSection.classList.toggle('hidden');
+        },
+
 
         accept: function () {
             this.allowPageUsage();
@@ -121,7 +138,7 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
             }
 
             var animate = {
-                display: 'block'
+                display: 'flex'
             };
 
             var position = this.getAttribute('position');

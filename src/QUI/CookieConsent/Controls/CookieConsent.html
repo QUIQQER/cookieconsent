@@ -2,41 +2,55 @@
 {assign var="imprintUrl" value=$Control::getImprintUrl($Project)}
 
 <div id="quiqqer-cookieconsent-banner" class="quiqqer-cookieconsent__{{$Control::getPosition($Project)}}">
-    <div class="quiqqer-cookieconsent-message">
+    <div id="quiqqer-cookieconsent-message">
         {{$Control::getText($Project)}}
+        <div id="quiqqer-cookieconsent-urls">
+            {if $privacyUrl}
+            <a href="{{$privacyUrl}}">{locale group="quiqqer/cookieconsent" var="cookie.banner.text.privacy"}</a>
+            {/if}
 
-        {if $privacyUrl}
-        <a href="{{$privacyUrl}}" style="margin-left: 10px;">Datenschutzerklärung</a>
-        {/if}
+            {if $privacyUrl && $imprintUrl}
+            <span>&bull;</span>
+            {/if}
 
-        {if $imprintUrl}
-        <a href="{{$imprintUrl}}" style="margin-left: 10px;">Impressum</a>
-        {/if}
+
+            {if $imprintUrl}
+            <a href="{{$imprintUrl}}">{locale group="quiqqer/cookieconsent" var="cookie.banner.text.imprint"}</a>
+            {/if}
+        </div>
     </div>
 
-    <fieldset>
-        {{foreach $cookiesGroupedByCategory key=$categoryName item=$Cookies}}
-            <input type="checkbox"
-                   value="{{$categoryName}}"
-                   class="quiqqer-cookieconsent-category"
-                   id="quiqqer-cookieconsent-category-{{$categoryName}}"
-                   {{if $categoryName== $requiredCookieCategory}}
-                   disabled
-                   checked
-                   {{/if}}
-            >
-            <label for="quiqqer-cookieconsent-category-{{$categoryName}}">
-                {locale group="quiqqer/cookieconsent" var="cookie.category.$categoryName"}
-            </label>
-        {{/foreach}}
-    </fieldset>
+    <div id="quiqqer-cookieconsent-categories">
+        <form action="javascript:void(0)">
+            <fieldset>
+                {{foreach $cookiesGroupedByCategory key=$categoryName item=$Cookies}}
+                <input type="checkbox"
+                       value="{{$categoryName}}"
+                       class="quiqqer-cookieconsent-category"
+                       id="quiqqer-cookieconsent-category-{{$categoryName}}"
+                       {{if $categoryName== $requiredCookieCategory}}
+                       disabled
+                       checked
+                       {{/if}}
+                >
+                <label for="quiqqer-cookieconsent-category-{{$categoryName}}">
+                    {locale group="quiqqer/cookieconsent" var="cookie.category.$categoryName"}
+                </label>
+                {{/foreach}}
+            </fieldset>
 
-    <button id="quiqqer-cookieconsent-accept">
-        {{$Control::getButtonText($Project)}}
-    </button>
+            <button id="quiqqer-cookieconsent-accept">
+                {{$Control::getButtonText($Project)}}
+            </button>
+        </form>
+        <a id="quiqqer-cookieconsent-toggle-info">
+            {locale group="quiqqer/cookieconsent" var="cookie.banner.info.button"}
+        </a>
+    </div>
 
-    <div id="quiqqer-cookieconsent-cookie-info">
+    <div id="quiqqer-cookieconsent-details" class="hidden">
         <table>
+            <caption>{locale group="quiqqer/cookieconsent" var="cookie.banner.info.title"}</caption>
             <thead>
                 <tr>
                     <th>

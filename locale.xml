@@ -122,8 +122,8 @@
             <en><![CDATA[Text to display]]></en>
         </locale>
         <locale name="setting.text.default">
-            <de><![CDATA[Diese Website verwendet Cookies, um die Benutzerfreundlichkeit zu erhöhen. Mit der weiteren Navigation auf der Website stimmen Sie der Nutzung von Cookies zu.]]></de>
-            <en><![CDATA[This website uses cookies to enhance the user-experience. By using this website, you consent to the use of cookies.]]></en>
+            <de><![CDATA[Diese Website setzt Cookies ein. Einige von ihnen sind essenziell, während andere helfen die Webseite zu verbessern und wirtschaftlich zu betreiben. Nähere Hinweise zur Verwendung von Cookies auf dieser Website, finden sich in der Datenschutzerklärung.]]></de>
+            <en><![CDATA[This website uses cookies. Some of them are essential, while others help to improve the site and allow it to operate economically. Please refer to the Privacy Policy for more information on how cookies are used on this site.]]></en>
         </locale>
 
         <locale name="setting.buttontext.label">
@@ -131,8 +131,8 @@
             <en><![CDATA[Button Text]]></en>
         </locale>
         <locale name="setting.buttontext.default">
-            <de><![CDATA[Ich stimme zu.]]></de>
-            <en><![CDATA[I agree.]]></en>
+            <de><![CDATA[Cookies akzeptieren]]></de>
+            <en><![CDATA[Accept Cookies]]></en>
         </locale>
 
         <locale name="setting.checklist.title">
@@ -411,6 +411,26 @@
         <locale name="cookie.quiqqer.purpose">
             <de><![CDATA[Eindeutige ID, die die Sitzung des Benutzers identifiziert.]]></de>
             <en><![CDATA[Unique ID that identifies the user's session.]]></en>
+        </locale>
+        <!-- endregion -->
+
+        <!-- region Cookie Consent Banner -->
+        <locale name="cookie.banner.text.privacy">
+            <de><![CDATA[Datenschutzerklärung]]></de>
+            <en><![CDATA[Privacy Policy]]></en>
+        </locale>
+        <locale name="cookie.banner.text.imprint">
+            <de><![CDATA[Impressum]]></de>
+            <en><![CDATA[Imprint]]></en>
+        </locale>
+
+        <locale name="cookie.banner.info.button">
+            <de><![CDATA[Informationen zu den eingesetzten Cookies]]></de>
+            <en><![CDATA[Information about the used cookies]]></en>
+        </locale>
+        <locale name="cookie.banner.info.title">
+            <de><![CDATA[Verwendete Cookies:]]></de>
+            <en><![CDATA[Used Cookies:]]></en>
         </locale>
         <!-- endregion -->
     </groups>

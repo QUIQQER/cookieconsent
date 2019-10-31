@@ -3,8 +3,9 @@
  * @author www.pcsg.de (Jan Wennrich)
  */
 define('package/quiqqer/cookieconsent/bin/classes/CookieManager', [
-    'qui/controls/Control'
-], function (QUIControl) {
+    'qui/controls/Control',
+    'Ajax'
+], function (QUIControl, QUIAjax) {
     "use strict";
 
     return new Class({
@@ -27,12 +28,37 @@ define('package/quiqqer/cookieconsent/bin/classes/CookieManager', [
         acceptCookieCategories: function (categories, callback) {
             this.fireEvent('cookieCategoriesAccepted', categories);
 
-            require(['qui/QUI', 'Ajax'], function (QUI, QUIAjax) {
+            require(['qui/QUI'], function (QUI) {
                 QUI.Storage.set('quiqqer-cookies-accepted-timestamp', Date.now());
 
                 QUIAjax.post('package_quiqqer_cookieconsent_ajax_acceptCookies', callback, {
                     'package'   : 'quiqqer/cookieconsent',
                     'categories': JSON.encode(categories)
+                });
+            });
+        },
+
+        /**
+         * Checks if the cookie with the given name was accepted.
+         * Returns a promise, which resolves with a boolean containing the result.
+         *
+         * The cookie name should be the name of the cookie's PHP-class.
+         * Keep in mind that you need to escape backslashes (see the valid example below)!
+         *
+         * @example isCookieAccepted('QUI\\CookieConsent\\Cookies\\QuiqqerSessionCookie')
+         *
+         * @param {string} cookieName
+         *
+         * @return {Promise<boolean>}
+         */
+        isCookieAccepted: function (cookieName) {
+            return new Promise(function (resolve, reject) {
+                QUIAjax.get('package_quiqqer_cookieconsent_ajax_isCookieAccepted', function (result) {
+                    resolve(result);
+                }, {
+                    'package'   : 'quiqqer/cookieconsent',
+                    'cookieName': cookieName,
+                    onError     : reject
                 });
             });
         }

@@ -33,20 +33,26 @@ body.cookiebanner-blocks-page {
     overflow: hidden;
 }
 
-.quiqqer-cookieconsent__top {
+#quiqqer-cookieconsent-banner.quiqqer-cookieconsent__top {
     box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
     top: 0;
 }
 
-.quiqqer-cookieconsent__bottom {
+#quiqqer-cookieconsent-banner.quiqqer-cookieconsent__bottom {
     bottom: 0;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, .28);
 }
 
-.quiqqer-cookieconsent__topSlide {
+#quiqqer-cookieconsent-banner.quiqqer-cookieconsent__topSlide {
     display: block;
     float: left;
     position: relative;
+}
+
+#quiqqer-cookieconsent-banner.quiqqer-cookieconsent__popup {
+    top: 25vh;
+    left: 16%;
+    width: 65%;
 }
 
 #quiqqer-cookieconsent-urls {

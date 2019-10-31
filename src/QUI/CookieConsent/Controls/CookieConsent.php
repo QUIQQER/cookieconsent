@@ -61,7 +61,7 @@ class CookieConsent extends Control
     {
         $position = $Project->getConfig('quiqqer.cookieconsent.position');
 
-        $allowedPositions = ['top', 'bottom', 'topSlide'];
+        $allowedPositions = ['top', 'bottom', 'topSlide', 'popup'];
 
         if (!\in_array($position, $allowedPositions)) {
             $position = 'top';

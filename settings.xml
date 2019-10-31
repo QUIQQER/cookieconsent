@@ -156,6 +156,9 @@
                                 <option value="topSlide">
                                     <locale group="quiqqer/cookieconsent" var="settings.cookieconsent.position.topSlide"/>
                                 </option>
+                                <option value="popup">
+                                    <locale group="quiqqer/cookieconsent" var="settings.cookieconsent.position.popup"/>
+                                </option>
                             </select>
 
                             <input conf="cookieconsent.blocksite" type="checkbox">

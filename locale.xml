@@ -53,6 +53,10 @@
             <de><![CDATA[Von unten]]></de>
             <en><![CDATA[From bottom]]></en>
         </locale>
+        <locale name="settings.cookieconsent.position.popup">
+            <de><![CDATA[Pop-up]]></de>
+            <en><![CDATA[Pop-up]]></en>
+        </locale>
 
         <!-- region Cookie-Class Related -->
         <locale name="cookie.name">

@@ -4,14 +4,14 @@
  * @author PCSG (Jan Wennrich)
  */
 
-namespace QUI\CookieConsent\Controls;
+namespace QUI\GDPR\Controls;
 
 use QUI\Control;
 
 /**
  * Class CookieConsent
  *
- * @package QUI\CookieConsent\Controls
+ * @package QUI\GDPR\Controls
  */
 class RevokeCookiesButton extends Control
 {
@@ -19,6 +19,6 @@ class RevokeCookiesButton extends Control
     {
         parent::__construct($attributes);
 
-        $this->setJavaScriptControl('package/quiqqer/cookieconsent/bin/controls/RevokeCookiesButton');
+        $this->setJavaScriptControl('package/quiqqer/gdpr/bin/controls/RevokeCookiesButton');
     }
 }

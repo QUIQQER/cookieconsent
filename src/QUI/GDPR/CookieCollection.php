@@ -4,14 +4,14 @@
  * @author PCSG (Jan Wennrich)
  */
 
-namespace QUI\CookieConsent;
+namespace QUI\GDPR;
 
 use QUI\Collection;
 
 /**
  * Class CookieCollection
  *
- * @package QUI\CookieConsent
+ * @package QUI\GDPR
  */
 class CookieCollection extends Collection
 {

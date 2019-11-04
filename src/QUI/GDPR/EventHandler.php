@@ -1,13 +1,13 @@
 <?php
 
-namespace QUI\CookieConsent;
+namespace QUI\GDPR;
 
 use QUI;
 
 /**
  * Class EventHandler
  *
- * @package QUI\CookieConsent
+ * @package QUI\GDPR
  */
 class EventHandler
 {
@@ -21,7 +21,7 @@ class EventHandler
             return;
         }
 
-        $CookieConstControl = new QUI\CookieConsent\Controls\CookieConsent();
+        $CookieConstControl = new QUI\GDPR\Controls\CookieConsent();
         $Template->extendFooter($CookieConstControl->create());
     }
 
@@ -46,7 +46,7 @@ class EventHandler
             return;
         }
 
-        $group = 'quiqqer/cookieconsent';
+        $group = 'quiqqer/gdpr';
 
         $localeVariables = [
             'setting.text.project.' . $Project->getName() => json_decode($params['cookieconsent.text'], true),

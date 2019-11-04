@@ -1,15 +1,15 @@
 /**
- * @module package/quiqqer/cookieconsent/bin/classes/CookieManager
+ * @module package/quiqqer/gdpr/bin/classes/CookieManager
  * @author www.pcsg.de (Jan Wennrich)
  */
-define('package/quiqqer/cookieconsent/bin/classes/CookieManager', [
+define('package/quiqqer/gdpr/bin/classes/CookieManager', [
     'qui/controls/Control',
     'Ajax'
 ], function (QUIControl, QUIAjax) {
     "use strict";
 
     return new Class({
-        Type: 'package/quiqqer/cookieconsent/bin/classes/CookieManager',
+        Type: 'package/quiqqer/gdpr/bin/classes/CookieManager',
 
         Extends: QUIControl,
 
@@ -31,8 +31,8 @@ define('package/quiqqer/cookieconsent/bin/classes/CookieManager', [
             require(['qui/QUI'], function (QUI) {
                 QUI.Storage.set('quiqqer-cookies-accepted-timestamp', Date.now());
 
-                QUIAjax.post('package_quiqqer_cookieconsent_ajax_acceptCookies', callback, {
-                    'package'   : 'quiqqer/cookieconsent',
+                QUIAjax.post('package_quiqqer_gdpr_ajax_acceptCookies', callback, {
+                    'package'   : 'quiqqer/gdpr',
                     'categories': JSON.encode(categories)
                 });
             });
@@ -45,7 +45,7 @@ define('package/quiqqer/cookieconsent/bin/classes/CookieManager', [
          * The cookie name should be the name of the cookie's PHP-class.
          * Keep in mind that you need to escape backslashes (see the valid example below)!
          *
-         * @example isCookieAccepted('QUI\\CookieConsent\\Cookies\\QuiqqerSessionCookie')
+         * @example isCookieAccepted('QUI\\GDPR\\Cookies\\QuiqqerSessionCookie')
          *
          * @param {string} cookieName
          *
@@ -53,10 +53,10 @@ define('package/quiqqer/cookieconsent/bin/classes/CookieManager', [
          */
         isCookieAccepted: function (cookieName) {
             return new Promise(function (resolve, reject) {
-                QUIAjax.get('package_quiqqer_cookieconsent_ajax_isCookieAccepted', function (result) {
+                QUIAjax.get('package_quiqqer_gdpr_ajax_isCookieAccepted', function (result) {
                     resolve(result);
                 }, {
-                    'package'   : 'quiqqer/cookieconsent',
+                    'package'   : 'quiqqer/gdpr',
                     'cookieName': cookieName,
                     onError     : reject
                 });
@@ -77,14 +77,14 @@ define('package/quiqqer/cookieconsent/bin/classes/CookieManager', [
                 reloadPage = false;
             }
 
-            QUIAjax.post('package_quiqqer_cookieconsent_ajax_revokeCookies', function (result) {
+            QUIAjax.post('package_quiqqer_gdpr_ajax_revokeCookies', function (result) {
                 self.fireEvent('cookiesRevoked');
 
                 if (reloadPage) {
                     location.reload();
                 }
             }, {
-                'package': 'quiqqer/cookieconsent'
+                'package': 'quiqqer/gdpr'
             });
         }
     });

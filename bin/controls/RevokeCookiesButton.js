@@ -1,8 +1,8 @@
 /**
- * @module package/quiqqer/cookieconsent/bin/controls/RevokeCookiesButton
+ * @module package/quiqqer/gdpr/bin/controls/RevokeCookiesButton
  * @author www.pcsg.de (Jan Wennrich)
  */
-define('package/quiqqer/cookieconsent/bin/controls/RevokeCookiesButton', [
+define('package/quiqqer/gdpr/bin/controls/RevokeCookiesButton', [
     'qui/QUI',
     'qui/controls/buttons/Button',
 
@@ -10,11 +10,11 @@ define('package/quiqqer/cookieconsent/bin/controls/RevokeCookiesButton', [
 ], function (QUI, QUIButton, QUILocale) {
     "use strict";
 
-    var lg = 'quiqqer/cookieconsent';
+    var lg = 'quiqqer/gdpr';
 
     return new Class({
         Extends: QUIButton,
-        Type   : 'package/quiqqer/cookieconsent/bin/controls/RevokeCookiesButton',
+        Type   : 'package/quiqqer/gdpr/bin/controls/RevokeCookiesButton',
 
         Binds: [
             'initialize'
@@ -35,7 +35,7 @@ define('package/quiqqer/cookieconsent/bin/controls/RevokeCookiesButton', [
         },
 
         $onClick: function () {
-            require(['package/quiqqer/cookieconsent/bin/CookieManager'], function (CookieManager) {
+            require(['package/quiqqer/gdpr/bin/CookieManager'], function (CookieManager) {
                 CookieManager.revokeCookies(true);
             });
         },

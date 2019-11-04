@@ -1,14 +1,11 @@
 /**
- * Requests Handler
- *
- * @module package/quiqqer/cookieconsent/bin/CookieManager
+ * @module package/quiqqer/gdpr/bin/CookieManager
  *
  * @author www.pcsg.de (Jan Wennrich)
- *
  */
-define('package/quiqqer/cookieconsent/bin/CookieManager', [
+define('package/quiqqer/gdpr/bin/CookieManager', [
 
-    'package/quiqqer/cookieconsent/bin/classes/CookieManager'
+    'package/quiqqer/gdpr/bin/classes/CookieManager'
 
 ], function (CookieManager) {
     "use strict";

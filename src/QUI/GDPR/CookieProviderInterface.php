@@ -3,7 +3,7 @@
  * @author PCSG (Jan Wennrich)
  */
 
-namespace QUI\CookieConsent;
+namespace QUI\GDPR;
 
 interface CookieProviderInterface
 {

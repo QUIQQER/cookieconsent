@@ -1,18 +1,19 @@
 /**
- * @module package/quiqqer/cookieconsent/bin/controls/CookieConsent
+ * @module package/quiqqer/gdpr/bin/controls/CookieConsent
  * @author www.pcsg.de (Henning Leutz)
+ * @author www.pcsg.de (Jan Wennrich)
  */
-define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
+define('package/quiqqer/gdpr/bin/controls/CookieConsent', [
     'qui/QUI',
     'qui/controls/Control'
 ], function (QUI, QUIControl) {
     "use strict";
 
-    var lg = 'quiqqer/cookieconsent';
+    var lg = 'quiqqer/gdpr';
 
     return new Class({
         Extends: QUIControl,
-        Type   : 'package/quiqqer/cookieconsent/bin/controls/CookieConsent',
+        Type   : 'package/quiqqer/gdpr/bin/controls/CookieConsent',
 
         Binds: [
             'initialize',
@@ -91,7 +92,7 @@ define('package/quiqqer/cookieconsent/bin/controls/CookieConsent', [
             this.allowPageUsage();
             this.hideAnimated();
 
-            require(['package/quiqqer/cookieconsent/bin/CookieManager'], function (CookieManager) {
+            require(['package/quiqqer/gdpr/bin/CookieManager'], function (CookieManager) {
                 CookieManager.acceptCookieCategories(this.getSelectedCategories());
             }.bind(this));
         },

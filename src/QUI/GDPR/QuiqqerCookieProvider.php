@@ -4,14 +4,14 @@
  * @author PCSG (Jan Wennrich)
  */
 
-namespace QUI\CookieConsent;
+namespace QUI\GDPR;
 
-use QUI\CookieConsent\Cookies\QuiqqerSessionCookie;
+use QUI\GDPR\Cookies\QuiqqerSessionCookie;
 
 /**
  * Class QuiqqerCookieProvider
  *
- * @package QUI\CookieConsent
+ * @package QUI\GDPR
  */
 class QuiqqerCookieProvider implements CookieProviderInterface
 {

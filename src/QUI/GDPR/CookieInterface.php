@@ -3,13 +3,13 @@
  * @author PCSG (Jan Wennrich)
  */
 
-namespace QUI\CookieConsent;
+namespace QUI\GDPR;
 
 /**
  * This interface describes the structure of a cookie.
  * The defined methods should be overwritten by a class implementing this interface.
  *
- * @package QUI\CookieConsent
+ * @package QUI\GDPR
  */
 interface CookieInterface
 {

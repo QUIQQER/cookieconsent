@@ -4,15 +4,15 @@
  * @author PCSG (Jan Wennrich)
  */
 
-namespace QUI\CookieConsent\Cookies;
+namespace QUI\GDPR\Cookies;
 
 use QUI;
-use QUI\CookieConsent\CookieInterface;
+use QUI\GDPR\CookieInterface;
 
 /**
  * Class QuiqqerSessionCookie
  *
- * @package QUI\CookieConsent\Cookies
+ * @package QUI\GDPR\Cookies
  */
 class QuiqqerSessionCookie implements CookieInterface
 {
@@ -37,7 +37,7 @@ class QuiqqerSessionCookie implements CookieInterface
      */
     public static function getPurpose(): string
     {
-        return QUI::getLocale()->get('quiqqer/cookieconsent', 'cookie.quiqqer.purpose');
+        return QUI::getLocale()->get('quiqqer/gdpr', 'cookie.quiqqer.purpose');
     }
 
     /**

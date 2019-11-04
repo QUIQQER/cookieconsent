@@ -9,7 +9,7 @@ If data protection specifications have been declared, those will be linked autom
 
 Package name:
 
-    quiqqer/cookieconsent
+    quiqqer/gdpr
 
 
 Features
@@ -22,7 +22,7 @@ Features
 Installation
 ------------
 
-Tha package name is: quiqqer/cookieconsent
+Tha package name is: quiqqer/gdpr
 
 
 Contribute

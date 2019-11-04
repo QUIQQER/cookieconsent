@@ -4,18 +4,18 @@
  * @author PCSG (Jan Wennrich)
  */
 
-namespace QUI\CookieConsent;
+namespace QUI\GDPR;
 
 use QUI;
 
 /**
  * Class CookieManager
  *
- * @package QUI\CookieConsent
+ * @package QUI\GDPR
  */
 class CookieManager extends QUI\Utils\Singleton
 {
-    const CACHE_KEY_COOKIE_PROVIDERS = 'quiqqer/cookieconsent/cookieManager/cookieProviders';
+    const CACHE_KEY_COOKIE_PROVIDERS = 'quiqqer/gdpr/cookieManager/cookieProviders';
 
     const PROVIDER_KEY = 'cookie';
 

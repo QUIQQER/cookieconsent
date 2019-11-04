@@ -1,7 +1,7 @@
 <?php
 
 QUI::$Ajax->registerFunction(
-    'package_quiqqer_cookieconsent_ajax_acceptCookies',
+    'package_quiqqer_gdpr_ajax_acceptCookies',
     function ($categories) {
         $categories = json_decode($categories);
 
@@ -9,14 +9,14 @@ QUI::$Ajax->registerFunction(
             $categories = [];
         }
 
-        $cookies = new \QUI\CookieConsent\CookieCollection();
+        $cookies = new \QUI\GDPR\CookieCollection();
 
         foreach ($categories as $category) {
-            $categoryCookies = \QUI\CookieConsent\CookieManager::getInstance()->getRegisteredCookiesForCategory($category);
+            $categoryCookies = \QUI\GDPR\CookieManager::getInstance()->getRegisteredCookiesForCategory($category);
             $cookies->merge($categoryCookies);
         }
 
-        \QUI\CookieConsent\CookieManager::acceptCookiesForSession($cookies);
+        \QUI\GDPR\CookieManager::acceptCookiesForSession($cookies);
 
         return true;
     },

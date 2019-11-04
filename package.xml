@@ -1,18 +1,18 @@
 <quiqqer>
     <package>
         <title>
-            <locale group="quiqqer/cookieconsent" var="package.title"/>
+            <locale group="quiqqer/gdpr" var="package.title"/>
         </title>
 
         <description>
-            <locale group="quiqqer/cookieconsent" var="package.description"/>
+            <locale group="quiqqer/gdpr" var="package.description"/>
         </description>
 
-        <image src="URL_OPT_DIR/quiqqer/cookieconsent/bin/images/Logo.jpg"/>
+        <image src="URL_OPT_DIR/quiqqer/gdpr/bin/images/Logo.jpg"/>
 
         <preview>
-            <image src="URL_OPT_DIR/quiqqer/cookieconsent/bin/images/screenshot1.png"/>
-            <image src="URL_OPT_DIR/quiqqer/cookieconsent/bin/images/screenshot2.png"/>
+            <image src="URL_OPT_DIR/quiqqer/gdpr/bin/images/screenshot1.png"/>
+            <image src="URL_OPT_DIR/quiqqer/gdpr/bin/images/screenshot2.png"/>
         </preview>
 
         <support>
@@ -29,7 +29,7 @@
         </copyright>
 
         <provider>
-            <cookie src="\QUI\CookieConsent\QuiqqerCookieProvider"/>
+            <cookie src="\QUI\GDPR\QuiqqerCookieProvider"/>
         </provider>
     </package>
 </quiqqer>

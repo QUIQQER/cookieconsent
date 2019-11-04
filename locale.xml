@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <locales>
-    <groups name="quiqqer/cookieconsent" datatype="php,js">
+    <groups name="quiqqer/gdpr" datatype="php,js">
         <locale name="package.title">
             <de><![CDATA[QUIQQER - Cookie Consent]]></de>
             <en><![CDATA[QUIQQER - Cookie Consent]]></en>
@@ -114,8 +114,8 @@
 
         <!-- region RevokeCookiesButton Brick -->
         <locale name="brick.revoke.title">
-            <de><![CDATA[CookieConsent: Cookies Widerrufen Button]]></de>
-            <en><![CDATA[CookieConsent: Revoke Cookies Button]]></en>
+            <de><![CDATA[DSGVO: Cookies Widerrufen Button]]></de>
+            <en><![CDATA[GDPR: Revoke Cookies Button]]></en>
         </locale>
         <locale name="brick.revoke.description">
             <de><![CDATA[Zeigt eine Schaltfläche an, die die Cookie-Einstellungen eines Benutzers zurücksetzt.]]></de>
@@ -131,7 +131,7 @@
         <!-- endregion -->
     </groups>
 
-    <groups name="quiqqer/cookieconsent" datatype="php">
+    <groups name="quiqqer/gdpr" datatype="php">
         <locale name="setting.cookieconsent.blocksite.text">
             <de><![CDATA[Verwendung der Seite blockieren]]></de>
             <en><![CDATA[Block use of the page]]></en>

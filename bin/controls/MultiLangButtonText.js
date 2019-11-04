@@ -1,12 +1,12 @@
 /**
- * @module package/quiqqer/cookieconsent/bin/controls/MultiLangButtonText
+ * @module package/quiqqer/gdpr/bin/controls/MultiLangButtonText
  *
  * @require qui/QUI
  * @require qui/controls/Control
  * @require package/quiqqer/translator/bin/controls/Update
  * @require Ajax
  */
-define('package/quiqqer/cookieconsent/bin/controls/MultiLangButtonText', [
+define('package/quiqqer/gdpr/bin/controls/MultiLangButtonText', [
 
     'qui/QUI',
     'qui/controls/Control',
@@ -19,7 +19,7 @@ define('package/quiqqer/cookieconsent/bin/controls/MultiLangButtonText', [
     return new Class({
 
         Extends: QUIControl,
-        Type   : 'package/quiqqer/cookieconsent/bin/controls/MultiLangButtonText',
+        Type   : 'package/quiqqer/gdpr/bin/controls/MultiLangButtonText',
 
         Binds: [
             '$onImport',
@@ -83,7 +83,7 @@ define('package/quiqqer/cookieconsent/bin/controls/MultiLangButtonText', [
 
             }.bind(this), {
                 'package': 'quiqqer/translator',
-                'group'  : 'quiqqer/cookieconsent',
+                'group'  : 'quiqqer/gdpr',
                 'var'    : 'setting.buttontext.project.' + this.$Project.getName()
             });
         }

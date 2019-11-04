@@ -1,7 +1,7 @@
 <?php
 
 QUI::$Ajax->registerFunction(
-    'package_quiqqer_cookieconsent_ajax_isCookieAccepted',
+    'package_quiqqer_gdpr_ajax_isCookieAccepted',
     function ($cookieName) {
         if (!class_exists($cookieName)) {
             return false;
@@ -9,15 +9,15 @@ QUI::$Ajax->registerFunction(
 
         $ReflectionClass = new ReflectionClass($cookieName);
 
-        if (!$ReflectionClass->implementsInterface(\QUI\CookieConsent\CookieInterface::class)) {
+        if (!$ReflectionClass->implementsInterface(\QUI\GDPR\CookieInterface::class)) {
             return false;
         }
 
-        /** @var \QUI\CookieConsent\CookieInterface $Cookie */
+        /** @var \QUI\GDPR\CookieInterface $Cookie */
         $Cookie = $ReflectionClass->newInstance();
 
 
-        return \QUI\CookieConsent\CookieManager::isCookieAcceptedInSession($Cookie);
+        return \QUI\GDPR\CookieManager::isCookieAcceptedInSession($Cookie);
     },
     ['cookieName']
 );

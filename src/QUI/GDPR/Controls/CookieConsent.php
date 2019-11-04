@@ -4,18 +4,18 @@
  * @author PCSG (Jan Wennrich)
  */
 
-namespace QUI\CookieConsent\Controls;
+namespace QUI\GDPR\Controls;
 
 use QUI\Control;
-use QUI\CookieConsent\CookieInterface;
-use QUI\CookieConsent\CookieManager;
+use QUI\GDPR\CookieInterface;
+use QUI\GDPR\CookieManager;
 use QUI\Projects\Project;
 use QUI\Projects\Site;
 
 /**
  * Class CookieConsent
  *
- * @package QUI\CookieConsent\Controls
+ * @package QUI\GDPR\Controls
  */
 class CookieConsent extends Control
 {
@@ -30,7 +30,7 @@ class CookieConsent extends Control
         $this->setJavaScriptControlOption('imprint-url', $this::getImprintUrl($Project));
         $this->setJavaScriptControlOption('blocksite', $Project->getConfig('cookieconsent.blocksite'));
 
-        $this->setJavaScriptControl('package/quiqqer/cookieconsent/bin/controls/CookieConsent');
+        $this->setJavaScriptControl('package/quiqqer/gdpr/bin/controls/CookieConsent');
 
         $this->addCSSFile(dirname(__FILE__) . '/CookieConsent.css');
     }
@@ -133,7 +133,7 @@ class CookieConsent extends Control
      */
     public static function getText($Project)
     {
-        $lg     = 'quiqqer/cookieconsent';
+        $lg     = 'quiqqer/gdpr';
         $locale = \QUI::getLocale();
 
         $text = $locale->get($lg, "setting.text.project.{$Project->getName()}");
@@ -154,7 +154,7 @@ class CookieConsent extends Control
      */
     public static function getButtonText($Project)
     {
-        $lg     = 'quiqqer/cookieconsent';
+        $lg     = 'quiqqer/gdpr';
         $locale = \QUI::getLocale();
 
         $text = $locale->get($lg, "setting.buttontext.project.{$Project->getName()}");

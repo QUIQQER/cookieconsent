@@ -1,5 +1,5 @@
 {
-  "name": "quiqqer/cookieconsent",
+  "name": "quiqqer/gdpr",
   "type": "quiqqer-module",
   "description": "The Cookie Consent module integrates a cookies-notification concerning the EU-guideline for your QUIQQER-Website. If data protection specifications have been declared, those will be linked automatically.",
   "version": "dev-dev",
@@ -30,7 +30,7 @@
   },
   "autoload": {
     "psr-4": {
-      "QUI\\CookieConsent\\": "src/QUI/CookieConsent"
+      "QUI\\GDPR\\": "src/QUI/GDPR"
     }
   }
 }

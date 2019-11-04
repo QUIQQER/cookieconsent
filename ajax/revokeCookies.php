@@ -1,8 +1,8 @@
 <?php
 
 QUI::$Ajax->registerFunction(
-    'package_quiqqer_cookieconsent_ajax_revokeCookies',
+    'package_quiqqer_gdpr_ajax_revokeCookies',
     function () {
-        \QUI\CookieConsent\CookieManager::revokeCookies();
+        \QUI\GDPR\CookieManager::revokeCookies();
     }
 );

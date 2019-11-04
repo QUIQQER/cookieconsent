@@ -14,7 +14,7 @@
                         <type><![CDATA[boolean]]></type>
                     </conf>
                 </section>
-                <section name="cookieconsent.checklist">
+                <section name="gdpr.checklist">
                     <conf name="disclaimer.read">
                         <type><![CDATA[boolean]]></type>
                     </conf>
@@ -133,51 +133,51 @@
                 <categories>
                     <category name="quiqqer">
                         <text>
-                            <locale group="quiqqer/cookieconsent" var="settings.title"/>
+                            <locale group="quiqqer/gdpr" var="settings.title"/>
                         </text>
 
-                        <settings title="quiqqer/cookieconsent" name="settings.cookieconsent">
+                        <settings title="quiqqer/gdpr" name="settings.cookieconsent">
                             <title>
-                                <locale group="quiqqer/cookieconsent" var="settings.cookieconsent.title"/>
+                                <locale group="quiqqer/gdpr" var="settings.cookieconsent.title"/>
                             </title>
                             <select conf="quiqqer.cookieconsent.position">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="settings.cookieconsent.position.text"/>
+                                    <locale group="quiqqer/gdpr" var="settings.cookieconsent.position.text"/>
                                 </text>
                                 <option value="top">
-                                    <locale group="quiqqer/cookieconsent" var="settings.cookieconsent.position.top"/>
+                                    <locale group="quiqqer/gdpr" var="settings.cookieconsent.position.top"/>
                                 </option>
                                 <option value="bottom">
-                                    <locale group="quiqqer/cookieconsent" var="settings.cookieconsent.position.bottom"/>
+                                    <locale group="quiqqer/gdpr" var="settings.cookieconsent.position.bottom"/>
                                 </option>
                                 <option value="topSlide">
-                                    <locale group="quiqqer/cookieconsent" var="settings.cookieconsent.position.topSlide"/>
+                                    <locale group="quiqqer/gdpr" var="settings.cookieconsent.position.topSlide"/>
                                 </option>
                                 <option value="popup">
-                                    <locale group="quiqqer/cookieconsent" var="settings.cookieconsent.position.popup"/>
+                                    <locale group="quiqqer/gdpr" var="settings.cookieconsent.position.popup"/>
                                 </option>
                             </select>
 
                             <input conf="cookieconsent.blocksite" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.cookieconsent.blocksite.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.cookieconsent.blocksite.text"/>
                                 </text>
                                 <description>
-                                    <locale group="quiqqer/cookieconsent" var="setting.cookieconsent.blocksite.description"/>
+                                    <locale group="quiqqer/gdpr" var="setting.cookieconsent.blocksite.description"/>
                                 </description>
                             </input>
 
                             <input type="hidden"
-                                   data-qui="package/quiqqer/cookieconsent/bin/controls/MultiLangDescription">
+                                   data-qui="package/quiqqer/gdpr/bin/controls/MultiLangDescription">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.text.label"/>
+                                    <locale group="quiqqer/gdpr" var="setting.text.label"/>
                                 </text>
                             </input>
 
                             <input type="hidden"
-                                   data-qui="package/quiqqer/cookieconsent/bin/controls/MultiLangButtonText">
+                                   data-qui="package/quiqqer/gdpr/bin/controls/MultiLangButtonText">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.buttontext.label"/>
+                                    <locale group="quiqqer/gdpr" var="setting.buttontext.label"/>
                                 </text>
                             </input>
                         </settings>
@@ -185,297 +185,297 @@
 
                     <category name="quiqqer.gdpr.checklist">
                         <text>
-                            <locale group="quiqqer/cookieconsent" var="setting.checklist.title"/>
+                            <locale group="quiqqer/gdpr" var="setting.checklist.title"/>
                         </text>
                         <icon>fa fa-legal</icon>
 
                         <settings name="checklist.disclaimer">
                             <title>
-                                <locale group="quiqqer/cookieconsent" var="setting.checklist.disclaimer.title"/>
+                                <locale group="quiqqer/gdpr" var="setting.checklist.disclaimer.title"/>
                             </title>
 
-                            <input conf="cookieconsent.checklist.disclaimer.read" type="checkbox">
+                            <input conf="gdpr.checklist.disclaimer.read" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.disclaimer.read.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.disclaimer.read.text"/>
                                 </text>
                                 <description>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.disclaimer.read.description"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.disclaimer.read.description"/>
                                 </description>
                             </input>
                         </settings>
 
                         <settings name="checklist.contact">
                             <title>
-                                <locale group="quiqqer/cookieconsent" var="setting.checklist.contact.title"/>
+                                <locale group="quiqqer/gdpr" var="setting.checklist.contact.title"/>
                             </title>
 
-                            <input conf="cookieconsent.checklist.contact.ssl" type="checkbox">
+                            <input conf="gdpr.checklist.contact.ssl" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.contact.ssl.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.contact.ssl.text"/>
                                 </text>
                                 <description>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.contact.ssl.description"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.contact.ssl.description"/>
                                 </description>
                             </input>
 
-                            <input conf="cookieconsent.checklist.contact.smtp" type="checkbox">
+                            <input conf="gdpr.checklist.contact.smtp" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.contact.smtp.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.contact.smtp.text"/>
                                 </text>
                             </input>
 
-                            <input conf="cookieconsent.checklist.contact.privacypolicy" type="checkbox">
+                            <input conf="gdpr.checklist.contact.privacypolicy" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.contact.privacypolicy.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.contact.privacypolicy.text"/>
                                 </text>
                             </input>
 
-                            <input conf="cookieconsent.checklist.contact.usage" type="checkbox">
+                            <input conf="gdpr.checklist.contact.usage" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.contact.usage.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.contact.usage.text"/>
                                 </text>
                             </input>
 
-                            <input conf="cookieconsent.checklist.contact.dpa" type="checkbox">
+                            <input conf="gdpr.checklist.contact.dpa" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.contact.dpa.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.contact.dpa.text"/>
                                 </text>
                                 <description>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.contact.dpa.description"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.contact.dpa.description"/>
                                 </description>
                             </input>
                         </settings>
 
                         <settings name="checklist.newsletter">
                             <title>
-                                <locale group="quiqqer/cookieconsent" var="setting.checklist.newsletter.title"/>
+                                <locale group="quiqqer/gdpr" var="setting.checklist.newsletter.title"/>
                             </title>
-                            <input conf="cookieconsent.checklist.newsletter.unsubscribe" type="checkbox">
+                            <input conf="gdpr.checklist.newsletter.unsubscribe" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.newsletter.unsubscribe.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.newsletter.unsubscribe.text"/>
                                 </text>
                             </input>
-                            <input conf="cookieconsent.checklist.newsletter.optin" type="checkbox">
+                            <input conf="gdpr.checklist.newsletter.optin" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.newsletter.optin.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.newsletter.optin.text"/>
                                 </text>
                             </input>
-                            <input conf="cookieconsent.checklist.newsletter.dataProcessingDirectory" type="checkbox">
+                            <input conf="gdpr.checklist.newsletter.dataProcessingDirectory" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.newsletter.dataProcessingDirectory.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.newsletter.dataProcessingDirectory.text"/>
                                 </text>
                             </input>
-                            <input conf="cookieconsent.checklist.newsletter.dpa" type="checkbox">
+                            <input conf="gdpr.checklist.newsletter.dpa" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.newsletter.dpa.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.newsletter.dpa.text"/>
                                 </text>
                                 <description>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.newsletter.dpa.description"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.newsletter.dpa.description"/>
                                 </description>
                             </input>
-                            <input conf="cookieconsent.checklist.newsletter.coupling" type="checkbox">
+                            <input conf="gdpr.checklist.newsletter.coupling" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.newsletter.coupling.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.newsletter.coupling.text"/>
                                 </text>
                                 <description>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.newsletter.coupling.description"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.newsletter.coupling.description"/>
                                 </description>
                             </input>
                         </settings>
 
                         <settings name="checklist.google">
                             <title>
-                                <locale group="quiqqer/cookieconsent" var="setting.checklist.google.title"/>
+                                <locale group="quiqqer/gdpr" var="setting.checklist.google.title"/>
                             </title>
-                            <input conf="cookieconsent.checklist.google.dpa" type="checkbox">
+                            <input conf="gdpr.checklist.google.dpa" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.google.dpa.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.google.dpa.text"/>
                                 </text>
                                 <description>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.google.dpa.description"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.google.dpa.description"/>
                                 </description>
                             </input>
-                            <input conf="cookieconsent.checklist.google.analytics.ips" type="checkbox">
+                            <input conf="gdpr.checklist.google.analytics.ips" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.google.analytics.ips.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.google.analytics.ips.text"/>
                                 </text>
                             </input>
-                            <input conf="cookieconsent.checklist.google.analytics.gdpr" type="checkbox">
+                            <input conf="gdpr.checklist.google.analytics.gdpr" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.google.analytics.gdpr.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.google.analytics.gdpr.text"/>
                                 </text>
                             </input>
-                            <input conf="cookieconsent.checklist.google.analytics.duration" type="checkbox">
+                            <input conf="gdpr.checklist.google.analytics.duration" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.google.analytics.duration.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.google.analytics.duration.text"/>
                                 </text>
                             </input>
                         </settings>
 
                         <settings name="checklist.tools">
                             <title>
-                                <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.title"/>
+                                <locale group="quiqqer/gdpr" var="setting.checklist.tools.title"/>
                             </title>
-                            <input conf="cookieconsent.checklist.tools.socialmedia" type="checkbox">
+                            <input conf="gdpr.checklist.tools.socialmedia" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.socialmedia.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.tools.socialmedia.text"/>
                                 </text>
                                 <description>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.socialmedia.description"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.tools.socialmedia.description"/>
                                 </description>
                             </input>
-                            <input conf="cookieconsent.checklist.tools.calendars" type="checkbox">
+                            <input conf="gdpr.checklist.tools.calendars" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.calendars.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.tools.calendars.text"/>
                                 </text>
                             </input>
-                            <input conf="cookieconsent.checklist.tools.youtube" type="checkbox">
+                            <input conf="gdpr.checklist.tools.youtube" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.youtube.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.tools.youtube.text"/>
                                 </text>
                             </input>
-                            <input conf="cookieconsent.checklist.tools.newsletters" type="checkbox">
+                            <input conf="gdpr.checklist.tools.newsletters" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.newsletters.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.tools.newsletters.text"/>
                                 </text>
                             </input>
-                            <input conf="cookieconsent.checklist.tools.seals" type="checkbox">
+                            <input conf="gdpr.checklist.tools.seals" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.seals.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.tools.seals.text"/>
                                 </text>
                                 <description>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.seals.description"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.tools.seals.description"/>
                                 </description>
                             </input>
-                            <input conf="cookieconsent.checklist.tools.google.maps" type="checkbox">
+                            <input conf="gdpr.checklist.tools.google.maps" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.google.maps.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.tools.google.maps.text"/>
                                 </text>
 
                             </input>
-                            <input conf="cookieconsent.checklist.tools.google.recaptcha" type="checkbox">
+                            <input conf="gdpr.checklist.tools.google.recaptcha" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.google.recaptcha.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.tools.google.recaptcha.text"/>
                                 </text>
                             </input>
-                            <input conf="cookieconsent.checklist.tools.google.fonts" type="checkbox">
+                            <input conf="gdpr.checklist.tools.google.fonts" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.tools.google.fonts.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.tools.google.fonts.text"/>
                                 </text>
                             </input>
                         </settings>
 
                         <settings name="checklist.cookies">
                             <title>
-                                <locale group="quiqqer/cookieconsent" var="setting.checklist.cookies.title"/>
+                                <locale group="quiqqer/gdpr" var="setting.checklist.cookies.title"/>
                             </title>
-                            <input conf="cookieconsent.checklist.cookies.inform" type="checkbox">
+                            <input conf="gdpr.checklist.cookies.inform" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.cookies.inform.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.cookies.inform.text"/>
                                 </text>
                             </input>
-                            <input conf="cookieconsent.checklist.cookies.consent" type="checkbox">
+                            <input conf="gdpr.checklist.cookies.consent" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.cookies.consent.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.cookies.consent.text"/>
                                 </text>
                             </input>
-                            <input conf="cookieconsent.checklist.cookies.revoke" type="checkbox">
+                            <input conf="gdpr.checklist.cookies.revoke" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.cookies.revoke.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.cookies.revoke.text"/>
                                 </text>
                             </input>
                         </settings>
 
                         <settings name="checklist.privacypolicy">
                             <title>
-                                <locale group="quiqqer/cookieconsent" var="setting.checklist.privacypolicy.title"/>
+                                <locale group="quiqqer/gdpr" var="setting.checklist.privacypolicy.title"/>
                             </title>
-                            <input conf="cookieconsent.checklist.privacypolicy.added" type="checkbox">
+                            <input conf="gdpr.checklist.privacypolicy.added" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.privacypolicy.added.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.privacypolicy.added.text"/>
                                 </text>
                                 <description>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.privacypolicy.added.description"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.privacypolicy.added.description"/>
                                 </description>
                             </input>
-                            <input conf="cookieconsent.checklist.privacypolicy.verified" type="checkbox">
+                            <input conf="gdpr.checklist.privacypolicy.verified" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.privacypolicy.verified.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.privacypolicy.verified.text"/>
                                 </text>
                             </input>
-                            <input conf="cookieconsent.checklist.privacypolicy.accessible" type="checkbox">
+                            <input conf="gdpr.checklist.privacypolicy.accessible" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.privacypolicy.accessible.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.privacypolicy.accessible.text"/>
                                 </text>
                                 <description>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.privacypolicy.accessible.description"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.privacypolicy.accessible.description"/>
                                 </description>
                             </input>
                         </settings>
 
                         <settings name="checklist.imprint">
                             <title>
-                                <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.title"/>
+                                <locale group="quiqqer/gdpr" var="setting.checklist.imprint.title"/>
                             </title>
-                            <input conf="cookieconsent.checklist.imprint.name.provider" type="checkbox">
+                            <input conf="gdpr.checklist.imprint.name.provider" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.name.provider.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.imprint.name.provider.text"/>
                                 </text>
                                 <description>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.name.provider.description"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.imprint.name.provider.description"/>
                                 </description>
                             </input>
-                            <input conf="cookieconsent.checklist.imprint.name.company" type="checkbox">
+                            <input conf="gdpr.checklist.imprint.name.company" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.name.company.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.imprint.name.company.text"/>
                                 </text>
                                 <description>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.name.company.description"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.imprint.name.company.description"/>
                                 </description>
                             </input>
-                            <input conf="cookieconsent.checklist.imprint.address" type="checkbox">
+                            <input conf="gdpr.checklist.imprint.address" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.address.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.imprint.address.text"/>
                                 </text>
                             </input>
-                            <input conf="cookieconsent.checklist.imprint.contact" type="checkbox">
+                            <input conf="gdpr.checklist.imprint.contact" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.contact.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.imprint.contact.text"/>
                                 </text>
                                 <description>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.contact.description"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.imprint.contact.description"/>
                                 </description>
                             </input>
-                            <input conf="cookieconsent.checklist.imprint.register" type="checkbox">
+                            <input conf="gdpr.checklist.imprint.register" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.register.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.imprint.register.text"/>
                                 </text>
                                 <description>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.register.description"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.imprint.register.description"/>
                                 </description>
                             </input>
-                            <input conf="cookieconsent.checklist.imprint.vat" type="checkbox">
+                            <input conf="gdpr.checklist.imprint.vat" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.vat.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.imprint.vat.text"/>
                                 </text>
                                 <description>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.vat.description"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.imprint.vat.description"/>
                                 </description>
                             </input>
-                            <input conf="cookieconsent.checklist.imprint.supervisor" type="checkbox">
+                            <input conf="gdpr.checklist.imprint.supervisor" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.supervisor.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.imprint.supervisor.text"/>
                                 </text>
                                 <description>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.supervisor.description"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.imprint.supervisor.description"/>
                                 </description>
                             </input>
-                            <input conf="cookieconsent.checklist.imprint.chamber" type="checkbox">
+                            <input conf="gdpr.checklist.imprint.chamber" type="checkbox">
                                 <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.chamber.text"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.imprint.chamber.text"/>
                                 </text>
                                 <description>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.imprint.chamber.description"/>
+                                    <locale group="quiqqer/gdpr" var="setting.checklist.imprint.chamber.description"/>
                                 </description>
                             </input>
                         </settings>

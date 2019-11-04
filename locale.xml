@@ -109,6 +109,26 @@
             <en><![CDATA[Marketing]]></en>
         </locale>
         <!-- endregion -->
+
+        <!-- region bricks -->
+
+        <!-- region RevokeCookiesButton Brick -->
+        <locale name="brick.revoke.title">
+            <de><![CDATA[CookieConsent: Cookies Widerrufen Button]]></de>
+            <en><![CDATA[CookieConsent: Revoke Cookies Button]]></en>
+        </locale>
+        <locale name="brick.revoke.description">
+            <de><![CDATA[Zeigt eine Schaltfläche an, die die Cookie-Einstellungen eines Benutzers zurücksetzt.]]></de>
+            <en><![CDATA[Displays a button that revokes a user's cookie settings.]]></en>
+        </locale>
+
+        <locale name="control.revoke.button.text">
+            <de><![CDATA[Cookies Widerrufen]]></de>
+            <en><![CDATA[Revoke Cookies]]></en>
+        </locale>
+        <!-- endregion -->
+
+        <!-- endregion -->
     </groups>
 
     <groups name="quiqqer/cookieconsent" datatype="php">

@@ -60,12 +60,6 @@
                     <conf name="google.analytics.duration">
                         <type><![CDATA[boolean]]></type>
                     </conf>
-                    <conf name="google.cookie.opt.out">
-                        <type><![CDATA[boolean]]></type>
-                    </conf>
-                    <conf name="google.cookie.opt.in">
-                        <type><![CDATA[boolean]]></type>
-                    </conf>
                     <conf name="tools.socialmedia">
                         <type><![CDATA[boolean]]></type>
                     </conf>
@@ -312,19 +306,6 @@
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.google.analytics.duration.text"/>
                                 </text>
-                            </input>
-                            <input conf="cookieconsent.checklist.google.cookie.opt.out" type="checkbox">
-                                <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.google.cookie.opt.out.text"/>
-                                </text>
-                            </input>
-                            <input conf="cookieconsent.checklist.google.cookie.opt.in" type="checkbox">
-                                <text>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.google.cookie.opt.in.text"/>
-                                </text>
-                                <description>
-                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.google.cookie.opt.in.description"/>
-                                </description>
                             </input>
                         </settings>
 

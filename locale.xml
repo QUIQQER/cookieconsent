@@ -265,19 +265,6 @@
             <de><![CDATA[Analytics: Dauer der Datenspeicherung festlegen]]></de>
             <en><![CDATA[Analytics: Set duration of data storage]]></en>
         </locale>
-        <locale name="setting.checklist.google.cookie.opt.out.text">
-            <de><![CDATA[Cookie-Banner muss „Opt-out“ von Google Analytics gewährleisten]]></de>
-            <en><![CDATA[Cookie banner must ensure "opt-out" from Google Analytics]]></en>
-        </locale>
-        <locale name="setting.checklist.google.cookie.opt.in.text">
-            <de><![CDATA[Cookie-Banner muss "Opt-in" unterstützen]]></de>
-            <en><![CDATA[Cookie banner must support "opt-in"]]></en>
-        </locale>
-        <locale name="setting.checklist.google.cookie.opt.in.description">
-            <de html="1"><![CDATA[<br>Tracking erst aktivieren, wenn der User zugestimmt hat.]]></de>
-            <en html="1"><![CDATA[<br>Start tracking only after the user has agreed.]]></en>
-        </locale>
-        
         
         
         <locale name="setting.checklist.tools.title">

@@ -90,6 +90,9 @@
                     <conf name="cookies.consent">
                         <type><![CDATA[boolean]]></type>
                     </conf>
+                    <conf name="cookies.revoke">
+                        <type><![CDATA[boolean]]></type>
+                    </conf>
                     <conf name="privacypolicy.added">
                         <type><![CDATA[boolean]]></type>
                     </conf>
@@ -374,6 +377,11 @@
                             <input conf="cookieconsent.checklist.cookies.consent" type="checkbox">
                                 <text>
                                     <locale group="quiqqer/cookieconsent" var="setting.checklist.cookies.consent.text"/>
+                                </text>
+                            </input>
+                            <input conf="cookieconsent.checklist.cookies.revoke" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/cookieconsent" var="setting.checklist.cookies.revoke.text"/>
                                 </text>
                             </input>
                         </settings>

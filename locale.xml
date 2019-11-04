@@ -327,6 +327,10 @@
             <de><![CDATA[Zustimmung des Nutzer einholen]]></de>
             <en><![CDATA[Obtain the user's consent]]></en>
         </locale>
+        <locale name="setting.checklist.cookies.revoke.text">
+            <de><![CDATA[Baustein zum Cookies widerrufen auf der Seite eingebaut.]]></de>
+            <en><![CDATA[Added brick to revoke cookies to the site.]]></en>
+        </locale>
         
         <locale name="setting.checklist.privacypolicy.title">
             <de><![CDATA[Datenschutzerklärung]]></de>

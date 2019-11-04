@@ -225,4 +225,21 @@ class CookieManager extends QUI\Utils\Singleton
 
         return true;
     }
+
+    /**
+     * Revokes all of the user's cookie settings.
+     *
+     * @fires onCookiesRevoked
+     */
+    public static function revokeCookies()
+    {
+        QUI::getSession()->del(static::SESSION_KEY_ESSENTIAL_COOKIES_ACCEPTED);
+        QUI::getSession()->del(static::SESSION_KEY_ACCEPTED_COOKIES);
+
+        try {
+            QUI::getEvents()->fireEvent('cookiesRevoked');
+        } catch (QUI\Exception $Exception) {
+            QUI\System\Log::writeException($Exception);
+        }
+    }
 }

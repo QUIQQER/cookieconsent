@@ -61,6 +61,31 @@ define('package/quiqqer/cookieconsent/bin/classes/CookieManager', [
                     onError     : reject
                 });
             });
+        },
+
+        /**
+         * Revokes all of the user's cookie settings.
+         *
+         * Set the first parameter to true to reload the page afterwards.
+         *
+         * @fires 'onCookiesRevoked'
+         */
+        revokeCookies: function (reloadPage) {
+            var self = this;
+
+            if (reloadPage === undefined) {
+                reloadPage = false;
+            }
+
+            QUIAjax.post('package_quiqqer_cookieconsent_ajax_revokeCookies', function (result) {
+                self.fireEvent('cookiesRevoked');
+
+                if (reloadPage) {
+                    location.reload();
+                }
+            }, {
+                'package': 'quiqqer/cookieconsent'
+            });
         }
     });
 });

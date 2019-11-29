@@ -26,7 +26,7 @@
       "QUI\\CookieConsent\\": "src/QUI/CookieConsent"
     }
   },
-  "abandoned": "quiqqer/gdpr",
+  "abandoned": "true",
   "suggest": {
     "quiqqer/gdpr": "This package is deprecated/abandoned. To conform GDPR-guidelines you should use quiqqer/gdpr instead."
   }

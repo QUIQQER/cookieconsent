@@ -2,7 +2,7 @@
   "name": "quiqqer/cookieconsent",
   "type": "quiqqer-module",
   "description": "Deprecated - Replacement: quiqqer/gdpr. The Cookie Consent module integrates a cookies-notification concerning the EU-guideline for your QUIQQER-Website.",
-  "version": "dev-master",
+  "version": "1.5.1",
   "license": "GPL-3.0+",
   "authors": [
     {

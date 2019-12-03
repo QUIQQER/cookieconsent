@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <locales>
-    <groups name="quiqqer/cookieconsent" datatype="php,js">
+    <groups name="quiqqer/gdpr" datatype="php,js">
         <locale name="package.title">
-            <de><![CDATA[QUIQQER - Cookie Consent (Deprecated)]]></de>
-            <en><![CDATA[QUIQQER - Cookie Consent (Deprecated)]]></en>
+            <de><![CDATA[QUIQQER - Cookie Consent]]></de>
+            <en><![CDATA[QUIQQER - Cookie Consent]]></en>
         </locale>
         <locale name="package.description">
-            <de><![CDATA[Deprecated - Ersatz: quiqqer/gdpr. Das Cookie Consent Modul integriert einen Cookies-Hinweis zur EU-Richtlinie in Ihre QUIQQER-Webseite. Wenn eine Datenschutzbestimmungen angelegt wurde, wird auf diese automatisch verlinkt.]]></de>
-            <en><![CDATA[Deprecated - Replacement: quiqqer/gdpr. The Cookie Consent module integrates a cookies-notification concerning the EU-guideline for your QUIQQER-Website. If data protection specifications have been declared, those will be linked automatically. ]]></en>
+            <de>
+                <![CDATA[Das Cookie Consent Modul integriert einen Cookies-Hinweis zur EU-Richtlinie in Ihre QUIQQER-Webseite. Wenn eine Datenschutzbestimmungen angelegt wurde, wird auf diese automatisch verlinkt.]]></de>
+            <en>
+                <![CDATA[The Cookie Consent module integrates a cookies-notification concerning the EU-guideline for your QUIQQER-Website. If data protection specifications have been declared, those will be linked automatically. ]]></en>
         </locale>
 
         <locale name="text" html="true">
@@ -51,5 +53,400 @@
             <de><![CDATA[Von unten]]></de>
             <en><![CDATA[From bottom]]></en>
         </locale>
+        <locale name="settings.cookieconsent.position.popup">
+            <de><![CDATA[Pop-up]]></de>
+            <en><![CDATA[Pop-up]]></en>
+        </locale>
+
+        <!-- region Cookie-Class Related -->
+        <locale name="cookie.name">
+            <de><![CDATA[Name]]></de>
+            <en><![CDATA[Name]]></en>
+        </locale>
+
+        <locale name="cookie.origin">
+            <de><![CDATA[Herkunft]]></de>
+            <en><![CDATA[Origin]]></en>
+        </locale>
+
+        <locale name="cookie.purpose">
+            <de><![CDATA[Zweck]]></de>
+            <en><![CDATA[Purpose]]></en>
+        </locale>
+
+        <locale name="cookie.lifetime">
+            <de><![CDATA[Dauer]]></de>
+            <en><![CDATA[Duration]]></en>
+        </locale>
+
+        <locale name="cookie.lifetime.session">
+            <de><![CDATA[Sitzung]]></de>
+            <en><![CDATA[Session]]></en>
+        </locale>
+
+        <locale name="cookie.category">
+            <de><![CDATA[Kategorie]]></de>
+            <en><![CDATA[Category]]></en>
+        </locale>
+
+        <locale name="cookie.category.essential">
+            <de><![CDATA[Notwendig]]></de>
+            <en><![CDATA[Required]]></en>
+        </locale>
+
+        <locale name="cookie.category.preferences">
+            <de><![CDATA[Präferenzen]]></de>
+            <en><![CDATA[Preferences]]></en>
+        </locale>
+
+        <locale name="cookie.category.statistics">
+            <de><![CDATA[Statistiken]]></de>
+            <en><![CDATA[Statistics]]></en>
+        </locale>
+
+        <locale name="cookie.category.marketing">
+            <de><![CDATA[Marketing]]></de>
+            <en><![CDATA[Marketing]]></en>
+        </locale>
+        <!-- endregion -->
+
+        <!-- region bricks -->
+
+        <!-- region RevokeCookiesButton Brick -->
+        <locale name="brick.revoke.title">
+            <de><![CDATA[DSGVO: Cookies Widerrufen Button]]></de>
+            <en><![CDATA[GDPR: Revoke Cookies Button]]></en>
+        </locale>
+        <locale name="brick.revoke.description">
+            <de><![CDATA[Zeigt eine Schaltfläche an, die die Cookie-Einstellungen eines Benutzers zurücksetzt.]]></de>
+            <en><![CDATA[Displays a button that revokes a user's cookie settings.]]></en>
+        </locale>
+
+        <locale name="control.revoke.button.text">
+            <de><![CDATA[Cookies Widerrufen]]></de>
+            <en><![CDATA[Revoke Cookies]]></en>
+        </locale>
+        <!-- endregion -->
+
+        <!-- endregion -->
+    </groups>
+
+    <groups name="quiqqer/gdpr" datatype="php">
+        <locale name="setting.cookieconsent.blocksite.text">
+            <de><![CDATA[Verwendung der Seite blockieren]]></de>
+            <en><![CDATA[Block use of the page]]></en>
+        </locale>
+        <locale name="setting.cookieconsent.blocksite.description">
+            <de html="1"><![CDATA[<br>Verhindert, dass die Seite genutzt werden kann, bis der Benutzer seine Einwilligung erteilt.]]></de>
+            <en html="1"><![CDATA[<br>Prevents the site from being used until the user gives his or her consent.]]></en>
+        </locale>
+
+        <locale name="setting.text.label">
+            <de><![CDATA[Anzuzeigender Text]]></de>
+            <en><![CDATA[Text to display]]></en>
+        </locale>
+        <locale name="setting.text.default">
+            <de><![CDATA[Diese Website setzt Cookies ein. Einige von ihnen sind essenziell, während andere helfen die Webseite zu verbessern und wirtschaftlich zu betreiben. Nähere Hinweise zur Verwendung von Cookies auf dieser Website, finden sich in der Datenschutzerklärung.]]></de>
+            <en><![CDATA[This website uses cookies. Some of them are essential, while others help to improve the site and allow it to operate economically. Please refer to the Privacy Policy for more information on how cookies are used on this site.]]></en>
+        </locale>
+
+        <locale name="setting.buttontext.label">
+            <de><![CDATA[Button Text]]></de>
+            <en><![CDATA[Button Text]]></en>
+        </locale>
+        <locale name="setting.buttontext.default">
+            <de><![CDATA[Cookies akzeptieren]]></de>
+            <en><![CDATA[Accept Cookies]]></en>
+        </locale>
+
+        <locale name="setting.checklist.title">
+            <de><![CDATA[DSGVO-Checkliste]]></de>
+            <en><![CDATA[GDPR-Checklist]]></en>
+        </locale>
+        <locale name="setting.checklist.disclaimer.title">
+            <de><![CDATA[Haftungsausschluss]]></de>
+            <en><![CDATA[Disclaimer]]></en>
+        </locale>
+        <locale name="setting.checklist.disclaimer.read.text">
+            <de><![CDATA[Haftungsausschluss Gelesen]]></de>
+            <en><![CDATA[Disclaimer Read]]></en>
+        </locale>
+        <locale name="setting.checklist.disclaimer.read.description">
+            <de html="1"><![CDATA[<br>Der Autor dieser Zusammenstellung garantiert keine (rechtliche) Korrektheit der Angaben. Irrtümer und Unvollständigkeiten vorbehalten.<br>Sämtliche Rechtstexte (bspw. Impressum oder Datenschutzerklärung) sollten von einem Anwalt überprüft werden.]]></de>
+            <en html="1"><![CDATA[<br>The author of this list does not guarantee any (legal) correctness of the information. Errors and omissions may occur.<br>All legal texts (e.g. imprint or privacy declaration) should be checked by a lawyer.]]></en>
+        </locale>
+        <locale name="setting.checklist.contact.title">
+            <de><![CDATA[Kontaktformular]]></de>
+            <en><![CDATA[Contact form]]></en>
+        </locale>
+        <locale name="setting.checklist.contact.ssl.text">
+            <de><![CDATA[SSL-Zertifikat (HTTPS)]]></de>
+            <en><![CDATA[SSL Certificate (HTTPS)]]></en>
+        </locale>
+        <locale name="setting.checklist.contact.ssl.description">
+            <de><![CDATA[<br>Webseite verwendet httpS:// statt http://]]></de>
+            <en><![CDATA[<br>Website uses httpS:// instead of http://]]></en>
+        </locale>
+        <locale name="setting.checklist.contact.smtp.text">
+            <de><![CDATA[Emails über SMTP bzw. TLS versenden]]></de>
+            <en><![CDATA[Send emails via SMTP or TLS]]></en>
+        </locale>
+        <locale name="setting.checklist.contact.privacypolicy.text">
+            <de><![CDATA[Datenschutzerklärung eingebunden]]></de>
+            <en><![CDATA[Privacy policy integrated]]></en>
+        </locale>
+        <locale name="setting.checklist.contact.usage.text">
+            <de><![CDATA[Hinweis auf Verwendungszweck und Dauer der Speicherung der Daten]]></de>
+            <en><![CDATA[Indication of purpose and duration of data storage]]></en>
+        </locale>
+        <locale name="setting.checklist.contact.dpa.text">
+            <de><![CDATA[AV-Vertrag abgeschlossen]]></de>
+            <en><![CDATA[DPA signed]]></en>
+        </locale>
+        <locale name="setting.checklist.contact.dpa.description">
+            <de html="1"><![CDATA[<br>Mit den Anbietern der von dir verwendeten Online-Tools oder Plug-Ins, die personenbezogene Daten erheben, müssen AV-Verträge (Auftrags-Verarbeitungs-Verträge) abgeschlossen werden.]]></de>
+            <en html="1"><![CDATA[<br>DPAs (data processing agreements) must be concluded with the providers of online tools or plug-ins you use, which collect personal data.]]></en>
+        </locale>
+        
+        <locale name="setting.checklist.newsletter.title">
+            <de><![CDATA[Newsletter]]></de>
+            <en><![CDATA[Newsletter]]></en>
+        </locale>
+        <locale name="setting.checklist.newsletter.unsubscribe.text">
+            <de><![CDATA[Abmeldelink]]></de>
+            <en><![CDATA[Unsubscribe Link]]></en>
+        </locale>
+        <locale name="setting.checklist.newsletter.optin.text">
+            <de><![CDATA[Double-Opt-In]]></de>
+            <en><![CDATA[Double Opt-In]]></en>
+        </locale>
+        <locale name="setting.checklist.newsletter.dataProcessingDirectory.text">
+            <de><![CDATA[Anbieter des E-Mail-Marketing-Tools in dein Datenverarbeitungsverzeichnis eingetragen]]></de>
+            <en><![CDATA[Provider of the e-mail marketing tool added to your data processing directory]]></en>
+        </locale>
+        <locale name="setting.checklist.newsletter.dpa.text">
+            <de><![CDATA[AV-Vertrag abgeschlossen]]></de>
+            <en><![CDATA[DPA signed]]></en>
+        </locale>
+        <locale name="setting.checklist.newsletter.dpa.description">
+            <de html="1"><![CDATA[<br>Mit den Anbietern der von dir verwendeten Online-Tools oder Plug-Ins, die personenbezogene Daten erheben, müssen AV-Verträge (Auftrags-Verarbeitungs-Verträge) abgeschlossen werden.]]></de>
+            <en html="1"><![CDATA[<br>DPAs (data processing agreements) must be concluded with the providers of online tools or plug-ins]]></en>
+        </locale>
+        <locale name="setting.checklist.newsletter.coupling.text">
+            <de><![CDATA[Kopplungsverbot]]></de>
+            <en><![CDATA[Prohibition of Coupling]]></en>
+        </locale>
+        <locale name="setting.checklist.newsletter.coupling.description">
+            <de html="1"><![CDATA[<br>Du kannst kein kostenloses E-Book oder ein anderes Freebie mehr mit der Newsletter-Anmeldung verknüpfen. Das bedeutet, wenn sich jemand für den Erhalt des Freebies registriert, dürfen die gesammelten Daten nur für die Übermittlung des Freebies verwendet werden. Du darfst keine Newsletter oder andere E-Mails an diese Adressen senden.]]></de>
+            <en html="1"><![CDATA[<br>You can no longer tie a free e-book or other freebie to your newsletter subscription. This means that if someone registers to receive the freebie, the collected data may only be used for the transmission of the freebie. You may not send newsletters or other e-mails to these addresses.]]></en>
+        </locale>
+        
+        <locale name="setting.checklist.google.title">
+            <de><![CDATA[Google Tools]]></de>
+            <en><![CDATA[Google Tools]]></en>
+        </locale>
+        <locale name="setting.checklist.google.dpa.text">
+            <de><![CDATA[AV-Vertrag abgeschlossen]]></de>
+            <en><![CDATA[DPA signed]]></en>
+        </locale>
+        <locale name="setting.checklist.google.dpa.description">
+            <de html="1"><![CDATA[<br>Mit den Anbietern der von dir verwendeten Online-Tools oder Plug-Ins, die personenbezogene Daten erheben, müssen AV-Verträge (Auftrags-Verarbeitungs-Verträge) abgeschlossen werden.]]></de>
+            <en html="1"><![CDATA[<br>DPAs (data processing agreements) must be concluded with the providers of online tools or plug-ins]]></en>
+        </locale>
+        <locale name="setting.checklist.google.analytics.ips.text">
+            <de><![CDATA[Analytics: Code IP-Adresse anonymisieren]]></de>
+            <en><![CDATA[Analytics Code: Anonymize IP address]]></en>
+        </locale>
+        <locale name="setting.checklist.google.analytics.gdpr.text">
+            <de><![CDATA[Analytics: DSGVO-Vertrag unterzeichnen]]></de>
+            <en><![CDATA[Analytics: GDPR contract signed]]></en>
+        </locale>
+        <locale name="setting.checklist.google.analytics.duration.text">
+            <de><![CDATA[Analytics: Dauer der Datenspeicherung festlegen]]></de>
+            <en><![CDATA[Analytics: Set duration of data storage]]></en>
+        </locale>
+        
+        
+        <locale name="setting.checklist.tools.title">
+            <de><![CDATA[Externe Tools DSGVO-konform eingebunden]]></de>
+            <en><![CDATA[GDPR-compliant integration of external tools]]></en>
+        </locale>
+        <locale name="setting.checklist.tools.socialmedia.text">
+            <de><![CDATA[Social Media Plugins]]></de>
+            <en><![CDATA[Social Media Plugins]]></en>
+        </locale>
+        <locale name="setting.checklist.tools.socialmedia.description">
+            <de html="1"><![CDATA[<br>(z.B. Facebook, Twitter)]]></de>
+            <en html="1"><![CDATA[<br>(e.g. Facebook, Twitter)]]></en>
+        </locale>
+        <locale name="setting.checklist.tools.calendars.text">
+            <de><![CDATA[Externe Kalender]]></de>
+            <en><![CDATA[External Calendars]]></en>
+        </locale>
+        <locale name="setting.checklist.tools.youtube.text">
+            <de><![CDATA[YouTube-Videos]]></de>
+            <en><![CDATA[YouTube videos]]></en>
+        </locale>
+        <locale name="setting.checklist.tools.newsletters.text">
+            <de><![CDATA[Newsletter-Tools]]></de>
+            <en><![CDATA[Newsletter tools]]></en>
+        </locale>
+        <locale name="setting.checklist.tools.seals.text">
+            <de><![CDATA[Produktsiegel]]></de>
+            <en><![CDATA[Product Seals]]></en>
+        </locale>
+        <locale name="setting.checklist.tools.seals.description">
+            <de html="1"><![CDATA[<br>(z.B: TrustedShop)]]></de>
+            <en html="1"><![CDATA[<br>(e.g. TrustedShop)]]></en>
+        </locale>
+        <locale name="setting.checklist.tools.google.maps.text">
+            <de><![CDATA[Google Maps]]></de>
+            <en><![CDATA[Google Maps]]></en>
+        </locale>
+        <locale name="setting.checklist.tools.google.recaptcha.text">
+            <de><![CDATA[Google ReCaptcha]]></de>
+            <en><![CDATA[Google ReCaptcha]]></en>
+        </locale>
+        <locale name="setting.checklist.tools.google.fonts.text">
+            <de><![CDATA[Google Schriftarten (Fonts)]]></de>
+            <en><![CDATA[Google Fonts]]></en>
+        </locale>
+        
+        
+        
+        
+        <locale name="setting.checklist.cookies.title">
+            <de><![CDATA[Cookie Banner]]></de>
+            <en><![CDATA[Cookie Banner]]></en>
+        </locale>
+        <locale name="setting.checklist.cookies.inform.text">
+            <de><![CDATA[Auf Cookies hinweisen]]></de>
+            <en><![CDATA[Inform about cookies]]></en>
+        </locale>
+        <locale name="setting.checklist.cookies.consent.text">
+            <de><![CDATA[Zustimmung des Nutzer einholen]]></de>
+            <en><![CDATA[Obtain the user's consent]]></en>
+        </locale>
+        <locale name="setting.checklist.cookies.revoke.text">
+            <de><![CDATA[Baustein zum Cookies widerrufen auf der Seite eingebaut.]]></de>
+            <en><![CDATA[Added brick to revoke cookies to the site.]]></en>
+        </locale>
+        
+        <locale name="setting.checklist.privacypolicy.title">
+            <de><![CDATA[Datenschutzerklärung]]></de>
+            <en><![CDATA[Privacy Policy]]></en>
+        </locale>
+        <locale name="setting.checklist.privacypolicy.added.text">
+            <de><![CDATA[Datenschutzerklärung erstellt]]></de>
+            <en><![CDATA[Privacy policy added]]></en>
+        </locale>
+        <locale name="setting.checklist.privacypolicy.added.description">
+            <de html="1"><![CDATA[<br>Generator für DSGVO-konforme Muster-Datenschutzerklärung: https://datenschutz-generator.de/datenschutzerklaerung/]]></de>
+            <en html="1"><![CDATA[<br>Generator for GDPR-compliant privacy policies: https://www.gdprprivacynotice.com/]]></en>
+        </locale>
+        <locale name="setting.checklist.privacypolicy.verified.text">
+            <de><![CDATA[Von einem Anwalt überprüft]]></de>
+            <en><![CDATA[Verified by a lawyer]]></en>
+        </locale>
+        <locale name="setting.checklist.privacypolicy.accessible.text">
+            <de><![CDATA[Leicht zugänglich gemacht]]></de>
+            <en><![CDATA[Easily accessible]]></en>
+        </locale>
+        <locale name="setting.checklist.privacypolicy.accessible.description">
+            <de html="1"><![CDATA[<br>Zum Aufruf der DSGVO darf der Nutzer maximal 2 Klicks benötigen]]></de>
+            <en html="1"><![CDATA[<br>The user may require a maximum of 2 clicks to see the privacy policy.]]></en>
+        </locale>
+        
+        <locale name="setting.checklist.imprint.title">
+            <de><![CDATA[Impressum]]></de>
+            <en><![CDATA[Imprint]]></en>
+        </locale>
+        <locale name="setting.checklist.imprint.name.provider.text">
+            <de><![CDATA[Vollständiger Name des Dienstanbieters]]></de>
+            <en><![CDATA[Full name of service provider]]></en>
+        </locale>
+        <locale name="setting.checklist.imprint.name.provider.description">
+            <de html="1"><![CDATA[<br>Ausgeschriebener Vor- und Zuname]]></de>
+            <en html="1"><![CDATA[<br>Full name and surname]]></en>
+        </locale>
+        <locale name="setting.checklist.imprint.name.company.text">
+            <de><![CDATA[Name der Gesellschaft mit Vertretungsberechtigten]]></de>
+            <en><![CDATA[Name of the company with authorised representatives]]></en>
+        </locale>
+        <locale name="setting.checklist.imprint.name.company.description">
+            <de html="1"><![CDATA[<br>Nur falls vorhanden; in der Regel ist das der Geschäftsführer mit ausgeschriebenem Vor- und Zunamen]]></de>
+            <en html="1"><![CDATA[<br>Only if applicable; usually this is the managing director with first name and surname]]></en>
+        </locale>
+        <locale name="setting.checklist.imprint.address.text">
+            <de><![CDATA[Vollständige Anschrift]]></de>
+            <en><![CDATA[Full address]]></en>
+        </locale>
+        <locale name="setting.checklist.imprint.contact.text">
+            <de><![CDATA[Unmittelbare Kontaktdaten]]></de>
+            <en><![CDATA[Immediate contact details]]></en>
+        </locale>
+        <locale name="setting.checklist.imprint.contact.description">
+            <de html="1"><![CDATA[<br>Telefonnummer, E-Mail-Adresse, Fax]]></de>
+            <en html="1"><![CDATA[<br>Telephone number, e-mail address, fax]]></en>
+        </locale>
+        <locale name="setting.checklist.imprint.register.text">
+            <de><![CDATA[Handelsregister, Registergericht]]></de>
+            <en><![CDATA[Commercial register, register court]]></en>
+        </locale>
+        <locale name="setting.checklist.imprint.register.description">
+            <de html="1"><![CDATA[<br>Nur falls vorhanden]]></de>
+            <en html="1"><![CDATA[<br>Only if applicable]]></en>
+        </locale>
+        <locale name="setting.checklist.imprint.vat.text">
+            <de><![CDATA[Ust-ID]]></de>
+            <en><![CDATA[VAT ID]]></en>
+        </locale>
+        <locale name="setting.checklist.imprint.vat.description">
+            <de html="1"><![CDATA[<br>Nur falls vorhanden]]></de>
+            <en html="1"><![CDATA[<br>Only if applicable]]></en>
+        </locale>
+        <locale name="setting.checklist.imprint.supervisor.text">
+            <de><![CDATA[Aufsichtsbehörde samt Anschrift]]></de>
+            <en><![CDATA[Supervisory authority, including address]]></en>
+        </locale>
+        <locale name="setting.checklist.imprint.supervisor.description">
+            <de html="1"><![CDATA[<br>Nur falls behördliche Zulassung erforderlich ist]]></de>
+            <en html="1"><![CDATA[<br>Only if official approval is required]]></en>
+        </locale>
+        <locale name="setting.checklist.imprint.chamber.text">
+            <de><![CDATA[Zuständige Kammer, Berufsbezeichnung, Links zu berufsrechtlichen Regelungen]]></de>
+            <en><![CDATA[Competent chamber, job title, links to professional regulations]]></en>
+        </locale>
+        <locale name="setting.checklist.imprint.chamber.description">
+            <de html="1"><![CDATA[<br>Nur bei reglementierten Berufen (betrifft u. a. Rechtsanwälte, Steuerberater, Berufe aus dem Gesundheitswesen)]]></de>
+            <en html="1"><![CDATA[<br>Only for regulated professions (including lawyers, tax consultants, healthcare professionals, etc.)]]></en>
+        </locale>
+
+        <!-- region QUIQQER Cookie Data -->
+        <locale name="cookie.quiqqer.purpose">
+            <de><![CDATA[Eindeutige ID, die die Sitzung des Benutzers identifiziert.]]></de>
+            <en><![CDATA[Unique ID that identifies the user's session.]]></en>
+        </locale>
+        <!-- endregion -->
+
+        <!-- region Cookie Consent Banner -->
+        <locale name="cookie.banner.text.privacy">
+            <de><![CDATA[Datenschutzerklärung]]></de>
+            <en><![CDATA[Privacy Policy]]></en>
+        </locale>
+        <locale name="cookie.banner.text.imprint">
+            <de><![CDATA[Impressum]]></de>
+            <en><![CDATA[Imprint]]></en>
+        </locale>
+
+        <locale name="cookie.banner.info.button">
+            <de><![CDATA[Informationen zu den eingesetzten Cookies]]></de>
+            <en><![CDATA[Information about the used cookies]]></en>
+        </locale>
+        <locale name="cookie.banner.info.title">
+            <de><![CDATA[Verwendete Cookies:]]></de>
+            <en><![CDATA[Used Cookies:]]></en>
+        </locale>
+        <!-- endregion -->
     </groups>
 </locales>

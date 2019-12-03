@@ -2,4 +2,6 @@
 <events>
     <event on="onTemplateSiteFetch" fire="\QUI\CookieConsent\EventHandler::onTemplateSiteFetch"/>
     <event on="onTemplateGetHeader" fire="\QUI\CookieConsent\EventHandler::onTemplateGetHeader"/>
+
+    <event on="onPackageSetup" fire="\QUI\CookieConsent\EventHandler::onPackageSetup"/>
 </events>

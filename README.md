@@ -1,7 +1,10 @@
 ![Cookie Consent](bin/images/Readme.jpg)
 
-Cookie Consent
-========
+-----
+
+### This module is deprecated. To comply with moden GDPR-guidelines you should use `quiqqer/gdpr` 
+
+-----
 
 The Cookie Consent module integrates a cookies-notification concerning the EU-guideline for your QUIQQER-Website. 
 If data protection specifications have been declared, those will be linked automatically. 

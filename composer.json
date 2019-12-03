@@ -1,7 +1,7 @@
 {
   "name": "quiqqer/cookieconsent",
   "type": "quiqqer-module",
-  "description": "Deprecated - Replacement: quiqqer/gdpr. The Cookie Consent module integrates a cookies-notification concerning the EU-guideline for your QUIQQER-Website.",
+  "description": "The Cookie Consent module integrates a cookies-notification concerning the EU-guideline for your QUIQQER-Website. If data protection specifications have been declared, those will be linked automatically.",
   "version": "dev-dev",
   "license": "GPL-3.0+",
   "authors": [
@@ -25,9 +25,5 @@
     "psr-4": {
       "QUI\\CookieConsent\\": "src/QUI/CookieConsent"
     }
-  },
-  "abandoned": "quiqqer/gdpr",
-  "suggest": {
-    "quiqqer/gdpr": "This package is deprecated/abandoned. To conform GDPR-guidelines you should use quiqqer/gdpr instead."
   }
 }

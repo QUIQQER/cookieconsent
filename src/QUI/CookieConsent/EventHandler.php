@@ -75,17 +75,4 @@ class EventHandler
             '<link rel="preload" as="style" href="'.URL_OPT_DIR.'quiqqer/cookieconsent/bin/CookieConsent.css?update='.$lastUpdate.'">'
         );
     }
-
-
-    public static function onPackageSetup(QUI\Package\Package $Package)
-    {
-        if ($Package->getName() != 'quiqqer/cookieconsent') {
-            return;
-        }
-
-        QUI\System\Log::write(
-            'The module "quiqqer/cookieconsent" is deprecated/abandoned. To comply with modern GDPR-guidelines you should use "quiqqer/gdpr" instead.',
-            QUI\System\Log::LEVEL_NOTICE
-        );
-    }
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiqqer>
+    <bricks>
+        <brick control="\QUI\GDPR\Controls\RevokeCookiesButton">
+            <title>
+                <locale group="quiqqer/gdpr" var="brick.revoke.title"/>
+            </title>
+            <description>
+                <locale group="quiqqer/gdpr" var="brick.revoke.description"/>
+            </description>
+        </brick>
+    </bricks>
+</quiqqer>

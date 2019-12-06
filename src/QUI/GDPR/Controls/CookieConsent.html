@@ -6,7 +6,7 @@
         {{$Control::getText($Project)}}
         <div id="quiqqer-cookieconsent-urls">
             {if $privacyUrl}
-            <a href="{{$privacyUrl}}">{locale group="quiqqer/cookieconsent" var="cookie.banner.text.privacy"}</a>
+            <a href="{{$privacyUrl}}">{locale group="quiqqer/gdpr" var="cookie.banner.text.privacy"}</a>
             {/if}
 
             {if $privacyUrl && $imprintUrl}
@@ -15,7 +15,7 @@
 
 
             {if $imprintUrl}
-            <a href="{{$imprintUrl}}">{locale group="quiqqer/cookieconsent" var="cookie.banner.text.imprint"}</a>
+            <a href="{{$imprintUrl}}">{locale group="quiqqer/gdpr" var="cookie.banner.text.imprint"}</a>
             {/if}
         </div>
     </div>
@@ -34,7 +34,7 @@
                        {{/if}}
                 >
                 <label for="quiqqer-cookieconsent-category-{{$categoryName}}">
-                    {locale group="quiqqer/cookieconsent" var="cookie.category.$categoryName"}
+                    {locale group="quiqqer/gdpr" var="cookie.category.$categoryName"}
                 </label>
                 {{/foreach}}
             </fieldset>
@@ -44,29 +44,29 @@
             </button>
         </form>
         <a id="quiqqer-cookieconsent-toggle-info">
-            {locale group="quiqqer/cookieconsent" var="cookie.banner.info.button"}
+            {locale group="quiqqer/gdpr" var="cookie.banner.info.button"}
         </a>
     </div>
 
     <div id="quiqqer-cookieconsent-details" class="hidden">
         <table>
-            <caption>{locale group="quiqqer/cookieconsent" var="cookie.banner.info.title"}</caption>
+            <caption>{locale group="quiqqer/gdpr" var="cookie.banner.info.title"}</caption>
             <thead>
                 <tr>
                     <th>
-                        {locale group="quiqqer/cookieconsent" var="cookie.name"}
+                        {locale group="quiqqer/gdpr" var="cookie.name"}
                     </th>
                     <th>
-                        {locale group="quiqqer/cookieconsent" var="cookie.category"}
+                        {locale group="quiqqer/gdpr" var="cookie.category"}
                     </th>
                     <th>
-                        {locale group="quiqqer/cookieconsent" var="cookie.origin"}
+                        {locale group="quiqqer/gdpr" var="cookie.origin"}
                     </th>
                     <th>
-                        {locale group="quiqqer/cookieconsent" var="cookie.purpose"}
+                        {locale group="quiqqer/gdpr" var="cookie.purpose"}
                     </th>
                     <th>
-                        {locale group="quiqqer/cookieconsent" var="cookie.lifetime"}
+                        {locale group="quiqqer/gdpr" var="cookie.lifetime"}
                     </th>
                 </tr>
             </thead>
@@ -75,7 +75,7 @@
                     {{foreach $Cookies as $Cookie}}
                         <tr>
                             <td>{{$Cookie->getName()}}</td>
-                            <td>{locale group="quiqqer/cookieconsent" var="cookie.category.$cookieCategory"}</td>
+                            <td>{locale group="quiqqer/gdpr" var="cookie.category.$cookieCategory"}</td>
                             <td>{{$Cookie->getOrigin()}}</td>
                             <td>{{$Cookie->getPurpose()}}</td>
                             <td>{{$Cookie->getLifetime()}}</td>

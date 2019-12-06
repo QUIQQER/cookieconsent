@@ -1,0 +1,33 @@
+<form id="quiqqer-cookie-edit-dialog-content">
+    <input type="hidden" value="{{data.id}}" id="quiqqer-cookie-edit-dialog-id"/>
+
+    <div>
+        <label for="quiqqer-cookie-edit-dialog-name">{{nameLabel}}</label>
+        <input type="text" value="{{data.name}}" id="quiqqer-cookie-edit-dialog-name" required/>
+    </div>
+
+    <div>
+        <label for="quiqqer-cookie-edit-dialog-origin">{{originLabel}}</label>
+        <input type="text" value="{{data.origin}}" id="quiqqer-cookie-edit-dialog-origin" required/>
+    </div>
+
+    <div>
+        <label for="quiqqer-cookie-edit-dialog-purpose">{{purposeLabel}}</label>
+        <input type="text" value="{{data.purpose}}" id="quiqqer-cookie-edit-dialog-purpose" required/>
+    </div>
+
+    <div>
+        <label for="quiqqer-cookie-edit-dialog-lifetime">{{lifetimeLabel}}</label>
+        <input type="text" value="{{data.lifetime}}" id="quiqqer-cookie-edit-dialog-lifetime" required/>
+    </div>
+
+    <div>
+        <label for="quiqqer-cookie-edit-dialog-category">{{categoryLabel}}</label>
+        <select id="quiqqer-cookie-edit-dialog-category" required>
+            <option value="essential">{{category.essential}}</option>
+            <option value="preferences">{{category.preferences}}</option>
+            <option value="statistics">{{category.statistics}}</option>
+            <option value="marketing">{{category.marketing}}</option>
+        </select>
+    </div>
+</form>

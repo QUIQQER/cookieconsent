@@ -250,4 +250,54 @@ class CookieManager extends QUI\Utils\Singleton
             QUI\System\Log::writeException($Exception);
         }
     }
+
+
+    /**
+     * Returns the name of the table used to store the given project's manually added cookies.
+     *
+     * @param QUI\Projects\Project $Project
+     *
+     * @return string
+     */
+    public static function getManualCookiesTableName(QUI\Projects\Project $Project)
+    {
+        return QUI::getDBProjectTableName('cookies', $Project, false);
+    }
+
+
+    /**
+     * Edits a manually added cookie with the given data.
+     * If no or an unused cookie-id is given, a new cookie with the given data is added.
+     *
+     * @param                      $data
+     * @param QUI\Projects\Project $Project
+     *
+     * @return \PDOStatement
+     * @throws QUI\Database\Exception
+     */
+    public static function editManualCookie($data, QUI\Projects\Project $Project)
+    {
+        return QUI::getDataBase()->replace(
+            self::getManualCookiesTableName($Project),
+            $data
+        );
+    }
+
+
+    /**
+     * Deletes the manually added cookie with the given ID from the given project.
+     *
+     * @param                      $id
+     * @param QUI\Projects\Project $Project
+     *
+     * @return \PDOStatement
+     * @throws QUI\Database\Exception
+     */
+    public static function deleteManualCookie($id, QUI\Projects\Project $Project)
+    {
+        return QUI::getDataBase()->delete(
+            self::getManualCookiesTableName($Project),
+            ['id' => $id]
+        );
+    }
 }

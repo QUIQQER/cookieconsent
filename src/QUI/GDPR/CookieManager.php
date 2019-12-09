@@ -105,6 +105,8 @@ class CookieManager extends QUI\Utils\Singleton
             }
         }
 
+        $this->registeredCookies->merge($this->getManualCookies(QUI::getRewrite()->getProject()));
+
         return $this->registeredCookies;
     }
 
@@ -299,5 +301,39 @@ class CookieManager extends QUI\Utils\Singleton
             self::getManualCookiesTableName($Project),
             ['id' => $id]
         );
+    }
+
+
+    /**
+     * Returns a collection of all manual cookies in the given project.
+     *
+     * @param QUI\Projects\Project $Project
+     *
+     * @return CookieCollection
+     *
+     * @throws QUI\Database\Exception
+     */
+    protected static function getManualCookies(QUI\Projects\Project $Project): CookieCollection
+    {
+        $cookieTable = self::getManualCookiesTableName($Project);
+
+        $result = QUI::getDataBase()->fetch([
+            'from' => $cookieTable
+        ]);
+
+        $CookieCollection = new CookieCollection();
+
+        foreach ($result as $cookieData) {
+            $CookieCollection->append(new QUI\GDPR\Cookies\ManualCookie(
+                $cookieData['id'],
+                $cookieData['name'],
+                $cookieData['origin'],
+                $cookieData['purpose'],
+                $cookieData['lifetime'],
+                $cookieData['category']
+            ));
+        }
+
+        return $CookieCollection;
     }
 }

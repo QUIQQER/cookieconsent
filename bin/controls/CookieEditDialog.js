@@ -56,11 +56,11 @@ define('package/quiqqer/gdpr/bin/controls/CookieEditDialog', [
 
             Content.set('html', Mustache.render(template, {
                 data         : data,
-                nameLabel    : QUILocale.get(lg, 'dialog.edit.name.label'),
-                originLabel  : QUILocale.get(lg, 'dialog.edit.origin.label'),
-                purposeLabel : QUILocale.get(lg, 'dialog.edit.purpose.label'),
-                lifetimeLabel: QUILocale.get(lg, 'dialog.edit.lifetime.label'),
-                categoryLabel: QUILocale.get(lg, 'dialog.edit.category.label'),
+                nameLabel    : QUILocale.get(lg, 'cookie.name'),
+                originLabel  : QUILocale.get(lg, 'cookie.origin'),
+                purposeLabel : QUILocale.get(lg, 'cookie.purpose'),
+                lifetimeLabel: QUILocale.get(lg, 'cookie.lifetime'),
+                categoryLabel: QUILocale.get(lg, 'cookie.category'),
                 category     : {
                     essential  : QUILocale.get(lg, 'cookie.category.essential'),
                     preferences: QUILocale.get(lg, 'cookie.category.preferences'),

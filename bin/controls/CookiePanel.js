@@ -49,7 +49,7 @@ define('package/quiqqer/gdpr/bin/controls/CookiePanel', [
         initialize: function (options) {
             this.setAttributes({
                 icon : 'fa fa-circle',
-                title: QUILocale.get(lg, 'panel.eventdata.title')
+                title: QUILocale.get(lg, 'panel.title')
             });
 
             this.parent(options);
@@ -71,7 +71,7 @@ define('package/quiqqer/gdpr/bin/controls/CookiePanel', [
 
             this.addButton({
                 name     : 'cookie-add',
-                text     : QUILocale.get(lg, 'panel.eventdata.button.data.edit'),
+                text     : QUILocale.get(lg, 'panel.button.add'),
                 textimage: 'fa fa-plus',
                 disabled : false,
                 events   : {
@@ -83,7 +83,7 @@ define('package/quiqqer/gdpr/bin/controls/CookiePanel', [
 
             this.addButton({
                 name     : 'cookie-edit',
-                text     : QUILocale.get(lg, 'panel.eventdata.button.data.edit'),
+                text     : QUILocale.get(lg, 'panel.button.edit'),
                 textimage: 'fa fa-pencil',
                 disabled : true,
                 events   : {
@@ -93,7 +93,7 @@ define('package/quiqqer/gdpr/bin/controls/CookiePanel', [
 
             this.addButton({
                 name     : 'cookie-delete',
-                text     : QUILocale.get(lg, 'panel.eventdata.button.data.delete'),
+                text     : QUILocale.get(lg, 'panel.button.delete'),
                 textimage: 'fa fa-trash',
                 disabled : true,
                 events   : {
@@ -115,27 +115,27 @@ define('package/quiqqer/gdpr/bin/controls/CookiePanel', [
                         dataType : 'integer',
                         hidden   : true
                     }, {
-                        header   : QUILocale.get(lg, 'panel.eventdata.grid.header.name'),
+                        header   : QUILocale.get(lg, 'cookie.name'),
                         dataIndex: 'name',
                         dataType : 'string',
                         width    : 150
                     }, {
-                        header   : QUILocale.get(lg, 'panel.eventdata.grid.header.origin'),
+                        header   : QUILocale.get(lg, 'cookie.origin'),
                         dataIndex: 'origin',
                         dataType : 'string',
                         width    : 150
                     }, {
-                        header   : QUILocale.get(lg, 'panel.eventdata.grid.header.purpose'),
+                        header   : QUILocale.get(lg, 'cookie.purpose'),
                         dataIndex: 'purpose',
                         dataType : 'string',
                         width    : 300
                     }, {
-                        header   : QUILocale.get(lg, 'panel.eventdata.grid.header.lifetime'),
+                        header   : QUILocale.get(lg, 'cookie.lifetime'),
                         dataIndex: 'lifetime',
                         dataType : 'string',
                         width    : 100
                     }, {
-                        header   : QUILocale.get(lg, 'panel.eventdata.grid.header.category'),
+                        header   : QUILocale.get(lg, 'cookie.category'),
                         dataIndex: 'category',
                         dataType : 'string',
                         width    : 100
@@ -245,8 +245,7 @@ define('package/quiqqer/gdpr/bin/controls/CookiePanel', [
                 data = this.$Grid.getSelectedData()[0];
 
             new CookieEditDialog({
-                // TODO: Add title
-                title : 'TODO: Add title',
+                title : QUILocale.get(lg, 'dialog.edit.title'),
                 data  : data,
                 events: {
                     'onSubmit': function (Dialog) {
@@ -268,8 +267,7 @@ define('package/quiqqer/gdpr/bin/controls/CookiePanel', [
             var self = this;
 
             new CookieEditDialog({
-                // TODO: Add title
-                title : 'TODO: Add title',
+                title : QUILocale.get(lg, 'dialog.add.title'),
                 events: {
                     'onSubmit': function (Dialog) {
                         if (!Dialog.reportValidity()) {

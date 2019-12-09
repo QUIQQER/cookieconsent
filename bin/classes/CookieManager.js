@@ -42,10 +42,11 @@ define('package/quiqqer/gdpr/bin/classes/CookieManager', [
          * Checks if the cookie with the given name was accepted.
          * Returns a promise, which resolves with a boolean containing the result.
          *
-         * The cookie name should be the name of the cookie's PHP-class.
+         * The cookie name should be the name of the cookie's PHP-class or the cookie's ID for manual cookies.
          * Keep in mind that you need to escape backslashes (see the valid example below)!
          *
          * @example isCookieAccepted('QUI\\GDPR\\Cookies\\QuiqqerSessionCookie')
+         * @example isCookieAccepted(12)
          *
          * @param {string} cookieName
          *

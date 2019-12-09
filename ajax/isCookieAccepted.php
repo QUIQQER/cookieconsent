@@ -3,6 +3,14 @@
 QUI::$Ajax->registerFunction(
     'package_quiqqer_gdpr_ajax_isCookieAccepted',
     function ($cookieName) {
+        // Manual cookie
+        if (\is_numeric($cookieName)) {
+            $cookieId    = (int)$cookieName;
+            $CookieToCheck = new \QUI\GDPR\Cookies\ManualCookie($cookieId, '', '', '', '', '');
+
+            return \QUI\GDPR\CookieManager::isCookieAcceptedInSession($CookieToCheck);
+        }
+
         if (!class_exists($cookieName)) {
             return false;
         }

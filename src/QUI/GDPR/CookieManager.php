@@ -161,6 +161,22 @@ class CookieManager extends QUI\Utils\Singleton
     {
         $AcceptedCookies = static::getAcceptedCookiesForSession();
 
+        // If we check for manual cookies, we have to check for the ID since the class names are anonymous
+        if ($Cookie instanceof QUI\GDPR\Cookies\ManualCookie) {
+            // Filter all cookies which don't have the given cookie's ID
+            $FilteredCookies = $AcceptedCookies->filter(function ($AcceptedCookie) use ($Cookie) {
+                // If the accepted cookie isn't a manual cookie, it's filtered
+                if (!($AcceptedCookie instanceof QUI\GDPR\Cookies\ManualCookie)) {
+                    return false;
+                }
+
+                /** @var QUI\GDPR\Cookies\ManualCookie $AcceptedCookie */
+                return $AcceptedCookie->getId() === $Cookie->getId();
+            });
+
+            return $FilteredCookies->length() > 0;
+        }
+
         return $AcceptedCookies->contains($Cookie);
     }
 

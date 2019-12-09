@@ -448,6 +448,12 @@
             <en><![CDATA[Used Cookies:]]></en>
         </locale>
         <!-- endregion -->
+
+
+        <locale name="menu.text">
+            <de><![CDATA[Cookie Verwaltung]]></de>
+            <en><![CDATA[Cookie Management]]></en>
+        </locale>
     </groups>
 
     <groups name="quiqqer/gdpr" datatype="js">

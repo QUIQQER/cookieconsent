@@ -2,7 +2,7 @@
 <menu>
     <item parent="/extras/"
           name="cookie"
-          icon="fa fa-circle"
+          icon="fa fa-bullseye"
           require="package/quiqqer/gdpr/bin/controls/CookiePanel"
     >
         <locale group="quiqqer/gdpr" var="menu.text"/>

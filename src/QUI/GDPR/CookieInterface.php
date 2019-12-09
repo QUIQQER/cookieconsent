@@ -20,7 +20,7 @@ interface CookieInterface
      *
      * @example "session_cookie"
      */
-    public static function getName(): string;
+    public function getName(): string;
 
 
     /**
@@ -30,7 +30,7 @@ interface CookieInterface
      *
      * @example google.com
      */
-    public static function getOrigin(): string;
+    public function getOrigin(): string;
 
 
     /**
@@ -41,7 +41,7 @@ interface CookieInterface
      *
      * @example "Identifies the user and allows authentication to the server"
      */
-    public static function getPurpose(): string;
+    public function getPurpose(): string;
 
 
     /**
@@ -54,7 +54,7 @@ interface CookieInterface
      * @example "1 day"
      * @example "Session"
      */
-    public static function getLifetime(): string;
+    public function getLifetime(): string;
 
 
     /**
@@ -65,7 +65,7 @@ interface CookieInterface
      *
      * @example 'essential'
      */
-    public static function getCategory(): string;
+    public function getCategory(): string;
 
 
     /**

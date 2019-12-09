@@ -105,6 +105,8 @@ class CookieManager extends QUI\Utils\Singleton
             }
         }
 
+        $this->registeredCookies->merge($this->getManualCookies(QUI::getRewrite()->getProject()));
+
         return $this->registeredCookies;
     }
 
@@ -158,6 +160,22 @@ class CookieManager extends QUI\Utils\Singleton
     public static function isCookieAcceptedInSession(CookieInterface $Cookie): bool
     {
         $AcceptedCookies = static::getAcceptedCookiesForSession();
+
+        // If we check for manual cookies, we have to check for the ID since the class names are anonymous
+        if ($Cookie instanceof QUI\GDPR\Cookies\ManualCookie) {
+            // Filter all cookies which don't have the given cookie's ID
+            $FilteredCookies = $AcceptedCookies->filter(function ($AcceptedCookie) use ($Cookie) {
+                // If the accepted cookie isn't a manual cookie, it's filtered
+                if (!($AcceptedCookie instanceof QUI\GDPR\Cookies\ManualCookie)) {
+                    return false;
+                }
+
+                /** @var QUI\GDPR\Cookies\ManualCookie $AcceptedCookie */
+                return $AcceptedCookie->getId() === $Cookie->getId();
+            });
+
+            return $FilteredCookies->length() > 0;
+        }
 
         return $AcceptedCookies->contains($Cookie);
     }
@@ -249,5 +267,89 @@ class CookieManager extends QUI\Utils\Singleton
         } catch (QUI\Exception $Exception) {
             QUI\System\Log::writeException($Exception);
         }
+    }
+
+
+    /**
+     * Returns the name of the table used to store the given project's manually added cookies.
+     *
+     * @param QUI\Projects\Project $Project
+     *
+     * @return string
+     */
+    public static function getManualCookiesTableName(QUI\Projects\Project $Project)
+    {
+        return QUI::getDBProjectTableName('cookies', $Project, false);
+    }
+
+
+    /**
+     * Edits a manually added cookie with the given data.
+     * If no or an unused cookie-id is given, a new cookie with the given data is added.
+     *
+     * @param                      $data
+     * @param QUI\Projects\Project $Project
+     *
+     * @return \PDOStatement
+     * @throws QUI\Database\Exception
+     */
+    public static function editManualCookie($data, QUI\Projects\Project $Project)
+    {
+        return QUI::getDataBase()->replace(
+            self::getManualCookiesTableName($Project),
+            $data
+        );
+    }
+
+
+    /**
+     * Deletes the manually added cookie with the given ID from the given project.
+     *
+     * @param                      $id
+     * @param QUI\Projects\Project $Project
+     *
+     * @return \PDOStatement
+     * @throws QUI\Database\Exception
+     */
+    public static function deleteManualCookie($id, QUI\Projects\Project $Project)
+    {
+        return QUI::getDataBase()->delete(
+            self::getManualCookiesTableName($Project),
+            ['id' => $id]
+        );
+    }
+
+
+    /**
+     * Returns a collection of all manual cookies in the given project.
+     *
+     * @param QUI\Projects\Project $Project
+     *
+     * @return CookieCollection
+     *
+     * @throws QUI\Database\Exception
+     */
+    protected static function getManualCookies(QUI\Projects\Project $Project): CookieCollection
+    {
+        $cookieTable = self::getManualCookiesTableName($Project);
+
+        $result = QUI::getDataBase()->fetch([
+            'from' => $cookieTable
+        ]);
+
+        $CookieCollection = new CookieCollection();
+
+        foreach ($result as $cookieData) {
+            $CookieCollection->append(new QUI\GDPR\Cookies\ManualCookie(
+                $cookieData['id'],
+                $cookieData['name'],
+                $cookieData['origin'],
+                $cookieData['purpose'],
+                $cookieData['lifetime'],
+                $cookieData['category']
+            ));
+        }
+
+        return $CookieCollection;
     }
 }

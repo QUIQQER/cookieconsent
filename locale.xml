@@ -448,5 +448,58 @@
             <en><![CDATA[Used Cookies:]]></en>
         </locale>
         <!-- endregion -->
+
+
+        <locale name="menu.text">
+            <de><![CDATA[Cookie Verwaltung]]></de>
+            <en><![CDATA[Cookie Management]]></en>
+        </locale>
+    </groups>
+
+    <groups name="quiqqer/gdpr" datatype="js">
+        <locale name="panel.title">
+            <de><![CDATA[Manuelle Cookie Verwaltung]]></de>
+            <en><![CDATA[Manual Cookie Management]]></en>
+        </locale>
+
+        <locale name="panel.button.add">
+            <de><![CDATA[Hinzufügen]]></de>
+            <en><![CDATA[Add]]></en>
+        </locale>
+
+        <locale name="panel.button.edit">
+            <de><![CDATA[Bearbeiten]]></de>
+            <en><![CDATA[Edit]]></en>
+        </locale>
+
+        <locale name="panel.button.delete">
+            <de><![CDATA[Löschen]]></de>
+            <en><![CDATA[Delete]]></en>
+        </locale>
+
+        <locale name="dialog.edit.title">
+            <de><![CDATA[Manuellen Cookie Bearbeiten]]></de>
+            <en><![CDATA[Edit Manual Cookie]]></en>
+        </locale>
+
+        <locale name="dialog.add.title">
+            <de><![CDATA[Manuellen Cookie Hinzufügen]]></de>
+            <en><![CDATA[Add Manual Cookie]]></en>
+        </locale>
+
+        <locale name="dialog.delete.title">
+            <de><![CDATA[Manuellen Cookie Löschen]]></de>
+            <en><![CDATA[Delete Manual Cookie]]></en>
+        </locale>
+
+        <locale name="dialog.delete.button.text">
+            <de><![CDATA[Löschen]]></de>
+            <en><![CDATA[Delete]]></en>
+        </locale>
+
+        <locale name="dialog.delete.text">
+            <de><![CDATA[Möchten Sie den Cookie '[cookieName]' wirklich löschen?]]></de>
+            <en><![CDATA[Do you really want to delete the Cookie '[cookieName]'?]]></en>
+        </locale>
     </groups>
 </locales>

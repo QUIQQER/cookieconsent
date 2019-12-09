@@ -19,7 +19,7 @@ class QuiqqerSessionCookie implements CookieInterface
     /**
      * @inheritDoc
      */
-    public static function getName(): string
+    public function getName(): string
     {
         return QUI::conf('session', 'name');
     }
@@ -27,7 +27,7 @@ class QuiqqerSessionCookie implements CookieInterface
     /**
      * @inheritDoc
      */
-    public static function getOrigin(): string
+    public function getOrigin(): string
     {
         return QUI::getRequest()->getHost();
     }
@@ -35,7 +35,7 @@ class QuiqqerSessionCookie implements CookieInterface
     /**
      * @inheritDoc
      */
-    public static function getPurpose(): string
+    public function getPurpose(): string
     {
         return QUI::getLocale()->get('quiqqer/gdpr', 'cookie.quiqqer.purpose');
     }
@@ -43,7 +43,7 @@ class QuiqqerSessionCookie implements CookieInterface
     /**
      * @inheritDoc
      */
-    public static function getLifetime(): string
+    public function getLifetime(): string
     {
         return \sprintf(
             '%d %s',
@@ -55,7 +55,7 @@ class QuiqqerSessionCookie implements CookieInterface
     /**
      * @inheritDoc
      */
-    public static function getCategory(): string
+    public function getCategory(): string
     {
         return static::COOKIE_CATEGORY_ESSENTIAL;
     }

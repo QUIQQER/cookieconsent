@@ -1,0 +1,18 @@
+#nerdspot-event-data-edit-dialog-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#nerdspot-event-data-edit-dialog-content > div:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+#nerdspot-event-data-edit-dialog-content #nerdspot-event-data-url {
+    display: inline-block;
+}
+
+#nerdspot-event-data-edit-dialog-content label[for=nerdspot-event-data-teaser-text] {
+    display: block;
+}

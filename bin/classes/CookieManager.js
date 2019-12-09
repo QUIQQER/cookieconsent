@@ -42,10 +42,11 @@ define('package/quiqqer/gdpr/bin/classes/CookieManager', [
          * Checks if the cookie with the given name was accepted.
          * Returns a promise, which resolves with a boolean containing the result.
          *
-         * The cookie name should be the name of the cookie's PHP-class.
+         * The cookie name should be the name of the cookie's PHP-class or the cookie's ID for manual cookies.
          * Keep in mind that you need to escape backslashes (see the valid example below)!
          *
          * @example isCookieAccepted('QUI\\GDPR\\Cookies\\QuiqqerSessionCookie')
+         * @example isCookieAccepted(12)
          *
          * @param {string} cookieName
          *
@@ -85,6 +86,65 @@ define('package/quiqqer/gdpr/bin/classes/CookieManager', [
                 }
             }, {
                 'package': 'quiqqer/gdpr'
+            });
+        },
+
+
+        /**
+         * Returns all of the given project's cookies formatted for a Grid-control.
+         *
+         * @param projectName
+         * @param page
+         * @param perPage
+         * @param sortOn
+         * @param sortBy
+         */
+        getCookiesForGrid: function (projectName, page, perPage, sortOn, sortBy) {
+            return new Promise(function (resolve, reject) {
+                QUIAjax.get('package_quiqqer_gdpr_ajax_getCookiesForGrid', resolve, {
+                    'package'  : 'quiqqer/gdpr',
+                    onError    : reject,
+                    projectName: projectName,
+                    page       : page,
+                    perPage    : perPage,
+                    sortOn     : sortOn,
+                    sortBy     : sortBy
+                });
+            });
+        },
+
+
+        /**
+         * Edit's the cookie with the given ID to take the given arguments.
+         *
+         * @param data
+         * @param projectName
+         */
+        editCookie: function (data, projectName) {
+            return new Promise(function (resolve, reject) {
+                QUIAjax.post('package_quiqqer_gdpr_ajax_editCookie', resolve, {
+                    'package'  : 'quiqqer/gdpr',
+                    onError    : reject,
+                    projectName: projectName,
+                    data       : JSON.stringify(data)
+                });
+            });
+        },
+
+
+        /**
+         * Deletes the manually added cookie with the given ID
+         *
+         * @param id
+         */
+        deleteCookie: function (id, projectName) {
+            return new Promise(function (resolve, reject) {
+                QUIAjax.post('package_quiqqer_gdpr_ajax_deleteCookie', resolve, {
+                    'package'  : 'quiqqer/gdpr',
+                    onError    : reject,
+                    projectName: projectName,
+                    id         : id
+                });
             });
         }
     });

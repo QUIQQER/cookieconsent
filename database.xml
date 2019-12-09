@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <projects>
+        <table name="cookies" no-auto-update="1" no-site-reference="1" no-project-lang="1">
+            <field type="INT ( 3 ) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY">id</field>
+            <field type="VARCHAR( 32 ) NOT NULL">name</field>
+            <field type="VARCHAR( 32 ) NOT NULL">origin</field>
+            <field type="VARCHAR( 256 ) NOT NULL">purpose</field>
+            <field type="VARCHAR( 32 ) NOT NULL">lifetime</field>
+            <field type="VARCHAR( 16 ) NOT NULL">category</field>
+
+            <primary>id</primary>
+        </table>
+    </projects>
+</database>

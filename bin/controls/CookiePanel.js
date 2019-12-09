@@ -286,9 +286,32 @@ define('package/quiqqer/gdpr/bin/controls/CookiePanel', [
 
 
         deleteCookie: function () {
-            var selectedData = this.$Grid.getSelectedData()[0];
+            var self = this,
+                selectedData = self.$Grid.getSelectedData()[0];
 
-            CookieManager.deleteCookie(selectedData.id, this.$ProjectSelect.getValue()).then(this.loadData);
+            new QUIConfirm({
+                icon     : 'fa fa-trash',
+                title    : QUILocale.get(lg, 'dialog.delete.title'),
+                maxHeight: 200,
+                maxWidth : 400,
+                ok_button: {
+                    text     : QUILocale.get(lg, 'dialog.delete.button.text'),
+                    textimage: 'fa fa-trash'
+                },
+                events   : {
+                    onOpen: function (Win) {
+                        Win.getContent().set('html', QUILocale.get(
+                            lg,
+                            'dialog.delete.text', {cookieName: selectedData.name})
+                        );
+                    },
+
+                    onSubmit: function () {
+
+                        CookieManager.deleteCookie(selectedData.id, self.$ProjectSelect.getValue()).then(self.loadData);
+                    }
+                }
+            }).open();
         }
     });
 });

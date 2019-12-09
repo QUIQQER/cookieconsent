@@ -480,5 +480,20 @@
             <de><![CDATA[Manuellen Cookie Hinzufügen]]></de>
             <en><![CDATA[Add Manual Cookie]]></en>
         </locale>
+
+        <locale name="dialog.delete.title">
+            <de><![CDATA[Manuellen Cookie Löschen]]></de>
+            <en><![CDATA[Delete Manual Cookie]]></en>
+        </locale>
+
+        <locale name="dialog.delete.button.text">
+            <de><![CDATA[Löschen]]></de>
+            <en><![CDATA[Delete]]></en>
+        </locale>
+
+        <locale name="dialog.delete.text">
+            <de><![CDATA[Möchten Sie den Cookie '[cookieName]' wirklich löschen?]]></de>
+            <en><![CDATA[Do you really want to delete the Cookie '[cookieName]'?]]></en>
+        </locale>
     </groups>
 </locales>

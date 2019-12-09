@@ -26,7 +26,6 @@ QUI::$Ajax->registerFunction(
         ]);
 
         return QUI\Utils\Grid::getResult($result, $page, $perPage);
-
     },
     ['projectName', 'page', 'perPage', 'sortOn', 'sortBy'],
     'Permission::checkAdminUser'

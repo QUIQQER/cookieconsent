@@ -24,7 +24,7 @@ define('package/quiqqer/gdpr/bin/controls/CookieEditDialog', [
 
         options: {
             maxWidth : 600,
-            maxHeight: 450,
+            maxHeight: 400,
             title    : QUILocale.get(lg, 'dialog.edit.title'),
             autoclose: false,
             texticon : false,

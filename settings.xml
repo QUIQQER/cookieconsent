@@ -135,6 +135,7 @@
                         <text>
                             <locale group="quiqqer/gdpr" var="settings.title"/>
                         </text>
+                        <icon>fa fa-bullseye</icon>
 
                         <settings title="quiqqer/gdpr" name="settings.cookieconsent">
                             <title>

@@ -1,35 +1,32 @@
 {
-    "name": "quiqqer\/gdpr",
-    "type": "quiqqer-module",
-    "description": "The Cookie Consent module integrates a cookies-notification concerning the EU-guideline for your QUIQQER-Website. If data protection specifications have been declared, those will be linked automatically.",
-    "license": "GPL-3.0+",
-    "authors": [
-        {
-            "name": "Henning Leutz",
-            "email": "leutz@pcsg.de",
-            "homepage": "http:\/\/www.pcsg.de",
-            "role": "Developer"
-        },
-        {
-            "name": "Jan Wennrich",
-            "email": "info@pcsg.de",
-            "homepage": "https:\/\/www.pcsg.de",
-            "role": "Developer"
-        }
-    ],
-    "support": {
-        "email": "support@pcsg.de",
-        "url": "http:\/\/www.pcsg.de"
-    },
-    "require": {
-        "php": ">=7",
-        "quiqqer\/quiqqer": "*@dev",
-        "quiqqer\/sitetypes": ">=1.2|dev-master|dev-dev",
-        "quiqqer\/utils": ">=1.18|dev-master|dev-dev"
-    },
-    "autoload": {
-        "psr-4": {
-            "QUI\\GDPR\\": "src\/QUI\/GDPR"
-        }
+  "name": "quiqqer/cookieconsent",
+  "type": "quiqqer-module",
+  "description": "Deprecated - Replacement: quiqqer/gdpr. The Cookie Consent module integrates a cookies-notification concerning the EU-guideline for your QUIQQER-Website.",
+  "license": "GPL-3.0+",
+  "authors": [
+    {
+      "name": "Henning Leutz",
+      "email": "leutz@pcsg.de",
+      "homepage": "http://www.pcsg.de",
+      "role": "Developer"
     }
+  ],
+  "support": {
+    "email": "support@pcsg.de",
+    "url": "http://www.pcsg.de"
+  },
+  "require": {
+    "php": ">=5.3",
+    "quiqqer/quiqqer": "*@dev",
+    "quiqqer/sitetypes": ">=1.2|dev-master|dev-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "QUI\\CookieConsent\\": "src/QUI/CookieConsent"
+    }
+  },
+  "abandoned": "quiqqer/gdpr",
+  "suggest": {
+    "quiqqer/gdpr": "This package is deprecated/abandoned. To conform GDPR-guidelines you should use quiqqer/gdpr instead."
+  }
 }
